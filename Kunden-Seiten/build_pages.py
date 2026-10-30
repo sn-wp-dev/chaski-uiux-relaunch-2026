@@ -49,7 +49,7 @@ def footer():
 
 def shell(filename,title,content,account=False):
     preview = '<div class="draft-bar">Layout-Vorschau · Beispieldaten · <a href="code.html">Kontoübersicht</a><a href="registrierung.html">Registrierung</a><a href="login.html">Login</a></div>'
-    html = f'<!doctype html>\n<html lang="de-CH"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex,nofollow"><meta name="theme-color" content="#F6F8F3"><title>{title} | CHASKI</title><link rel="icon" href="assets/logo-0.png"><link rel="stylesheet" href="assets/kunden.css"><script src="assets/kunden.js" defer></script></head><body>{preview}{header(account)}{content}{footer()}</body></html>'
+    html = f'<!doctype html>\n<html lang="de-CH"><head><script src="../js/auth.js"></script><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex,nofollow"><meta name="theme-color" content="#F6F8F3"><title>{title} | CHASKI</title><link rel="icon" href="assets/logo-0.png"><link rel="stylesheet" href="assets/kunden.css"><script src="assets/kunden.js" defer></script></head><body>{preview}{header(account)}{content}{footer()}</body></html>'
     (ROOT / filename).write_text(html,encoding='utf-8')
 
 NAV = [('code.html','dashboard','Übersicht'),('kundenkarte.html','card','Kundenkarte'),('click-collect.html','box','Click & Collect'),(None,'search','Lost & Found'),('support.html','chat','Support'),(None,'person','Profil bearbeiten'),(None,'lock','Passwort ändern'),(None,'delete','Konto löschen'),('login.html','logout','Abmelden')]
