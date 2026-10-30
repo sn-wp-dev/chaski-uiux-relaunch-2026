@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" role="img" aria-labelledby="pkg-title" class="chaski-paket">
+  <title id="pkg-title">Paket mit angehobenem Deckel</title>
+  <defs>
+    <linearGradient id="pkg-front" x1="66" y1="108" x2="143" y2="200" gradientUnits="userSpaceOnUse"><stop stop-color="#E3EAD8"/><stop offset=".5" stop-color="#E3EAD8"/><stop offset="1" stop-color="#586937"/></linearGradient>
+    <linearGradient id="pkg-side" x1="145" y1="114" x2="202" y2="187" gradientUnits="userSpaceOnUse"><stop stop-color="#586937"/><stop offset=".55" stop-color="#4A562D"/><stop offset="1" stop-color="#2D351B"/></linearGradient>
+    <linearGradient id="pkg-top" x1="95" y1="58" x2="155" y2="133" gradientUnits="userSpaceOnUse"><stop stop-color="#FFFFFF"/><stop offset=".4" stop-color="#F6F8F3"/><stop offset="1" stop-color="#E3EAD8"/></linearGradient>
+    <linearGradient id="pkg-rim" x1="67" y1="102" x2="147" y2="133" gradientUnits="userSpaceOnUse"><stop stop-color="#E3EAD8"/><stop offset="1" stop-color="#586937"/></linearGradient>
+    <linearGradient id="pkg-tape" x1="106" y1="70" x2="154" y2="119" gradientUnits="userSpaceOnUse"><stop stop-color="#586937"/><stop offset="1" stop-color="#2D351B"/></linearGradient>
+    <radialGradient id="pkg-shadow"><stop stop-color="#252D15" stop-opacity=".2"/><stop offset="1" stop-color="#252D15" stop-opacity="0"/></radialGradient>
+    <filter id="pkg-contact" x="-30%" y="-30%" width="160%" height="180%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#252D15" flood-opacity=".15"/></filter>
+  </defs>
+  <ellipse class="ground" cx="130" cy="211" rx="80" ry="16" fill="url(#pkg-shadow)"/>
+  <g class="body">
+    <path d="M61 104 127 73Q131 71 135 73L199 101 136 137Z" fill="#252D15"/>
+    <path d="M61 104 135 136 135 207Q133 210 129 208L66 180Q61 178 61 172Z" fill="url(#pkg-front)"/>
+    <path d="M135 136 199 101 199 170Q199 176 194 179L138 208Q135 210 135 206Z" fill="url(#pkg-side)"/>
+    <path d="M63 108 63 171Q63 176 68 178L129 205" fill="none" stroke="#FFFFFF" stroke-opacity=".35" stroke-width="1.5"/>
+    <path d="M136 138 136 204" stroke="#F6F8F3" stroke-opacity=".23" stroke-width="1.5"/>
+    <path d="M77 142Q77 139 80 140L107 152Q110 153 110 156V177Q110 180 107 179L80 167Q77 166 77 163Z" fill="#F6F8F3" fill-opacity=".9"/>
+    <path d="M84 150 102 158M84 156 96 161" stroke="#586937" stroke-width="2.1" stroke-linecap="round" opacity=".65"/>
+    <path d="M84 161V165M88 163V167M92 165V169M98 167V171M102 169V173" stroke="#4A562D" stroke-width="1.4"/>
+  </g>
+  <g class="lid" filter="url(#pkg-contact)">
+    <path d="M57 96 135 126 203 93V104Q203 107 199 109L139 140Q135 142 131 140L60 109Q57 108 57 104Z" fill="url(#pkg-rim)"/>
+    <path d="M135 127 203 93V104Q203 107 199 109L139 140Q137 141 135 141Z" fill="#4A562D"/>
+    <path d="M60 92 124 62Q129 60 134 62L200 90Q207 93 201 97L139 128Q135 130 131 128L60 99Q53 96 60 92Z" fill="url(#pkg-top)"/>
+    <path d="M101 73 119 65 189 95 171 104Z" fill="url(#pkg-tape)"/>
+    <path d="M171 104 189 95V114L171 123Z" fill="#2D351B"/>
+    <path d="M62 95 132 124Q135 126 139 124L198 95" fill="none" stroke="#FFFFFF" stroke-opacity=".65" stroke-width="1.6" stroke-linecap="round"/>
+    <path d="M106 73 174 102" stroke="#E3EAD8" stroke-opacity=".35" stroke-width="1.3"/>
+  </g>
+</svg>

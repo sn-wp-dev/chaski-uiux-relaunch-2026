@@ -1,0 +1,555 @@
+<!doctype html>
+<html lang="de">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="light"><link rel="icon" href="data:,"><title>CHASKI · Icon-Studio 2026</title><style>@font-face{font-family:Jakarta;src:url('./assets/jakarta-400.ttf') format('truetype');font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:Jakarta;src:url('./assets/jakarta-500.ttf') format('truetype');font-weight:500;font-style:normal;font-display:swap}
+@font-face{font-family:Jakarta;src:url('./assets/jakarta-600.ttf') format('truetype');font-weight:600;font-style:normal;font-display:swap}
+@font-face{font-family:Jakarta;src:url('./assets/jakarta-700.ttf') format('truetype');font-weight:700;font-style:normal;font-display:swap}
+:root{--canvas:#F6F8F3;--ink:#2D351B;--muted:#626957;--line:#DDE4D4;--icon-size:160px}
+*{box-sizing:border-box}body{margin:0;background:var(--canvas);color:var(--ink);font:14px/1.6 Jakarta,'Segoe UI',sans-serif}button,select{font:inherit}button,a,select{-webkit-tap-highlight-color:transparent}button{cursor:pointer}a{color:inherit}button:focus-visible,a:focus-visible,select:focus-visible{outline:3px solid #586937;outline-offset:5px}button:disabled{cursor:default;opacity:.55}
+.masthead{max-width:1320px;margin:auto;padding:25px 40px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}.wordmark{text-decoration:none;font-size:28px;letter-spacing:-1.5px;font-weight:800;line-height:1}.brand-dot{color:#586937}.masthead-right{display:flex;align-items:center;gap:25px;font-size:10px;font-weight:650;letter-spacing:.1em}.status{border:1px solid #CCD5BF;padding:6px 12px;border-radius:20px}
+main{max-width:1240px;margin:auto;padding:0 24px}.intro{padding:57px 0 37px}.eyebrow{font-size:10px;letter-spacing:.13em;font-weight:700;margin:0 0 15px;color:#586937}h1{font-size:clamp(36px,4.7vw,62px);line-height:1.1;letter-spacing:-.055em;margin:0 0 22px;font-weight:600}h1 span{color:#6C7A53}.lede{font-size:15px;color:var(--muted);line-height:1.8;margin:0}
+.toolbar{display:flex;justify-content:space-between;align-items:center;gap:24px;border-top:1px solid var(--line);padding:24px 0 10px;flex-wrap:wrap}fieldset{border:0;margin:0;padding:0;min-width:0}legend,.size-control{font-size:10px;font-weight:650;letter-spacing:.04em}legend{padding:0;margin-bottom:8px}.background-controls,.segmented{display:flex;gap:5px}.background-controls button,.segmented button{border:1px solid transparent;padding:8px 12px;border-radius:30px;background:transparent;color:#4E5549;font-size:11px;white-space:nowrap;min-height:40px}.background-controls button{display:flex;align-items:center;gap:7px}.background-controls button[aria-pressed=true]{background:#fff;border-color:#DDE4D4;box-shadow:0 2px 4px #252d1505}.swatch{display:inline-block;width:15px;height:15px;border:1px solid #00000013;border-radius:50%}.white{background:#fff}.sage{background:#E3EAD8}.moss{background:#2D351B}.segmented{border:1px solid var(--line);border-radius:30px;padding:3px;background:#EDF1E7;gap:0}.segmented button{min-height:32px;padding:6px 13px}.segmented button[aria-pressed=true]{background:#2D351B;color:#fff}.size-control{display:flex;flex-direction:column;gap:8px}select{border:1px solid #DDE4D4;border-radius:20px;background:transparent;padding:9px 30px 9px 12px;color:var(--ink);font-size:11px;min-height:40px}.interaction-hint{margin:6px 0 18px;font-size:11px;color:var(--muted);min-height:18px}
+.icon-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.icon-card{border:1px solid #E1E6D9;border-radius:18px;background:#fff;overflow:hidden;transition:background .2s,color .2s,border-color .2s}.card-meta{display:flex;justify-content:space-between;padding:20px 22px 0;font-size:9px;letter-spacing:.09em;color:#7A846C}.card-meta>span:first-child{font-size:11px;letter-spacing:0}.stage{display:flex;align-items:center;justify-content:center;width:100%;height:242px;border:0;background:transparent;padding:0;position:relative;overflow:hidden}.stage:focus-visible{outline-offset:-8px;border-radius:14px}.stage svg{display:block;width:var(--icon-size);height:var(--icon-size);overflow:visible;pointer-events:none}.stage:hover{background:radial-gradient(ellipse at center,#EDF1E740,transparent 68%)}.card-copy{padding:0 25px 24px}.card-copy h2{font-size:18px;font-weight:650;letter-spacing:-.035em;margin:0 0 8px}.card-copy p{font-size:12px;color:var(--muted);margin:0;max-width:270px;line-height:1.8;min-height:44px}.card-links{display:flex;gap:22px;margin:0 25px;padding:15px 0;border-top:1px solid var(--line)}.card-links a{display:flex;align-items:center;gap:10px;text-decoration:none;font-size:10px;font-weight:650;min-height:28px}.card-links a:hover{text-decoration:underline;text-underline-offset:4px}.card-links a span{font-size:16px}
+body[data-background=sage] .icon-card{background:#E3EAD8;border-color:#D3DDC6}body[data-background=sage] .card-links{border-color:#C7D2B9}body[data-background=moss] .icon-card{background:#2D351B;border-color:#252D15;color:#F6F8F3}body[data-background=moss] .card-meta,body[data-background=moss] .card-copy p{color:#D0DAC2}body[data-background=moss] .card-links{border-color:#586937}body[data-background=moss] .stage:focus-visible{outline-color:#E3EAD8}
+.detail-section{margin-top:65px}.section-heading{display:flex;justify-content:space-between;align-items:end;gap:25px;margin-bottom:26px}.section-heading .eyebrow,.palette-section .eyebrow{margin-bottom:8px}.section-heading h2,.palette-section h2{font-size:27px;line-height:1.25;letter-spacing:-.045em;font-weight:600;margin:0}.section-heading>p{margin:0;color:var(--muted);font-size:11px;line-height:1.8}.size-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.size-sample{padding:22px 20px;border-top:1px solid #CDD6BF}.size-sample h3{margin:0 0 16px;font-size:11px;font-weight:600}.sample-row{display:flex;align-items:end;justify-content:space-between;gap:9px}.sample-row>div{display:flex;align-items:center;flex-direction:column}.sample-icon{display:block}.sample-icon svg{width:100%;height:100%;display:block}.sample-row small{font-size:9px;color:#68735A;margin-top:10px}
+.palette-section{display:flex;justify-content:space-between;align-items:center;gap:35px;border-top:1px solid var(--line);margin-top:40px;padding:35px 0}.palette-section p:not(.eyebrow){font-size:11px;color:var(--muted);margin:12px 0 0}.palette{display:flex;gap:10px}.palette>div{display:flex;align-items:center;flex-direction:column;gap:9px}.palette span{width:63px;height:48px;border-radius:9px;border:1px solid #252d1512}.palette code{font-size:9px;color:var(--muted)}.motion-note{font-size:10px;color:var(--muted);margin:0 0 35px}footer{max-width:1240px;padding:22px 24px;margin:auto;border-top:1px solid var(--line);display:flex;justify-content:space-between;font-size:9px;letter-spacing:.04em;color:var(--muted)}
+@media(max-width:900px){.toolbar{gap:18px}.stage{height:210px}.card-copy{padding-inline:18px}.card-links{margin-inline:18px;gap:13px}.card-meta{padding-inline:18px;font-size:7px}.sample-row{flex-wrap:wrap;justify-content:center}.section-heading{align-items:start}.palette-section{align-items:start;flex-direction:column}}
+@media(max-width:650px){.masthead{padding:22px 20px}.masthead-right{font-size:8px}.masthead-right>.status{display:none}main{padding:0 20px}.intro{padding:40px 0 30px}h1{font-size:44px}.lede{font-size:13px}.desktop-break{display:none}.toolbar{align-items:end}.size-control{flex-direction:row;align-items:center}.icon-grid,.size-grid{grid-template-columns:1fr}.stage{height:240px}.card-meta{font-size:9px}.card-copy{padding:0 24px 22px}.card-copy p{max-width:none;min-height:0}.card-links{margin-inline:24px;gap:28px}.card-links a{min-height:32px}.detail-section{margin-top:42px}.section-heading{flex-direction:column;gap:15px}.sample-row{justify-content:space-around;flex-wrap:nowrap}.size-sample{padding-inline:0}.palette{gap:8px;width:100%;justify-content:space-between}.palette span{width:48px;height:42px}.palette code{font-size:8px}.palette-section h2,.section-heading h2{font-size:25px}footer{padding-inline:20px;gap:20px;flex-wrap:wrap}.interaction-hint{margin-top:12px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+
+/* Scoped classes also work when multiple icons are embedded in a document. */
+.chaski-paket .lid { transform-origin: 130px 100px; }
+.chaski-brief .check { transform-origin: 178px 90px; }
+.chaski-brief .envelope { transform-origin: 128px 160px; }
+.chaski-download .tray { transform-origin: 128px 198px; }
+.chaski-paket.is-playing .lid { animation: chaski-lid 3.6s cubic-bezier(.4,0,.2,1) infinite; }
+.chaski-brief.is-playing .check { animation: chaski-check 3.6s ease-in-out infinite; }
+.chaski-brief.is-playing .envelope { animation: chaski-envelope 3.6s ease-in-out infinite; }
+.chaski-download.is-playing .arrow { animation: chaski-arrow 3.6s ease-in-out infinite; }
+.chaski-download.is-playing .tray { animation: chaski-tray 3.6s ease-in-out infinite; }
+@keyframes chaski-lid {
+  0%, 12%, 64%, 100% { transform: translateY(0) rotate(0); }
+  30%, 42% { transform: translateY(-16px) rotate(-4deg); }
+  54% { transform: translateY(1px) rotate(0); }
+}
+@keyframes chaski-check {
+  0%, 10% { transform: translateY(9px) scale(.65); opacity: 0; }
+  28% { transform: translateY(-3px) scale(1.09); opacity: 1; }
+  38%, 84% { transform: translateY(0) scale(1); opacity: 1; }
+  100% { transform: translateY(9px) scale(.65); opacity: 0; }
+}
+@keyframes chaski-envelope {
+  0%, 18%, 50%, 100% { transform: translateY(0); }
+  32% { transform: translateY(2px); }
+}
+@keyframes chaski-arrow {
+  0%, 10%, 64%, 100% { transform: translateY(0); }
+  28% { transform: translateY(14px); }
+  40% { transform: translateY(-5px); }
+  51% { transform: translateY(2px); }
+}
+@keyframes chaski-tray {
+  0%, 23%, 46%, 100% { transform: scaleY(1); }
+  30% { transform: scaleY(.95); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .chaski-paket *, .chaski-brief *, .chaski-download * { animation: none !important; }
+}
+</style></head>
+<body data-background="white" data-motion="static">
+  <header class="masthead"><a class="wordmark" href="#main" aria-label="CHASKI Icon-Studio">CHASKI<span class="brand-dot">.</span></a><div class="masthead-right">RELAUNCH 2026 <span class="status">ICON-PILOT / 01</span></div></header>
+  <main id="main">
+    <section class="intro"><p class="eyebrow">EINE FORMENSPRACHE. DREI ERSTE MOTIVE.</p><h1>Kleine Formen.<br><span>Mehr Charakter.</span></h1><p class="lede">Weiche Kanten, sanfte Tiefe und die neuen CHASKI-Farben.<br class="desktop-break"> Drei eigene Icons – bereit für einen kleinen Moment Bewegung.</p></section>
+    <section class="studio" aria-label="Interaktive Icon-Vorschau">
+      <div class="toolbar">
+        <fieldset><legend>Hintergrund</legend><div class="background-controls"><button type="button" data-bg="white" aria-pressed="true"><i class="swatch white"></i>Weiß</button><button type="button" data-bg="sage" aria-pressed="false"><i class="swatch sage"></i>Salbei</button><button type="button" data-bg="moss" aria-pressed="false"><i class="swatch moss"></i>Moos</button></div></fieldset>
+        <fieldset><legend>Ansicht</legend><div class="segmented"><button type="button" data-mode="static" aria-pressed="true">Statisch</button><button type="button" data-mode="hover" aria-pressed="false">Bei Interaktion</button><button type="button" data-mode="loop" aria-pressed="false">In Bewegung</button></div></fieldset>
+        <label class="size-control">Größe <select id="icon-size"><option value="96">96 px</option><option value="160" selected>160 px</option><option value="224">224 px</option></select></label>
+      </div>
+      <p class="interaction-hint" id="motion-status" aria-live="polite">Klicke ein Icon an, um seine Animation einmal abzuspielen.</p>
+      <div class="icon-grid"><article class="icon-card"><div class="card-meta"><span>01</span><span>CHASKI / SOFT VOLUME</span></div>
+    <button class="stage" aria-label="Paket: Animation abspielen" data-part="lid"><svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" aria-hidden="true" focusable="false" class="chaski-paket">
+  <title id="main-pkg-title">Paket mit angehobenem Deckel</title>
+  <defs>
+    <linearGradient id="main-pkg-front" x1="66" y1="108" x2="143" y2="200" gradientUnits="userSpaceOnUse"><stop stop-color="#E3EAD8"/><stop offset=".5" stop-color="#E3EAD8"/><stop offset="1" stop-color="#586937"/></linearGradient>
+    <linearGradient id="main-pkg-side" x1="145" y1="114" x2="202" y2="187" gradientUnits="userSpaceOnUse"><stop stop-color="#586937"/><stop offset=".55" stop-color="#4A562D"/><stop offset="1" stop-color="#2D351B"/></linearGradient>
+    <linearGradient id="main-pkg-top" x1="95" y1="58" x2="155" y2="133" gradientUnits="userSpaceOnUse"><stop stop-color="#FFFFFF"/><stop offset=".4" stop-color="#F6F8F3"/><stop offset="1" stop-color="#E3EAD8"/></linearGradient>
+    <linearGradient id="main-pkg-rim" x1="67" y1="102" x2="147" y2="133" gradientUnits="userSpaceOnUse"><stop stop-color="#E3EAD8"/><stop offset="1" stop-color="#586937"/></linearGradient>
+    <linearGradient id="main-pkg-tape" x1="106" y1="70" x2="154" y2="119" gradientUnits="userSpaceOnUse"><stop stop-color="#586937"/><stop offset="1" stop-color="#2D351B"/></linearGradient>
+    <radialGradient id="main-pkg-shadow"><stop stop-color="#252D15" stop-opacity=".2"/><stop offset="1" stop-color="#252D15" stop-opacity="0"/></radialGradient>
+    <filter id="main-pkg-contact" x="-30%" y="-30%" width="160%" height="180%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#252D15" flood-opacity=".15"/></filter>
+  </defs>
+  <ellipse class="ground" cx="130" cy="211" rx="80" ry="16" fill="url(#main-pkg-shadow)"/>
+  <g class="body">
+    <path d="M61 104 127 73Q131 71 135 73L199 101 136 137Z" fill="#252D15"/>
+    <path d="M61 104 135 136 135 207Q133 210 129 208L66 180Q61 178 61 172Z" fill="url(#main-pkg-front)"/>
+    <path d="M135 136 199 101 199 170Q199 176 194 179L138 208Q135 210 135 206Z" fill="url(#main-pkg-side)"/>
+    <path d="M63 108 63 171Q63 176 68 178L129 205" fill="none" stroke="#FFFFFF" stroke-opacity=".35" stroke-width="1.5"/>
+    <path d="M136 138 136 204" stroke="#F6F8F3" stroke-opacity=".23" stroke-width="1.5"/>
+    <path d="M77 142Q77 139 80 140L107 152Q110 153 110 156V177Q110 180 107 179L80 167Q77 166 77 163Z" fill="#F6F8F3" fill-opacity=".9"/>
+    <path d="M84 150 102 158M84 156 96 161" stroke="#586937" stroke-width="2.1" stroke-linecap="round" opacity=".65"/>
+    <path d="M84 161V165M88 163V167M92 165V169M98 167V171M102 169V173" stroke="#4A562D" stroke-width="1.4"/>
+  </g>
+  <g class="lid" filter="url(#main-pkg-contact)">
+    <path d="M57 96 135 126 203 93V104Q203 107 199 109L139 140Q135 142 131 140L60 109Q57 108 57 104Z" fill="url(#main-pkg-rim)"/>
+    <path d="M135 127 203 93V104Q203 107 199 109L139 140Q137 141 135 141Z" fill="#4A562D"/>
+    <path d="M60 92 124 62Q129 60 134 62L200 90Q207 93 201 97L139 128Q135 130 131 128L60 99Q53 96 60 92Z" fill="url(#main-pkg-top)"/>
+    <path d="M101 73 119 65 189 95 171 104Z" fill="url(#main-pkg-tape)"/>
+    <path d="M171 104 189 95V114L171 123Z" fill="#2D351B"/>
+    <path d="M62 95 132 124Q135 126 139 124L198 95" fill="none" stroke="#FFFFFF" stroke-opacity=".65" stroke-width="1.6" stroke-linecap="round"/>
+    <path d="M106 73 174 102" stroke="#E3EAD8" stroke-opacity=".35" stroke-width="1.3"/>
+  </g>
+</svg>
+</button>
+    <div class="card-copy"><h2>Paket</h2><p>Helle Flächen, moosgrüne Seiten und ein Deckel, der sich sanft hebt.</p></div>
+    <div class="card-links"><a href="icons/chaski-paket.svg" download>SVG laden <span aria-hidden="true">↓</span></a><a href="animated/chaski-paket-animated.svg" download>Animiert <span aria-hidden="true">↓</span></a></div></article><article class="icon-card"><div class="card-meta"><span>02</span><span>CHASKI / SOFT VOLUME</span></div>
+    <button class="stage" aria-label="Brief bestätigt: Animation abspielen" data-part="check"><svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" aria-hidden="true" focusable="false" class="chaski-brief">
+  <title id="main-mail-title">Brief mit Bestätigungshäkchen</title>
+  <defs>
+    <linearGradient id="main-mail-paper" x1="65" y1="91" x2="178" y2="191" gradientUnits="userSpaceOnUse"><stop stop-color="#F6F8F3"/><stop offset=".55" stop-color="#E3EAD8"/><stop offset="1" stop-color="#586937"/></linearGradient>
+    <linearGradient id="main-mail-fold" x1="120" y1="92" x2="127" y2="176" gradientUnits="userSpaceOnUse"><stop stop-color="#FFFFFF"/><stop offset=".5" stop-color="#E3EAD8"/><stop offset="1" stop-color="#586937"/></linearGradient>
+    <linearGradient id="main-mail-front" x1="87" y1="137" x2="159" y2="216" gradientUnits="userSpaceOnUse"><stop stop-color="#F6F8F3"/><stop offset=".55" stop-color="#E3EAD8"/><stop offset="1" stop-color="#586937"/></linearGradient>
+    <linearGradient id="main-mail-check" x1="165" y1="65" x2="190" y2="108" gradientUnits="userSpaceOnUse"><stop stop-color="#E3EAD8"/><stop offset=".35" stop-color="#586937"/><stop offset="1" stop-color="#4A562D"/></linearGradient>
+    <radialGradient id="main-mail-shadow"><stop stop-color="#252D15" stop-opacity=".18"/><stop offset="1" stop-color="#252D15" stop-opacity="0"/></radialGradient>
+    <filter id="main-mail-bevel" x="-15%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="1.6" flood-color="#252D15" flood-opacity=".16"/></filter>
+    <filter id="main-mail-badge-shadow" x="-35%" y="-35%" width="170%" height="180%"><feDropShadow dx="0" dy="6" stdDeviation="4" flood-color="#252D15" flood-opacity=".18"/></filter>
+  </defs>
+  <ellipse class="ground" cx="128" cy="211" rx="84" ry="14" fill="url(#main-mail-shadow)"/>
+  <g class="envelope">
+    <g transform="rotate(-8 128 142)">
+      <rect x="51" y="96" width="158" height="105" rx="10" fill="#4A562D"/>
+      <rect x="48" y="90" width="158" height="105" rx="9" fill="url(#main-mail-paper)"/>
+      <path d="M52 190 111 143Q127 131 142 143L202 190Q200 195 196 195H58Q54 195 52 190Z" fill="url(#main-mail-front)"/>
+      <path d="M52 190 111 143M142 143 202 190" fill="none" stroke="#F6F8F3" stroke-opacity=".65" stroke-width="1.5"/>
+      <path d="M51 94Q52 90 58 90H196Q202 90 204 94L138 148Q127 157 116 148Z" fill="url(#main-mail-fold)" filter="url(#main-mail-bevel)"/>
+      <path d="M54 94 118 146Q127 153 136 146L200 94" fill="none" stroke="#FFFFFF" stroke-opacity=".65" stroke-width="1.5" stroke-linecap="round"/>
+      <path d="M50 101V184Q50 193 59 193H194" fill="none" stroke="#FFFFFF" stroke-opacity=".38" stroke-width="1.3"/>
+    </g>
+  </g>
+  <g class="check" filter="url(#main-mail-badge-shadow)">
+    <path d="M157 88 172 103 202 68" fill="none" stroke="#2D351B" stroke-width="15" stroke-linecap="round" stroke-linejoin="round" transform="translate(1 4)"/>
+    <path d="M157 88 172 103 202 68" fill="none" stroke="url(#main-mail-check)" stroke-width="15" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M155 85 171 100 200 66" fill="none" stroke="#F6F8F3" stroke-opacity=".45" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>
+</button>
+    <div class="card-copy"><h2>Brief bestätigt</h2><p>Ein gefalteter Umschlag mit einem plastischen, federnden Häkchen.</p></div>
+    <div class="card-links"><a href="icons/chaski-brief-bestaetigt.svg" download>SVG laden <span aria-hidden="true">↓</span></a><a href="animated/chaski-brief-bestaetigt-animated.svg" download>Animiert <span aria-hidden="true">↓</span></a></div></article><article class="icon-card"><div class="card-meta"><span>03</span><span>CHASKI / SOFT VOLUME</span></div>
+    <button class="stage" aria-label="Download: Animation abspielen" data-part="arrow"><svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" aria-hidden="true" focusable="false" class="chaski-download">
+  <title id="main-dl-title">Download-Pfeil mit Ablage</title>
+  <defs>
+    <linearGradient id="main-dl-tray" x1="69" y1="157" x2="162" y2="206" gradientUnits="userSpaceOnUse"><stop stop-color="#F6F8F3"/><stop offset=".48" stop-color="#E3EAD8"/><stop offset="1" stop-color="#586937"/></linearGradient>
+    <linearGradient id="main-dl-arrow" x1="98" y1="56" x2="155" y2="168" gradientUnits="userSpaceOnUse"><stop stop-color="#E3EAD8"/><stop offset=".35" stop-color="#586937"/><stop offset=".7" stop-color="#4A562D"/><stop offset="1" stop-color="#2D351B"/></linearGradient>
+    <linearGradient id="main-dl-light" x1="113" y1="65" x2="131" y2="151" gradientUnits="userSpaceOnUse"><stop stop-color="#FFFFFF" stop-opacity=".8"/><stop offset="1" stop-color="#E3EAD8" stop-opacity=".08"/></linearGradient>
+    <radialGradient id="main-dl-shadow"><stop stop-color="#252D15" stop-opacity=".18"/><stop offset="1" stop-color="#252D15" stop-opacity="0"/></radialGradient>
+    <filter id="main-dl-soft" x="-30%" y="-25%" width="160%" height="160%"><feDropShadow dx="0" dy="5" stdDeviation="3" flood-color="#252D15" flood-opacity=".12"/></filter>
+  </defs>
+  <ellipse class="ground" cx="130" cy="213" rx="79" ry="13" fill="url(#main-dl-shadow)"/>
+  <g class="tray">
+    <path d="M65 160V184Q65 198 79 198H179Q193 198 193 184V160" fill="none" stroke="#4A562D" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" transform="translate(2 5)"/>
+    <path d="M65 160V184Q65 198 79 198H179Q193 198 193 184V160" fill="none" stroke="url(#main-dl-tray)" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M62 158V183Q62 195 78 195H176" fill="none" stroke="#FFFFFF" stroke-opacity=".6" stroke-width="2.3" stroke-linecap="round"/>
+    <path d="M190 158V180" fill="none" stroke="#F6F8F3" stroke-opacity=".55" stroke-width="2" stroke-linecap="round"/>
+  </g>
+  <g class="arrow" filter="url(#main-dl-soft)">
+    <path d="M128 62V150M96 122 128 154 160 122" fill="none" stroke="#252D15" stroke-width="22" stroke-linecap="round" stroke-linejoin="round" transform="translate(2 5)"/>
+    <path d="M128 62V150M96 122 128 154 160 122" fill="none" stroke="url(#main-dl-arrow)" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M123 62V134M94 118 125 149M136 144 158 120" fill="none" stroke="url(#main-dl-light)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>
+</button>
+    <div class="card-copy"><h2>Download</h2><p>Runde Kanten und ein kurzer Impuls in Richtung Ablage.</p></div>
+    <div class="card-links"><a href="icons/chaski-download.svg" download>SVG laden <span aria-hidden="true">↓</span></a><a href="animated/chaski-download-animated.svg" download>Animiert <span aria-hidden="true">↓</span></a></div></article></div>
+    </section>
+    <section class="detail-section"><div class="section-heading"><div><p class="eyebrow">AUCH IM KLEINEN</p><h2>Ein Set. Mehrere Größen.</h2></div><p>Die gleichen Motive in 32, 48, 64 und 96 Pixeln.<br>Für kleine Bedienelemente ist eine vereinfachte Variante vorgesehen.</p></div><div class="size-grid"><div class="size-sample"><h3>Paket</h3><div class="sample-row"><div><span class="sample-icon" style="width:32px;height:32px"><svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" aria-hidden="true" focusable="false" class="chaski-paket">
+  <title id="size32-pkg-title">Paket mit angehobenem Deckel</title>
+  <defs>
+    <linearGradient id="size32-pkg-front" x1="66" y1="108" x2="143" y2="200" gradientUnits="userSpaceOnUse"><stop stop-color="#E3EAD8"/><stop offset=".5" stop-color="#E3EAD8"/><stop offset="1" stop-color="#586937"/></linearGradient>
+    <linearGradient id="size32-pkg-side" x1="145" y1="114" x2="202" y2="187" gradientUnits="userSpaceOnUse"><stop stop-color="#586937"/><stop offset=".55" stop-color="#4A562D"/><stop offset="1" stop-color="#2D351B"/></linearGradient>
+    <linearGradient id="size32-pkg-top" x1="95" y1="58" x2="155" y2="133" gradientUnits="userSpaceOnUse"><stop stop-color="#FFFFFF"/><stop offset=".4" stop-color="#F6F8F3"/><stop offset="1" stop-color="#E3EAD8"/></linearGradient>
+    <linearGradient id="size32-pkg-rim" x1="67" y1="102" x2="147" y2="133" gradientUnits="userSpaceOnUse"><stop stop-color="#E3EAD8"/><stop offset="1" stop-color="#586937"/></linearGradient>
+    <linearGradient id="size32-pkg-tape" x1="106" y1="70" x2="154" y2="119" gradientUnits="userSpaceOnUse"><stop stop-color="#586937"/><stop offset="1" stop-color="#2D351B"/></linearGradient>
+    <radialGradient id="size32-pkg-shadow"><stop stop-color="#252D15" stop-opacity=".2"/><stop offset="1" stop-color="#252D15" stop-opacity="0"/></radialGradient>
+    <filter id="size32-pkg-contact" x="-30%" y="-30%" width="160%" height="180%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#252D15" flood-opacity=".15"/></filter>
+  </defs>
+  <ellipse class="ground" cx="130" cy="211" rx="80" ry="16" fill="url(#size32-pkg-shadow)"/>
+  <g class="body">
+    <path d="M61 104 127 73Q131 71 135 73L199 101 136 137Z" fill="#252D15"/>
+    <path d="M61 104 135 136 135 207Q133 210 129 208L66 180Q61 178 61 172Z" fill="url(#size32-pkg-front)"/>
+    <path d="M135 136 199 101 199 170Q199 176 194 179L138 208Q135 210 135 206Z" fill="url(#size32-pkg-side)"/>
+    <path d="M63 108 63 171Q63 176 68 178L129 205" fill="none" stroke="#FFFFFF" stroke-opacity=".35" stroke-width="1.5"/>
+    <path d="M136 138 136 204" stroke="#F6F8F3" stroke-opacity=".23" stroke-width="1.5"/>
+    <path d="M77 142Q77 139 80 140L107 152Q110 153 110 156V177Q110 180 107 179L80 167Q77 166 77 163Z" fill="#F6F8F3" fill-opacity=".9"/>
+    <path d="M84 150 102 158M84 156 96 161" stroke="#586937" stroke-width="2.1" stroke-linecap="round" opacity=".65"/>
+    <path d="M84 161V165M88 163V167M92 165V169M98 167V171M102 169V173" stroke="#4A562D" stroke-width="1.4"/>
+  </g>
+  <g class="lid" filter="url(#size32-pkg-contact)">
+    <path d="M57 96 135 126 203 93V104Q203 107 199 109L139 140Q135 142 131 140L60 109Q57 108 57 104Z" fill="url(#size32-pkg-rim)"/>
+    <path d="M135 127 203 93V104Q203 107 199 109L139 140Q137 141 135 141Z" fill="#4A562D"/>
+    <path d="M60 92 124 62Q129 60 134 62L200 90Q207 93 201 97L139 128Q135 130 131 128L60 99Q53 96 60 92Z" fill="url(#size32-pkg-top)"/>
+    <path d="M101 73 119 65 189 95 171 104Z" fill="url(#size32-pkg-tape)"/>
+    <path d="M171 104 189 95V114L171 123Z" fill="#2D351B"/>
+    <path d="M62 95 132 124Q135 126 139 124L198 95" fill="none" stroke="#FFFFFF" stroke-opacity=".65" stroke-width="1.6" stroke-linecap="round"/>
+    <path d="M106 73 174 102" stroke="#E3EAD8" stroke-opacity=".35" stroke-width="1.3"/>
+  </g>
+</svg>
+</span><small>32 px</small></div><div><span class="sample-icon" style="width:48px;height:48px"><svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" aria-hidden="true" focusable="false" class="chaski-paket">
+  <title id="size48-pkg-title">Paket mit angehobenem Deckel</title>
+  <defs>
+    <linearGradient id="size48-pkg-front" x1="66" y1="108" x2="143" y2="200" gradientUnits="userSpaceOnUse"><stop stop-color="#E3EAD8"/><stop offset=".5" stop-color="#E3EAD8"/><stop offset="1" stop-color="#586937"/></linearGradient>
+    <linearGradient id="size48-pkg-side" x1="145" y1="114" x2="202" y2="187" gradientUnits="userSpaceOnUse"><stop stop-color="#586937"/><stop offset=".55" stop-color="#4A562D"/><stop offset="1" stop-color="#2D351B"/></linearGradient>
+    <linearGradient id="size48-pkg-top" x1="95" y1="58" x2="155" y2="133" gradientUnits="userSpaceOnUse"><stop stop-color="#FFFFFF"/><stop offset=".4" stop-color="#F6F8F3"/><stop offset="1" stop-color="#E3EAD8"/></linearGradient>
+    <linearGradient id="size48-pkg-rim" x1="67" y1="102" x2="147" y2="133" gradientUnits="userSpaceOnUse"><stop stop-color="#E3EAD8"/><stop offset="1" stop-color="#586937"/></linearGradient>
+    <linearGradient id="size48-pkg-tape" x1="106" y1="70" x2="154" y2="119" gradientUnits="userSpaceOnUse"><stop stop-color="#586937"/><stop offset="1" stop-color="#2D351B"/></linearGradient>
+    <radialGradient id="size48-pkg-shadow"><stop stop-color="#252D15" stop-opacity=".2"/><stop offset="1" stop-color="#252D15" stop-opacity="0"/></radialGradient>
+    <filter id="size48-pkg-contact" x="-30%" y="-30%" width="160%" height="180%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#252D15" flood-opacity=".15"/></filter>
+  </defs>
+  <ellipse class="ground" cx="130" cy="211" rx="80" ry="16" fill="url(#size48-pkg-shadow)"/>
+  <g class="body">
+    <path d="M61 104 127 73Q131 71 135 73L199 101 136 137Z" fill="#252D15"/>
+    <path d="M61 104 135 136 135 207Q133 210 129 208L66 180Q61 178 61 172Z" fill="url(#size48-pkg-front)"/>
+    <path d="M135 136 199 101 199 170Q199 176 194 179L138 208Q135 210 135 206Z" fill="url(#size48-pkg-side)"/>
+    <path d="M63 108 63 171Q63 176 68 178L129 205" fill="none" stroke="#FFFFFF" stroke-opacity=".35" stroke-width="1.5"/>
+    <path d="M136 138 136 204" stroke="#F6F8F3" stroke-opacity=".23" stroke-width="1.5"/>
+    <path d="M77 142Q77 139 80 140L107 152Q110 153 110 156V177Q110 180 107 179L80 167Q77 166 77 163Z" fill="#F6F8F3" fill-opacity=".9"/>
+    <path d="M84 150 102 158M84 156 96 161" stroke="#586937" stroke-width="2.1" stroke-linecap="round" opacity=".65"/>
+    <path d="M84 161V165M88 163V167M92 165V169M98 167V171M102 169V173" stroke="#4A562D" stroke-width="1.4"/>
+  </g>
+  <g class="lid" filter="url(#size48-pkg-contact)">
+    <path d="M57 96 135 126 203 93V104Q203 107 199 109L139 140Q135 142 131 140L60 109Q57 108 57 104Z" fill="url(#size48-pkg-rim)"/>
+    <path d="M135 127 203 93V104Q203 107 199 109L139 140Q137 141 135 141Z" fill="#4A562D"/>
+    <path d="M60 92 124 62Q129 60 134 62L200 90Q207 93 201 97L139 128Q135 130 131 128L60 99Q53 96 60 92Z" fill="url(#size48-pkg-top)"/>
+    <path d="M101 73 119 65 189 95 171 104Z" fill="url(#size48-pkg-tape)"/>
+    <path d="M171 104 189 95V114L171 123Z" fill="#2D351B"/>
+    <path d="M62 95 132 124Q135 126 139 124L198 95" fill="none" stroke="#FFFFFF" stroke-opacity=".65" stroke-width="1.6" stroke-linecap="round"/>
+    <path d="M106 73 174 102" stroke="#E3EAD8" stroke-opacity=".35" stroke-width="1.3"/>
+  </g>
+</svg>
+</span><small>48 px</small></div><div><span class="sample-icon" style="width:64px;height:64px"><svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" aria-hidden="true" focusable="false" class="chaski-paket">
+  <title id="size64-pkg-title">Paket mit angehobenem Deckel</title>
+  <defs>
+    <linearGradient id="size64-pkg-front" x1="66" y1="108" x2="143" y2="200" gradientUnits="userSpaceOnUse"><stop stop-color="#E3EAD8"/><stop offset=".5" stop-color="#E3EAD8"/><stop offset="1" stop-color="#586937"/></linearGradient>
+    <linearGradient id="size64-pkg-side" x1="145" y1="114" x2="202" y2="187" gradientUnits="userSpaceOnUse"><stop stop-color="#586937"/><stop offset=".55" stop-color="#4A562D"/><stop offset="1" stop-color="#2D351B"/></linearGradient>
+    <linearGradient id="size64-pkg-top" x1="95" y1="58" x2="155" y2="133" gradientUnits="userSpaceOnUse"><stop stop-color="#FFFFFF"/><stop offset=".4" stop-color="#F6F8F3"/><stop offset="1" stop-color="#E3EAD8"/></linearGradient>
+    <linearGradient id="size64-pkg-rim" x1="67" y1="102" x2="147" y2="133" gradientUnits="userSpaceOnUse"><stop stop-color="#E3EAD8"/><stop offset="1" stop-color="#586937"/></linearGradient>
+    <linearGradient id="size64-pkg-tape" x1="106" y1="70" x2="154" y2="119" gradientUnits="userSpaceOnUse"><stop stop-color="#586937"/><stop offset="1" stop-color="#2D351B"/></linearGradient>
+    <radialGradient id="size64-pkg-shadow"><stop stop-color="#252D15" stop-opacity=".2"/><stop offset="1" stop-color="#252D15" stop-opacity="0"/></radialGradient>
+    <filter id="size64-pkg-contact" x="-30%" y="-30%" width="160%" height="180%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#252D15" flood-opacity=".15"/></filter>
+  </defs>
+  <ellipse class="ground" cx="130" cy="211" rx="80" ry="16" fill="url(#size64-pkg-shadow)"/>
+  <g class="body">
+    <path d="M61 104 127 73Q131 71 135 73L199 101 136 137Z" fill="#252D15"/>
+    <path d="M61 104 135 136 135 207Q133 210 129 208L66 180Q61 178 61 172Z" fill="url(#size64-pkg-front)"/>
+    <path d="M135 136 199 101 199 170Q199 176 194 179L138 208Q135 210 135 206Z" fill="url(#size64-pkg-side)"/>
+    <path d="M63 108 63 171Q63 176 68 178L129 205" fill="none" stroke="#FFFFFF" stroke-opacity=".35" stroke-width="1.5"/>
+    <path d="M136 138 136 204" stroke="#F6F8F3" stroke-opacity=".23" stroke-width="1.5"/>
+    <path d="M77 142Q77 139 80 140L107 152Q110 153 110 156V177Q110 180 107 179L80 167Q77 166 77 163Z" fill="#F6F8F3" fill-opacity=".9"/>
+    <path d="M84 150 102 158M84 156 96 161" stroke="#586937" stroke-width="2.1" stroke-linecap="round" opacity=".65"/>
+    <path d="M84 161V165M88 163V167M92 165V169M98 167V171M102 169V173" stroke="#4A562D" stroke-width="1.4"/>
+  </g>
+  <g class="lid" filter="url(#size64-pkg-contact)">
+    <path d="M57 96 135 126 203 93V104Q203 107 199 109L139 140Q135 142 131 140L60 109Q57 108 57 104Z" fill="url(#size64-pkg-rim)"/>
+    <path d="M135 127 203 93V104Q203 107 199 109L139 140Q137 141 135 141Z" fill="#4A562D"/>
+    <path d="M60 92 124 62Q129 60 134 62L200 90Q207 93 201 97L139 128Q135 130 131 128L60 99Q53 96 60 92Z" fill="url(#size64-pkg-top)"/>
+    <path d="M101 73 119 65 189 95 171 104Z" fill="url(#size64-pkg-tape)"/>
+    <path d="M171 104 189 95V114L171 123Z" fill="#2D351B"/>
+    <path d="M62 95 132 124Q135 126 139 124L198 95" fill="none" stroke="#FFFFFF" stroke-opacity=".65" stroke-width="1.6" stroke-linecap="round"/>
+    <path d="M106 73 174 102" stroke="#E3EAD8" stroke-opacity=".35" stroke-width="1.3"/>
+  </g>
+</svg>
+</span><small>64 px</small></div><div><span class="sample-icon" style="width:96px;height:96px"><svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" aria-hidden="true" focusable="false" class="chaski-paket">
+  <title id="size96-pkg-title">Paket mit angehobenem Deckel</title>
+  <defs>
+    <linearGradient id="size96-pkg-front" x1="66" y1="108" x2="143" y2="200" gradientUnits="userSpaceOnUse"><stop stop-color="#E3EAD8"/><stop offset=".5" stop-color="#E3EAD8"/><stop offset="1" stop-color="#586937"/></linearGradient>
+    <linearGradient id="size96-pkg-side" x1="145" y1="114" x2="202" y2="187" gradientUnits="userSpaceOnUse"><stop stop-color="#586937"/><stop offset=".55" stop-color="#4A562D"/><stop offset="1" stop-color="#2D351B"/></linearGradient>
+    <linearGradient id="size96-pkg-top" x1="95" y1="58" x2="155" y2="133" gradientUnits="userSpaceOnUse"><stop stop-color="#FFFFFF"/><stop offset=".4" stop-color="#F6F8F3"/><stop offset="1" stop-color="#E3EAD8"/></linearGradient>
+    <linearGradient id="size96-pkg-rim" x1="67" y1="102" x2="147" y2="133" gradientUnits="userSpaceOnUse"><stop stop-color="#E3EAD8"/><stop offset="1" stop-color="#586937"/></linearGradient>
+    <linearGradient id="size96-pkg-tape" x1="106" y1="70" x2="154" y2="119" gradientUnits="userSpaceOnUse"><stop stop-color="#586937"/><stop offset="1" stop-color="#2D351B"/></linearGradient>
+    <radialGradient id="size96-pkg-shadow"><stop stop-color="#252D15" stop-opacity=".2"/><stop offset="1" stop-color="#252D15" stop-opacity="0"/></radialGradient>
+    <filter id="size96-pkg-contact" x="-30%" y="-30%" width="160%" height="180%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#252D15" flood-opacity=".15"/></filter>
+  </defs>
+  <ellipse class="ground" cx="130" cy="211" rx="80" ry="16" fill="url(#size96-pkg-shadow)"/>
+  <g class="body">
+    <path d="M61 104 127 73Q131 71 135 73L199 101 136 137Z" fill="#252D15"/>
+    <path d="M61 104 135 136 135 207Q133 210 129 208L66 180Q61 178 61 172Z" fill="url(#size96-pkg-front)"/>
+    <path d="M135 136 199 101 199 170Q199 176 194 179L138 208Q135 210 135 206Z" fill="url(#size96-pkg-side)"/>
+    <path d="M63 108 63 171Q63 176 68 178L129 205" fill="none" stroke="#FFFFFF" stroke-opacity=".35" stroke-width="1.5"/>
+    <path d="M136 138 136 204" stroke="#F6F8F3" stroke-opacity=".23" stroke-width="1.5"/>
+    <path d="M77 142Q77 139 80 140L107 152Q110 153 110 156V177Q110 180 107 179L80 167Q77 166 77 163Z" fill="#F6F8F3" fill-opacity=".9"/>
+    <path d="M84 150 102 158M84 156 96 161" stroke="#586937" stroke-width="2.1" stroke-linecap="round" opacity=".65"/>
+    <path d="M84 161V165M88 163V167M92 165V169M98 167V171M102 169V173" stroke="#4A562D" stroke-width="1.4"/>
+  </g>
+  <g class="lid" filter="url(#size96-pkg-contact)">
+    <path d="M57 96 135 126 203 93V104Q203 107 199 109L139 140Q135 142 131 140L60 109Q57 108 57 104Z" fill="url(#size96-pkg-rim)"/>
+    <path d="M135 127 203 93V104Q203 107 199 109L139 140Q137 141 135 141Z" fill="#4A562D"/>
+    <path d="M60 92 124 62Q129 60 134 62L200 90Q207 93 201 97L139 128Q135 130 131 128L60 99Q53 96 60 92Z" fill="url(#size96-pkg-top)"/>
+    <path d="M101 73 119 65 189 95 171 104Z" fill="url(#size96-pkg-tape)"/>
+    <path d="M171 104 189 95V114L171 123Z" fill="#2D351B"/>
+    <path d="M62 95 132 124Q135 126 139 124L198 95" fill="none" stroke="#FFFFFF" stroke-opacity=".65" stroke-width="1.6" stroke-linecap="round"/>
+    <path d="M106 73 174 102" stroke="#E3EAD8" stroke-opacity=".35" stroke-width="1.3"/>
+  </g>
+</svg>
+</span><small>96 px</small></div></div></div><div class="size-sample"><h3>Brief bestätigt</h3><div class="sample-row"><div><span class="sample-icon" style="width:32px;height:32px"><svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" aria-hidden="true" focusable="false" class="chaski-brief">
+  <title id="size32-mail-title">Brief mit Bestätigungshäkchen</title>
+  <defs>
+    <linearGradient id="size32-mail-paper" x1="65" y1="91" x2="178" y2="191" gradientUnits="userSpaceOnUse"><stop stop-color="#F6F8F3"/><stop offset=".55" stop-color="#E3EAD8"/><stop offset="1" stop-color="#586937"/></linearGradient>
+    <linearGradient id="size32-mail-fold" x1="120" y1="92" x2="127" y2="176" gradientUnits="userSpaceOnUse"><stop stop-color="#FFFFFF"/><stop offset=".5" stop-color="#E3EAD8"/><stop offset="1" stop-color="#586937"/></linearGradient>
+    <linearGradient id="size32-mail-front" x1="87" y1="137" x2="159" y2="216" gradientUnits="userSpaceOnUse"><stop stop-color="#F6F8F3"/><stop offset=".55" stop-color="#E3EAD8"/><stop offset="1" stop-color="#586937"/></linearGradient>
+    <linearGradient id="size32-mail-check" x1="165" y1="65" x2="190" y2="108" gradientUnits="userSpaceOnUse"><stop stop-color="#E3EAD8"/><stop offset=".35" stop-color="#586937"/><stop offset="1" stop-color="#4A562D"/></linearGradient>
+    <radialGradient id="size32-mail-shadow"><stop stop-color="#252D15" stop-opacity=".18"/><stop offset="1" stop-color="#252D15" stop-opacity="0"/></radialGradient>
+    <filter id="size32-mail-bevel" x="-15%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="1.6" flood-color="#252D15" flood-opacity=".16"/></filter>
+    <filter id="size32-mail-badge-shadow" x="-35%" y="-35%" width="170%" height="180%"><feDropShadow dx="0" dy="6" stdDeviation="4" flood-color="#252D15" flood-opacity=".18"/></filter>
+  </defs>
+  <ellipse class="ground" cx="128" cy="211" rx="84" ry="14" fill="url(#size32-mail-shadow)"/>
+  <g class="envelope">
+    <g transform="rotate(-8 128 142)">
+      <rect x="51" y="96" width="158" height="105" rx="10" fill="#4A562D"/>
+      <rect x="48" y="90" width="158" height="105" rx="9" fill="url(#size32-mail-paper)"/>
+      <path d="M52 190 111 143Q127 131 142 143L202 190Q200 195 196 195H58Q54 195 52 190Z" fill="url(#size32-mail-front)"/>
+      <path d="M52 190 111 143M142 143 202 190" fill="none" stroke="#F6F8F3" stroke-opacity=".65" stroke-width="1.5"/>
+      <path d="M51 94Q52 90 58 90H196Q202 90 204 94L138 148Q127 157 116 148Z" fill="url(#size32-mail-fold)" filter="url(#size32-mail-bevel)"/>
+      <path d="M54 94 118 146Q127 153 136 146L200 94" fill="none" stroke="#FFFFFF" stroke-opacity=".65" stroke-width="1.5" stroke-linecap="round"/>
+      <path d="M50 101V184Q50 193 59 193H194" fill="none" stroke="#FFFFFF" stroke-opacity=".38" stroke-width="1.3"/>
+    </g>
+  </g>
+  <g class="check" filter="url(#size32-mail-badge-shadow)">
+    <path d="M157 88 172 103 202 68" fill="none" stroke="#2D351B" stroke-width="15" stroke-linecap="round" stroke-linejoin="round" transform="translate(1 4)"/>
+    <path d="M157 88 172 103 202 68" fill="none" stroke="url(#size32-mail-check)" stroke-width="15" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M155 85 171 100 200 66" fill="none" stroke="#F6F8F3" stroke-opacity=".45" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>
+</span><small>32 px</small></div><div><span class="sample-icon" style="width:48px;height:48px"><svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" aria-hidden="true" focusable="false" class="chaski-brief">
+  <title id="size48-mail-title">Brief mit Bestätigungshäkchen</title>
+  <defs>
+    <linearGradient id="size48-mail-paper" x1="65" y1="91" x2="178" y2="191" gradientUnits="userSpaceOnUse"><stop stop-color="#F6F8F3"/><stop offset=".55" stop-color="#E3EAD8"/><stop offset="1" stop-color="#586937"/></linearGradient>
+    <linearGradient id="size48-mail-fold" x1="120" y1="92" x2="127" y2="176" gradientUnits="userSpaceOnUse"><stop stop-color="#FFFFFF"/><stop offset=".5" stop-color="#E3EAD8"/><stop offset="1" stop-color="#586937"/></linearGradient>
+    <linearGradient id="size48-mail-front" x1="87" y1="137" x2="159" y2="216" gradientUnits="userSpaceOnUse"><stop stop-color="#F6F8F3"/><stop offset=".55" stop-color="#E3EAD8"/><stop offset="1" stop-color="#586937"/></linearGradient>
+    <linearGradient id="size48-mail-check" x1="165" y1="65" x2="190" y2="108" gradientUnits="userSpaceOnUse"><stop stop-color="#E3EAD8"/><stop offset=".35" stop-color="#586937"/><stop offset="1" stop-color="#4A562D"/></linearGradient>
+    <radialGradient id="size48-mail-shadow"><stop stop-color="#252D15" stop-opacity=".18"/><stop offset="1" stop-color="#252D15" stop-opacity="0"/></radialGradient>
+    <filter id="size48-mail-bevel" x="-15%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="1.6" flood-color="#252D15" flood-opacity=".16"/></filter>
+    <filter id="size48-mail-badge-shadow" x="-35%" y="-35%" width="170%" height="180%"><feDropShadow dx="0" dy="6" stdDeviation="4" flood-color="#252D15" flood-opacity=".18"/></filter>
+  </defs>
+  <ellipse class="ground" cx="128" cy="211" rx="84" ry="14" fill="url(#size48-mail-shadow)"/>
+  <g class="envelope">
+    <g transform="rotate(-8 128 142)">
+      <rect x="51" y="96" width="158" height="105" rx="10" fill="#4A562D"/>
+      <rect x="48" y="90" width="158" height="105" rx="9" fill="url(#size48-mail-paper)"/>
+      <path d="M52 190 111 143Q127 131 142 143L202 190Q200 195 196 195H58Q54 195 52 190Z" fill="url(#size48-mail-front)"/>
+      <path d="M52 190 111 143M142 143 202 190" fill="none" stroke="#F6F8F3" stroke-opacity=".65" stroke-width="1.5"/>
+      <path d="M51 94Q52 90 58 90H196Q202 90 204 94L138 148Q127 157 116 148Z" fill="url(#size48-mail-fold)" filter="url(#size48-mail-bevel)"/>
+      <path d="M54 94 118 146Q127 153 136 146L200 94" fill="none" stroke="#FFFFFF" stroke-opacity=".65" stroke-width="1.5" stroke-linecap="round"/>
+      <path d="M50 101V184Q50 193 59 193H194" fill="none" stroke="#FFFFFF" stroke-opacity=".38" stroke-width="1.3"/>
+    </g>
+  </g>
+  <g class="check" filter="url(#size48-mail-badge-shadow)">
+    <path d="M157 88 172 103 202 68" fill="none" stroke="#2D351B" stroke-width="15" stroke-linecap="round" stroke-linejoin="round" transform="translate(1 4)"/>
+    <path d="M157 88 172 103 202 68" fill="none" stroke="url(#size48-mail-check)" stroke-width="15" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M155 85 171 100 200 66" fill="none" stroke="#F6F8F3" stroke-opacity=".45" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>
+</span><small>48 px</small></div><div><span class="sample-icon" style="width:64px;height:64px"><svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" aria-hidden="true" focusable="false" class="chaski-brief">
+  <title id="size64-mail-title">Brief mit Bestätigungshäkchen</title>
+  <defs>
+    <linearGradient id="size64-mail-paper" x1="65" y1="91" x2="178" y2="191" gradientUnits="userSpaceOnUse"><stop stop-color="#F6F8F3"/><stop offset=".55" stop-color="#E3EAD8"/><stop offset="1" stop-color="#586937"/></linearGradient>
+    <linearGradient id="size64-mail-fold" x1="120" y1="92" x2="127" y2="176" gradientUnits="userSpaceOnUse"><stop stop-color="#FFFFFF"/><stop offset=".5" stop-color="#E3EAD8"/><stop offset="1" stop-color="#586937"/></linearGradient>
+    <linearGradient id="size64-mail-front" x1="87" y1="137" x2="159" y2="216" gradientUnits="userSpaceOnUse"><stop stop-color="#F6F8F3"/><stop offset=".55" stop-color="#E3EAD8"/><stop offset="1" stop-color="#586937"/></linearGradient>
+    <linearGradient id="size64-mail-check" x1="165" y1="65" x2="190" y2="108" gradientUnits="userSpaceOnUse"><stop stop-color="#E3EAD8"/><stop offset=".35" stop-color="#586937"/><stop offset="1" stop-color="#4A562D"/></linearGradient>
+    <radialGradient id="size64-mail-shadow"><stop stop-color="#252D15" stop-opacity=".18"/><stop offset="1" stop-color="#252D15" stop-opacity="0"/></radialGradient>
+    <filter id="size64-mail-bevel" x="-15%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="1.6" flood-color="#252D15" flood-opacity=".16"/></filter>
+    <filter id="size64-mail-badge-shadow" x="-35%" y="-35%" width="170%" height="180%"><feDropShadow dx="0" dy="6" stdDeviation="4" flood-color="#252D15" flood-opacity=".18"/></filter>
+  </defs>
+  <ellipse class="ground" cx="128" cy="211" rx="84" ry="14" fill="url(#size64-mail-shadow)"/>
+  <g class="envelope">
+    <g transform="rotate(-8 128 142)">
+      <rect x="51" y="96" width="158" height="105" rx="10" fill="#4A562D"/>
+      <rect x="48" y="90" width="158" height="105" rx="9" fill="url(#size64-mail-paper)"/>
+      <path d="M52 190 111 143Q127 131 142 143L202 190Q200 195 196 195H58Q54 195 52 190Z" fill="url(#size64-mail-front)"/>
+      <path d="M52 190 111 143M142 143 202 190" fill="none" stroke="#F6F8F3" stroke-opacity=".65" stroke-width="1.5"/>
+      <path d="M51 94Q52 90 58 90H196Q202 90 204 94L138 148Q127 157 116 148Z" fill="url(#size64-mail-fold)" filter="url(#size64-mail-bevel)"/>
+      <path d="M54 94 118 146Q127 153 136 146L200 94" fill="none" stroke="#FFFFFF" stroke-opacity=".65" stroke-width="1.5" stroke-linecap="round"/>
+      <path d="M50 101V184Q50 193 59 193H194" fill="none" stroke="#FFFFFF" stroke-opacity=".38" stroke-width="1.3"/>
+    </g>
+  </g>
+  <g class="check" filter="url(#size64-mail-badge-shadow)">
+    <path d="M157 88 172 103 202 68" fill="none" stroke="#2D351B" stroke-width="15" stroke-linecap="round" stroke-linejoin="round" transform="translate(1 4)"/>
+    <path d="M157 88 172 103 202 68" fill="none" stroke="url(#size64-mail-check)" stroke-width="15" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M155 85 171 100 200 66" fill="none" stroke="#F6F8F3" stroke-opacity=".45" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>
+</span><small>64 px</small></div><div><span class="sample-icon" style="width:96px;height:96px"><svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" aria-hidden="true" focusable="false" class="chaski-brief">
+  <title id="size96-mail-title">Brief mit Bestätigungshäkchen</title>
+  <defs>
+    <linearGradient id="size96-mail-paper" x1="65" y1="91" x2="178" y2="191" gradientUnits="userSpaceOnUse"><stop stop-color="#F6F8F3"/><stop offset=".55" stop-color="#E3EAD8"/><stop offset="1" stop-color="#586937"/></linearGradient>
+    <linearGradient id="size96-mail-fold" x1="120" y1="92" x2="127" y2="176" gradientUnits="userSpaceOnUse"><stop stop-color="#FFFFFF"/><stop offset=".5" stop-color="#E3EAD8"/><stop offset="1" stop-color="#586937"/></linearGradient>
+    <linearGradient id="size96-mail-front" x1="87" y1="137" x2="159" y2="216" gradientUnits="userSpaceOnUse"><stop stop-color="#F6F8F3"/><stop offset=".55" stop-color="#E3EAD8"/><stop offset="1" stop-color="#586937"/></linearGradient>
+    <linearGradient id="size96-mail-check" x1="165" y1="65" x2="190" y2="108" gradientUnits="userSpaceOnUse"><stop stop-color="#E3EAD8"/><stop offset=".35" stop-color="#586937"/><stop offset="1" stop-color="#4A562D"/></linearGradient>
+    <radialGradient id="size96-mail-shadow"><stop stop-color="#252D15" stop-opacity=".18"/><stop offset="1" stop-color="#252D15" stop-opacity="0"/></radialGradient>
+    <filter id="size96-mail-bevel" x="-15%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="1.6" flood-color="#252D15" flood-opacity=".16"/></filter>
+    <filter id="size96-mail-badge-shadow" x="-35%" y="-35%" width="170%" height="180%"><feDropShadow dx="0" dy="6" stdDeviation="4" flood-color="#252D15" flood-opacity=".18"/></filter>
+  </defs>
+  <ellipse class="ground" cx="128" cy="211" rx="84" ry="14" fill="url(#size96-mail-shadow)"/>
+  <g class="envelope">
+    <g transform="rotate(-8 128 142)">
+      <rect x="51" y="96" width="158" height="105" rx="10" fill="#4A562D"/>
+      <rect x="48" y="90" width="158" height="105" rx="9" fill="url(#size96-mail-paper)"/>
+      <path d="M52 190 111 143Q127 131 142 143L202 190Q200 195 196 195H58Q54 195 52 190Z" fill="url(#size96-mail-front)"/>
+      <path d="M52 190 111 143M142 143 202 190" fill="none" stroke="#F6F8F3" stroke-opacity=".65" stroke-width="1.5"/>
+      <path d="M51 94Q52 90 58 90H196Q202 90 204 94L138 148Q127 157 116 148Z" fill="url(#size96-mail-fold)" filter="url(#size96-mail-bevel)"/>
+      <path d="M54 94 118 146Q127 153 136 146L200 94" fill="none" stroke="#FFFFFF" stroke-opacity=".65" stroke-width="1.5" stroke-linecap="round"/>
+      <path d="M50 101V184Q50 193 59 193H194" fill="none" stroke="#FFFFFF" stroke-opacity=".38" stroke-width="1.3"/>
+    </g>
+  </g>
+  <g class="check" filter="url(#size96-mail-badge-shadow)">
+    <path d="M157 88 172 103 202 68" fill="none" stroke="#2D351B" stroke-width="15" stroke-linecap="round" stroke-linejoin="round" transform="translate(1 4)"/>
+    <path d="M157 88 172 103 202 68" fill="none" stroke="url(#size96-mail-check)" stroke-width="15" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M155 85 171 100 200 66" fill="none" stroke="#F6F8F3" stroke-opacity=".45" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>
+</span><small>96 px</small></div></div></div><div class="size-sample"><h3>Download</h3><div class="sample-row"><div><span class="sample-icon" style="width:32px;height:32px"><svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" aria-hidden="true" focusable="false" class="chaski-download">
+  <title id="size32-dl-title">Download-Pfeil mit Ablage</title>
+  <defs>
+    <linearGradient id="size32-dl-tray" x1="69" y1="157" x2="162" y2="206" gradientUnits="userSpaceOnUse"><stop stop-color="#F6F8F3"/><stop offset=".48" stop-color="#E3EAD8"/><stop offset="1" stop-color="#586937"/></linearGradient>
+    <linearGradient id="size32-dl-arrow" x1="98" y1="56" x2="155" y2="168" gradientUnits="userSpaceOnUse"><stop stop-color="#E3EAD8"/><stop offset=".35" stop-color="#586937"/><stop offset=".7" stop-color="#4A562D"/><stop offset="1" stop-color="#2D351B"/></linearGradient>
+    <linearGradient id="size32-dl-light" x1="113" y1="65" x2="131" y2="151" gradientUnits="userSpaceOnUse"><stop stop-color="#FFFFFF" stop-opacity=".8"/><stop offset="1" stop-color="#E3EAD8" stop-opacity=".08"/></linearGradient>
+    <radialGradient id="size32-dl-shadow"><stop stop-color="#252D15" stop-opacity=".18"/><stop offset="1" stop-color="#252D15" stop-opacity="0"/></radialGradient>
+    <filter id="size32-dl-soft" x="-30%" y="-25%" width="160%" height="160%"><feDropShadow dx="0" dy="5" stdDeviation="3" flood-color="#252D15" flood-opacity=".12"/></filter>
+  </defs>
+  <ellipse class="ground" cx="130" cy="213" rx="79" ry="13" fill="url(#size32-dl-shadow)"/>
+  <g class="tray">
+    <path d="M65 160V184Q65 198 79 198H179Q193 198 193 184V160" fill="none" stroke="#4A562D" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" transform="translate(2 5)"/>
+    <path d="M65 160V184Q65 198 79 198H179Q193 198 193 184V160" fill="none" stroke="url(#size32-dl-tray)" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M62 158V183Q62 195 78 195H176" fill="none" stroke="#FFFFFF" stroke-opacity=".6" stroke-width="2.3" stroke-linecap="round"/>
+    <path d="M190 158V180" fill="none" stroke="#F6F8F3" stroke-opacity=".55" stroke-width="2" stroke-linecap="round"/>
+  </g>
+  <g class="arrow" filter="url(#size32-dl-soft)">
+    <path d="M128 62V150M96 122 128 154 160 122" fill="none" stroke="#252D15" stroke-width="22" stroke-linecap="round" stroke-linejoin="round" transform="translate(2 5)"/>
+    <path d="M128 62V150M96 122 128 154 160 122" fill="none" stroke="url(#size32-dl-arrow)" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M123 62V134M94 118 125 149M136 144 158 120" fill="none" stroke="url(#size32-dl-light)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>
+</span><small>32 px</small></div><div><span class="sample-icon" style="width:48px;height:48px"><svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" aria-hidden="true" focusable="false" class="chaski-download">
+  <title id="size48-dl-title">Download-Pfeil mit Ablage</title>
+  <defs>
+    <linearGradient id="size48-dl-tray" x1="69" y1="157" x2="162" y2="206" gradientUnits="userSpaceOnUse"><stop stop-color="#F6F8F3"/><stop offset=".48" stop-color="#E3EAD8"/><stop offset="1" stop-color="#586937"/></linearGradient>
+    <linearGradient id="size48-dl-arrow" x1="98" y1="56" x2="155" y2="168" gradientUnits="userSpaceOnUse"><stop stop-color="#E3EAD8"/><stop offset=".35" stop-color="#586937"/><stop offset=".7" stop-color="#4A562D"/><stop offset="1" stop-color="#2D351B"/></linearGradient>
+    <linearGradient id="size48-dl-light" x1="113" y1="65" x2="131" y2="151" gradientUnits="userSpaceOnUse"><stop stop-color="#FFFFFF" stop-opacity=".8"/><stop offset="1" stop-color="#E3EAD8" stop-opacity=".08"/></linearGradient>
+    <radialGradient id="size48-dl-shadow"><stop stop-color="#252D15" stop-opacity=".18"/><stop offset="1" stop-color="#252D15" stop-opacity="0"/></radialGradient>
+    <filter id="size48-dl-soft" x="-30%" y="-25%" width="160%" height="160%"><feDropShadow dx="0" dy="5" stdDeviation="3" flood-color="#252D15" flood-opacity=".12"/></filter>
+  </defs>
+  <ellipse class="ground" cx="130" cy="213" rx="79" ry="13" fill="url(#size48-dl-shadow)"/>
+  <g class="tray">
+    <path d="M65 160V184Q65 198 79 198H179Q193 198 193 184V160" fill="none" stroke="#4A562D" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" transform="translate(2 5)"/>
+    <path d="M65 160V184Q65 198 79 198H179Q193 198 193 184V160" fill="none" stroke="url(#size48-dl-tray)" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M62 158V183Q62 195 78 195H176" fill="none" stroke="#FFFFFF" stroke-opacity=".6" stroke-width="2.3" stroke-linecap="round"/>
+    <path d="M190 158V180" fill="none" stroke="#F6F8F3" stroke-opacity=".55" stroke-width="2" stroke-linecap="round"/>
+  </g>
+  <g class="arrow" filter="url(#size48-dl-soft)">
+    <path d="M128 62V150M96 122 128 154 160 122" fill="none" stroke="#252D15" stroke-width="22" stroke-linecap="round" stroke-linejoin="round" transform="translate(2 5)"/>
+    <path d="M128 62V150M96 122 128 154 160 122" fill="none" stroke="url(#size48-dl-arrow)" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M123 62V134M94 118 125 149M136 144 158 120" fill="none" stroke="url(#size48-dl-light)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>
+</span><small>48 px</small></div><div><span class="sample-icon" style="width:64px;height:64px"><svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" aria-hidden="true" focusable="false" class="chaski-download">
+  <title id="size64-dl-title">Download-Pfeil mit Ablage</title>
+  <defs>
+    <linearGradient id="size64-dl-tray" x1="69" y1="157" x2="162" y2="206" gradientUnits="userSpaceOnUse"><stop stop-color="#F6F8F3"/><stop offset=".48" stop-color="#E3EAD8"/><stop offset="1" stop-color="#586937"/></linearGradient>
+    <linearGradient id="size64-dl-arrow" x1="98" y1="56" x2="155" y2="168" gradientUnits="userSpaceOnUse"><stop stop-color="#E3EAD8"/><stop offset=".35" stop-color="#586937"/><stop offset=".7" stop-color="#4A562D"/><stop offset="1" stop-color="#2D351B"/></linearGradient>
+    <linearGradient id="size64-dl-light" x1="113" y1="65" x2="131" y2="151" gradientUnits="userSpaceOnUse"><stop stop-color="#FFFFFF" stop-opacity=".8"/><stop offset="1" stop-color="#E3EAD8" stop-opacity=".08"/></linearGradient>
+    <radialGradient id="size64-dl-shadow"><stop stop-color="#252D15" stop-opacity=".18"/><stop offset="1" stop-color="#252D15" stop-opacity="0"/></radialGradient>
+    <filter id="size64-dl-soft" x="-30%" y="-25%" width="160%" height="160%"><feDropShadow dx="0" dy="5" stdDeviation="3" flood-color="#252D15" flood-opacity=".12"/></filter>
+  </defs>
+  <ellipse class="ground" cx="130" cy="213" rx="79" ry="13" fill="url(#size64-dl-shadow)"/>
+  <g class="tray">
+    <path d="M65 160V184Q65 198 79 198H179Q193 198 193 184V160" fill="none" stroke="#4A562D" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" transform="translate(2 5)"/>
+    <path d="M65 160V184Q65 198 79 198H179Q193 198 193 184V160" fill="none" stroke="url(#size64-dl-tray)" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M62 158V183Q62 195 78 195H176" fill="none" stroke="#FFFFFF" stroke-opacity=".6" stroke-width="2.3" stroke-linecap="round"/>
+    <path d="M190 158V180" fill="none" stroke="#F6F8F3" stroke-opacity=".55" stroke-width="2" stroke-linecap="round"/>
+  </g>
+  <g class="arrow" filter="url(#size64-dl-soft)">
+    <path d="M128 62V150M96 122 128 154 160 122" fill="none" stroke="#252D15" stroke-width="22" stroke-linecap="round" stroke-linejoin="round" transform="translate(2 5)"/>
+    <path d="M128 62V150M96 122 128 154 160 122" fill="none" stroke="url(#size64-dl-arrow)" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M123 62V134M94 118 125 149M136 144 158 120" fill="none" stroke="url(#size64-dl-light)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>
+</span><small>64 px</small></div><div><span class="sample-icon" style="width:96px;height:96px"><svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" aria-hidden="true" focusable="false" class="chaski-download">
+  <title id="size96-dl-title">Download-Pfeil mit Ablage</title>
+  <defs>
+    <linearGradient id="size96-dl-tray" x1="69" y1="157" x2="162" y2="206" gradientUnits="userSpaceOnUse"><stop stop-color="#F6F8F3"/><stop offset=".48" stop-color="#E3EAD8"/><stop offset="1" stop-color="#586937"/></linearGradient>
+    <linearGradient id="size96-dl-arrow" x1="98" y1="56" x2="155" y2="168" gradientUnits="userSpaceOnUse"><stop stop-color="#E3EAD8"/><stop offset=".35" stop-color="#586937"/><stop offset=".7" stop-color="#4A562D"/><stop offset="1" stop-color="#2D351B"/></linearGradient>
+    <linearGradient id="size96-dl-light" x1="113" y1="65" x2="131" y2="151" gradientUnits="userSpaceOnUse"><stop stop-color="#FFFFFF" stop-opacity=".8"/><stop offset="1" stop-color="#E3EAD8" stop-opacity=".08"/></linearGradient>
+    <radialGradient id="size96-dl-shadow"><stop stop-color="#252D15" stop-opacity=".18"/><stop offset="1" stop-color="#252D15" stop-opacity="0"/></radialGradient>
+    <filter id="size96-dl-soft" x="-30%" y="-25%" width="160%" height="160%"><feDropShadow dx="0" dy="5" stdDeviation="3" flood-color="#252D15" flood-opacity=".12"/></filter>
+  </defs>
+  <ellipse class="ground" cx="130" cy="213" rx="79" ry="13" fill="url(#size96-dl-shadow)"/>
+  <g class="tray">
+    <path d="M65 160V184Q65 198 79 198H179Q193 198 193 184V160" fill="none" stroke="#4A562D" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" transform="translate(2 5)"/>
+    <path d="M65 160V184Q65 198 79 198H179Q193 198 193 184V160" fill="none" stroke="url(#size96-dl-tray)" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M62 158V183Q62 195 78 195H176" fill="none" stroke="#FFFFFF" stroke-opacity=".6" stroke-width="2.3" stroke-linecap="round"/>
+    <path d="M190 158V180" fill="none" stroke="#F6F8F3" stroke-opacity=".55" stroke-width="2" stroke-linecap="round"/>
+  </g>
+  <g class="arrow" filter="url(#size96-dl-soft)">
+    <path d="M128 62V150M96 122 128 154 160 122" fill="none" stroke="#252D15" stroke-width="22" stroke-linecap="round" stroke-linejoin="round" transform="translate(2 5)"/>
+    <path d="M128 62V150M96 122 128 154 160 122" fill="none" stroke="url(#size96-dl-arrow)" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M123 62V134M94 118 125 149M136 144 158 120" fill="none" stroke="url(#size96-dl-light)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>
+</span><small>96 px</small></div></div></div></div></section>
+    <section class="palette-section"><div><p class="eyebrow">CHASKI RELAUNCH 2026</p><h2>Von Salbei bis Moos.</h2><p>Eine grüne Farbfamilie. Licht und Schatten geben den Formen Tiefe.</p></div><div class="palette"><div><span style="background:#E3EAD8"></span><code>#E3EAD8</code></div><div><span style="background:#586937"></span><code>#586937</code></div><div><span style="background:#4A562D"></span><code>#4A562D</code></div><div><span style="background:#2D351B"></span><code>#2D351B</code></div><div><span style="background:#252D15"></span><code>#252D15</code></div></div></section>
+    <p class="motion-note">Bei aktivierter Einstellung „Bewegung reduzieren“ bleiben die Icons ruhig.</p>
+    <noscript><p>Die statischen Icons und SVG-Downloads funktionieren auch ohne JavaScript. Für die interaktive Vorschau aktiviere JavaScript.</p></noscript>
+  </main>
+  <footer><span>CHASKI · ICON-STUDIO</span><span>Lokaler Gestaltungsentwurf · Oktober 2026</span></footer>
+  <script>const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+const stages = [...document.querySelectorAll('.stage')];
+const timers = new Map();
+let mode = 'static';
+function stop(stage) {
+  clearTimeout(timers.get(stage));
+  timers.delete(stage);
+  stage.querySelector('svg').classList.remove('is-playing');
+}
+function play(stage, once = false) {
+  stop(stage);
+  if (reducedMotion.matches) return;
+  const svg = stage.querySelector('svg');
+  void svg.getBoundingClientRect();
+  svg.classList.add('is-playing');
+  if (once) timers.set(stage,setTimeout(()=>stop(stage),2300));
+}
+function applyMode() {
+  stages.forEach(stop);
+  document.querySelectorAll('[data-mode]').forEach(button=>{
+    button.setAttribute('aria-pressed',String(button.dataset.mode===mode));
+    button.disabled = reducedMotion.matches && button.dataset.mode!=='static';
+  });
+  document.body.dataset.motion = mode;
+  document.getElementById('motion-status').textContent = reducedMotion.matches
+    ? '„Bewegung reduzieren“ ist aktiv. Alle Icons werden statisch angezeigt.'
+    : mode==='loop' ? 'Die Animationen laufen mit einer kurzen Ruhephase. Mit „Statisch“ stoppst du sie.'
+    : mode==='hover' ? 'Bewege den Zeiger auf ein Icon, nutze die Tab-Taste oder tippe es an.'
+    : 'Klicke ein Icon an, um seine Animation einmal abzuspielen.';
+  if(mode==='loop') stages.forEach(stage=>play(stage));
+}
+document.querySelectorAll('[data-bg]').forEach(button=>button.addEventListener('click',()=>{
+  document.body.dataset.background = button.dataset.bg;
+  document.querySelectorAll('[data-bg]').forEach(other=>other.setAttribute('aria-pressed',String(other===button)));
+}));
+document.querySelectorAll('[data-mode]').forEach(button=>button.addEventListener('click',()=>{
+  mode = button.dataset.mode;
+  applyMode();
+}));
+document.getElementById('icon-size').addEventListener('change',event=>{
+  document.documentElement.style.setProperty('--icon-size',`${event.target.value}px`);
+});
+stages.forEach(stage=>{
+  stage.addEventListener('click',()=>play(stage,mode!=='loop'));
+  stage.addEventListener('pointerenter',()=>{if(mode==='hover') play(stage,true);});
+  stage.addEventListener('focus',()=>{if(mode==='hover') play(stage,true);});
+  stage.addEventListener('pointerleave',()=>{if(mode==='hover') stop(stage);});
+  stage.addEventListener('blur',()=>{if(mode==='hover') stop(stage);});
+});
+reducedMotion.addEventListener('change',()=>{if(reducedMotion.matches) mode='static';applyMode();});
+document.addEventListener('visibilitychange',()=>{if(document.hidden) stages.forEach(stop);else applyMode();});
+applyMode();
+</script>
+</body></html>

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" role="img" aria-labelledby="dl-title" class="chaski-download">
+  <title id="dl-title">Download-Pfeil mit Ablage</title>
+  <defs>
+    <linearGradient id="dl-tray" x1="69" y1="157" x2="162" y2="206" gradientUnits="userSpaceOnUse"><stop stop-color="#F6F8F3"/><stop offset=".48" stop-color="#E3EAD8"/><stop offset="1" stop-color="#586937"/></linearGradient>
+    <linearGradient id="dl-arrow" x1="98" y1="56" x2="155" y2="168" gradientUnits="userSpaceOnUse"><stop stop-color="#E3EAD8"/><stop offset=".35" stop-color="#586937"/><stop offset=".7" stop-color="#4A562D"/><stop offset="1" stop-color="#2D351B"/></linearGradient>
+    <linearGradient id="dl-light" x1="113" y1="65" x2="131" y2="151" gradientUnits="userSpaceOnUse"><stop stop-color="#FFFFFF" stop-opacity=".8"/><stop offset="1" stop-color="#E3EAD8" stop-opacity=".08"/></linearGradient>
+    <radialGradient id="dl-shadow"><stop stop-color="#252D15" stop-opacity=".18"/><stop offset="1" stop-color="#252D15" stop-opacity="0"/></radialGradient>
+    <filter id="dl-soft" x="-30%" y="-25%" width="160%" height="160%"><feDropShadow dx="0" dy="5" stdDeviation="3" flood-color="#252D15" flood-opacity=".12"/></filter>
+  </defs>
+  <ellipse class="ground" cx="130" cy="213" rx="79" ry="13" fill="url(#dl-shadow)"/>
+  <g class="tray">
+    <path d="M65 160V184Q65 198 79 198H179Q193 198 193 184V160" fill="none" stroke="#4A562D" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" transform="translate(2 5)"/>
+    <path d="M65 160V184Q65 198 79 198H179Q193 198 193 184V160" fill="none" stroke="url(#dl-tray)" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M62 158V183Q62 195 78 195H176" fill="none" stroke="#FFFFFF" stroke-opacity=".6" stroke-width="2.3" stroke-linecap="round"/>
+    <path d="M190 158V180" fill="none" stroke="#F6F8F3" stroke-opacity=".55" stroke-width="2" stroke-linecap="round"/>
+  </g>
+  <g class="arrow" filter="url(#dl-soft)">
+    <path d="M128 62V150M96 122 128 154 160 122" fill="none" stroke="#252D15" stroke-width="22" stroke-linecap="round" stroke-linejoin="round" transform="translate(2 5)"/>
+    <path d="M128 62V150M96 122 128 154 160 122" fill="none" stroke="url(#dl-arrow)" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M123 62V134M94 118 125 149M136 144 158 120" fill="none" stroke="url(#dl-light)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

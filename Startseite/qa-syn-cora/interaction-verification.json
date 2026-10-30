@@ -1,0 +1,42 @@
+[
+  {
+    "test": "Mobile menu opens",
+    "passed": true
+  },
+  {
+    "test": "Menu closes after navigation",
+    "passed": true
+  },
+  {
+    "test": "Bulky 170cm -> 20 EUR and 14 days",
+    "passed": true
+  },
+  {
+    "test": "Invalid size feedback",
+    "passed": true
+  },
+  {
+    "test": "Escape closes mobile menu",
+    "passed": true
+  },
+  {
+    "test": "FAQ opens",
+    "passed": true
+  },
+  {
+    "test": "Mobile next review scrolls",
+    "passed": true
+  },
+  {
+    "test": "Standard L=100 + shortest=50 -> XL 10 EUR; H disabled",
+    "passed": true
+  },
+  {
+    "test": "Bulky activates height and 14-day storage",
+    "passed": true
+  },
+  {
+    "test": "Oversize 530cm -> inquiry",
+    "passed": true
+  }
+]

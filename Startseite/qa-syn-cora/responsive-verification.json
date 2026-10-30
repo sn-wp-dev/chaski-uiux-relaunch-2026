@@ -1,0 +1,37 @@
+[
+  {
+    "clientWidth": 1425,
+    "documentWidth": 1425,
+    "fieldAlignment": true,
+    "passed": true,
+    "width": 1440
+  },
+  {
+    "clientWidth": 1009,
+    "documentWidth": 1009,
+    "fieldAlignment": true,
+    "passed": true,
+    "width": 1024
+  },
+  {
+    "clientWidth": 753,
+    "documentWidth": 753,
+    "fieldAlignment": true,
+    "passed": true,
+    "width": 768
+  },
+  {
+    "clientWidth": 375,
+    "documentWidth": 375,
+    "fieldAlignment": true,
+    "passed": true,
+    "width": 390
+  },
+  {
+    "clientWidth": 305,
+    "documentWidth": 305,
+    "fieldAlignment": true,
+    "passed": true,
+    "width": 320
+  }
+]

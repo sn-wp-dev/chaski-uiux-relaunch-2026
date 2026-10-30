@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="de"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>CHASKI – Startseite · Botanical-Farbwelt</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&amp;family=Outfit:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+    @layer base {
+      html, body { margin: 0; padding: 0; }
+      body { overscroll-behavior: none; }
+      main > :first-child { margin-top: 0 !important; }
+      main > :last-child { margin-bottom: 0 !important; }
+    }
+    ::-webkit-scrollbar { display: none; }
+  </style>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "background": "#FAF6ED",
+            "surface": "#FAF6ED",
+            "surface-section": "#EEF0E6",
+            "surface-container": "#F5EEDC",
+            "surface-card": "#FFFFFF",
+            "primary": "#35402D",
+            "primary-container": "#52613F",
+            "primary-dark": "#303B2A",
+            "secondary": "#5B664A",
+            "secondary-container": "#F2E8CF",
+            "on-primary": "#FFFFFF",
+            "on-surface": "#2E3328",
+            "on-surface-variant": "#5B5C52",
+            "outline": "#7D796D",
+            "outline-light": "#DED3C3",
+            "badge-green": "#E6EBDD",
+            "error": "#BA1A1A"
+          },
+          borderRadius: {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "2xl": "1rem",
+            "full": "9999px"
+          },
+          spacing: {
+            "container-max": "1200px"
+          },
+          fontFamily: {
+            sans: ["Manrope", "sans-serif"]
+          }
+        }
+      }
+    };
+  </script>
+</head>
+<body data-palette="sage" class="bg-[#FAF6ED] font-sans text-on-surface antialiased selection:bg-[#52613F] selection:text-white">
+<!-- HEADER & NAVIGATION -->
+<header class="fixed top-0 left-0 right-0 z-50 bg-[#FAF6ED]/90 backdrop-blur-md border-b border-[#DED3C3]">
+<div class="h-20 max-w-container-max mx-auto px-6 flex items-center justify-between">
+<!-- Left: Logo -->
+<a class="flex items-center" href="#"><img alt="CHASKI Lieferadresse Konstanz" class="h-9 w-auto object-contain transition-transform hover:scale-[1.02]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBeYDvE5G0KdUoYEwCWvkWOz10oF9KA7wExW4aoIsF-8dfudbsZKjbWoqCciq-Do51mrA_2DYFD02xBn-un7I168sczw_EIVw9T_74BCtgW2JfO5az4ehxtMUgcBxKXbJOf5BWK8R244lrV_2Bg7xUHutqEYPhFN47nizgyOyHjcK8sd_sECeEyVHSHArSyyBvUS8ikBLEZ1-6jIhhO0VRW7fXKf6qNiXkamvXdgCT_cbHnkn-FNmHgtHXFSV86_Rs9-g"/></a>
+<!-- Center: 5 Nav Items -->
+<nav class="hidden md:flex items-center gap-8 text-[15px] font-medium text-on-surface-variant">
+<a class="hover:text-primary transition-colors" href="#so-funktionierts">So funktioniert's</a>
+<a class="hover:text-primary transition-colors" href="#services">Services</a>
+<a class="hover:text-primary transition-colors" href="#preise">Preise</a>
+<a class="hover:text-primary transition-colors" href="#faq">FAQ</a>
+<a class="hover:text-primary transition-colors" href="#kontakt">Kontakt</a>
+</nav>
+<!-- Right: Login & CTA -->
+<div class="flex items-center gap-5">
+<a class="text-[14px] font-medium text-on-surface-variant hover:text-primary transition-colors" href="#login">Login</a>
+<a data-ui="primary" class="inline-flex items-center justify-center text-[14px] font-semibold text-white px-5 py-2.5 rounded-full transition-all shadow-md hover:shadow-lg hover:scale-[1.02] active:scale-[0.98]" href="#registrieren" style="background: linear-gradient(135deg, var(--theme-strong) 0%, var(--theme-strong) 100%); box-shadow: 0 4px 14px -2px color-mix(in srgb, var(--theme-deep) 35%, transparent);"><span>Kostenlos registrieren</span><span class="material-symbols-outlined text-[16px] ml-1.5">arrow_forward</span></a>
+</div>
+</div>
+</header>
+<main class="pt-20">
+<!-- SECTION 1: HERO (Calm, Minimal, Prestigious Nature/Sage) -->
+<section class="relative overflow-hidden pt-12 pb-16 lg:pt-16 lg:pb-24" data-palette="sage"><div id="hero-grainient" class="grainient-hero" aria-hidden="true"></div><div class="absolute inset-0 pointer-events-none z-0 opacity-[0.06]" style="background-image: radial-gradient(var(--theme-strong) 1px, transparent 1px); background-size: 24px 24px;"></div><div class="absolute -top-32 -left-32 w-96 h-96 rounded-full pointer-events-none" style="background: radial-gradient(circle, color-mix(in srgb, var(--theme-accent) 22%, transparent) 0%, color-mix(in srgb, var(--theme-canvas) 0%, transparent) 70%); filter: blur(50px);"></div><div class="absolute top-1/4 right-0 w-[500px] h-[500px] rounded-full pointer-events-none" style="background: radial-gradient(circle, color-mix(in srgb, var(--theme-accent) 15%, transparent) 0%, color-mix(in srgb, var(--theme-canvas) 0%, transparent) 70%); filter: blur(70px);"></div><div class="max-w-container-max mx-auto px-6 relative z-10"><div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center"><div class="lg:col-span-7 flex flex-col items-start"><div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full mb-6 border border-[#52613F]/20 shadow-sm" style="background: linear-gradient(135deg, color-mix(in srgb, var(--theme-tint) 90%, transparent) 0%, color-mix(in srgb, var(--theme-companion) 70%, transparent) 100%); backdrop-filter: blur(8px);"><span class="text-xs font-bold tracking-wider uppercase text-[#3E4A32]">Für Schweizer Grenzgänger &amp; Online-Shopper</span></div><h1 class="text-3xl sm:text-4xl lg:text-[48px] font-bold leading-[1.15] text-[#2E3328] tracking-tight mb-5">Deine deutsche Lieferadresse <span class="text-transparent bg-clip-text" style="background-image: linear-gradient(135deg, var(--theme-strong) 0%, var(--theme-strong) 100%);">in Konstanz.</span></h1><p class="text-lg text-on-surface-variant max-w-xl leading-relaxed mb-8 font-normal">Pakete günstig nach Deutschland liefern lassen, bequem an der Grenze abholen und bis zu <strong>80% Versand- und Zollkosten</strong> sparen.</p><div class="flex flex-wrap items-center gap-4 mb-8"><a data-ui="primary" class="inline-flex items-center justify-center text-[15px] font-semibold text-white px-7 py-3.5 rounded-full transition-all hover:scale-[1.02] active:scale-[0.98] group" href="#registrieren" style="background: linear-gradient(135deg, var(--theme-strong) 0%, var(--theme-strong) 100%); box-shadow: 0 8px 24px -4px color-mix(in srgb, var(--theme-deep) 42%, transparent);"><span>Lieferadresse anlegen</span><span class="material-symbols-outlined text-[18px] ml-2 transition-transform group-hover:translate-x-1">arrow_forward</span></a><a data-ui="text-link" class="inline-flex items-center justify-center text-[15px] font-semibold text-[#3E4A32] px-6 py-3.5 rounded-full transition-all hover:scale-[1.02] active:scale-[0.98]" href="#preise" style="background: color-mix(in srgb, var(--theme-card) 85%, transparent); backdrop-filter: blur(12px); border: 1px solid color-mix(in srgb, var(--theme-line) 90%, transparent); box-shadow: 0 4px 16px -2px color-mix(in srgb, var(--theme-deep) 8%, transparent);"><span class="material-symbols-outlined text-[18px] mr-2 text-[#596744]">calculate</span><span>Preise &amp; Rechner</span></a></div><div class="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-6 border-t border-[#DED3C3]/80 w-full"><div class="flex items-center gap-2.5 p-2.5 rounded-xl border border-white/60" style="background: color-mix(in srgb, var(--theme-card) 60%, transparent); backdrop-filter: blur(8px);"><div class="w-7 h-7 rounded-lg flex items-center justify-center shrink-0" style="background: linear-gradient(135deg, var(--theme-tint) 0%, var(--theme-accent) 100%);" data-ui="hero-small-icon"><span class="material-symbols-outlined text-[#52613F] text-[16px]">inventory_2</span></div><span class="text-[13px] font-semibold text-[#303B2A]">30 Tage gratis Lagerung</span></div><div class="flex items-center gap-2.5 p-2.5 rounded-xl border border-white/60" style="background: color-mix(in srgb, var(--theme-card) 60%, transparent); backdrop-filter: blur(8px);"><div class="w-7 h-7 rounded-lg flex items-center justify-center shrink-0" style="background: linear-gradient(135deg, var(--theme-tint) 0%, var(--theme-accent) 100%);" data-ui="hero-small-icon"><span class="material-symbols-outlined text-[#52613F] text-[16px]">lock_clock</span></div><span class="text-[13px] font-semibold text-[#303B2A]">24/7 Schließfächer</span></div><div class="flex items-center gap-2.5 p-2.5 rounded-xl border border-white/60" style="background: color-mix(in srgb, var(--theme-card) 60%, transparent); backdrop-filter: blur(8px);"><div class="w-7 h-7 rounded-lg flex items-center justify-center shrink-0" style="background: linear-gradient(135deg, var(--theme-tint) 0%, var(--theme-accent) 100%);" data-ui="hero-small-icon"><span class="material-symbols-outlined text-[#52613F] text-[16px]">near_me</span></div><span class="text-[13px] font-semibold text-[#303B2A]">5 Min. ab Kreuzlingen</span></div></div></div><div class="lg:col-span-5 relative"><div class="relative rounded-3xl overflow-hidden p-2.5 border border-white/80 transition-transform hover:scale-[1.01] duration-300" style="background: linear-gradient(145deg, color-mix(in srgb, var(--theme-card) 90%, transparent) 0%, color-mix(in srgb, var(--theme-tint) 70%, transparent) 100%); backdrop-filter: blur(16px); box-shadow: 0 20px 40px -15px color-mix(in srgb, var(--theme-deep) 18%, transparent);"><div class="relative rounded-2xl overflow-hidden h-[480px]"><img alt="CHASKI Paketübergabe am Holz-Tresen in Konstanz" class="w-full h-full object-cover object-center" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAFu4wZqqdGTfrey0yL92g2ayERtBeb3A1-P-ea8EwN2pLLSQduzFU1YHGgspxu4wSpPlGbVkB9j9Beae3Avct0uIeLG2Fb4B3LAFWQ4IdMzwfP1urw8MgKVSz6Q6DPAKc5D6nqL18vLxPylKiZkNatbF-ITBK6oyjrDZxlwPxzMw4y9zrVZQLbo4vuC1xoS7i5nB-Aji_zWYuFNiWLJFR_QFHlpImdXzrWtCW4PtLF2wL153IvyUXOVlWm9aIw9dOkvQ"/><div class="absolute inset-0 pointer-events-none" style="background: linear-gradient(180deg, rgba(0,0,0,0) 50%, color-mix(in srgb, var(--theme-deep) 55%, transparent) 100%);" data-surface="dark"></div><div class="absolute bottom-4 left-4 right-4 p-3.5 rounded-2xl border border-white/80 shadow-lg flex items-center gap-3.5" style="background: color-mix(in srgb, var(--theme-card) 94%, transparent); backdrop-filter: blur(14px);"><div class="w-11 h-11 rounded-xl overflow-hidden shrink-0 border border-[#DED3C3] shadow-sm"><img alt="CHASKI Filiale Konstanz" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPJ0dcqX064A_mcSWnJdoLf1zHqx0V5A_xClmzaaBoY7ZvPOBsUxAOPsbkgD1qMbKgujv4axCEjcXaT7CH_UoCkwNfuBqFxpMxEjqEOAUJKkUmX0EUKu9pytQsetFDoldZneav7rz3dkaXRswJde2JtVlq8UhnJaUE4ReNKkEeFrfXrrhjYBormiKvKKnA2s0BD3NZ8d3LMs8eYWZl4o3jPXhdA7_E-cPaHyDhCyMEbrvkmNs27Qsxgpu8k_D2n62XyQ"/></div><div class="flex flex-col flex-1"><div class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px] text-amber-500">star</span><span class="material-symbols-outlined text-[16px] text-amber-500">star</span><span class="material-symbols-outlined text-[16px] text-amber-500">star</span><span class="material-symbols-outlined text-[16px] text-amber-500">star</span><span class="material-symbols-outlined text-[16px] text-amber-500">star</span><span class="text-xs font-extrabold text-[#2E3328] ml-1">4.9 / 5</span></div><span class="text-[11px] text-on-surface-variant font-medium mt-0.5">August-Borsig-Straße 2a, 78467 Konstanz</span></div></div></div></div></div></div></div></section>
+<!-- SECTION 2: SO FUNKTIONIERT'S -->
+<section class="relative overflow-hidden w-full py-20 border-y border-[#DED3C3]/80" id="so-funktionierts" style="background: linear-gradient(180deg, var(--theme-tint) 0%, var(--theme-wash) 50%, var(--theme-tint) 100%);" data-palette="sage"><div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[350px] rounded-full pointer-events-none" style="background: radial-gradient(circle, color-mix(in srgb, var(--theme-accent) 18%, transparent) 0%, color-mix(in srgb, var(--theme-tint) 0%, transparent) 70%); filter: blur(80px);"></div><div class="max-w-container-max mx-auto px-6 relative z-10"><div class="text-center max-w-xl mx-auto mb-14"><span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold tracking-wider text-[#3E4A32] uppercase mb-3 border border-[#52613F]/20" style="background: color-mix(in srgb, var(--theme-card) 70%, transparent); backdrop-filter: blur(6px);"><span class="material-symbols-outlined text-[15px] text-[#596744]">speed</span> Einfach &amp; Schnell</span><h2 class="text-2xl lg:text-3xl font-bold text-[#2E3328] tracking-tight">In 3 Schritten zur deutschen Adresse</h2><p class="text-sm text-on-surface-variant mt-2">Kostenlos registrieren, Adresse angeben und Lieferungen flexibel in Konstanz abholen.</p></div><div class="grid grid-cols-1 md:grid-cols-3 gap-6 relative"><div class="rounded-2xl p-8 border border-white/80 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl flex flex-col justify-between group" style="background: color-mix(in srgb, var(--theme-card) 85%, transparent); backdrop-filter: blur(14px); box-shadow: 0 10px 30px -10px color-mix(in srgb, var(--theme-deep) 8%, transparent);"><div><div class="flex items-center justify-between mb-6"><div class="w-12 h-12 rounded-2xl flex items-center justify-center text-white shadow-md transition-transform group-hover:scale-105" style="background: linear-gradient(135deg, var(--theme-strong) 0%, var(--theme-strong) 100%);" data-ui="icon-well"><span class="material-symbols-outlined text-[24px]">person_add</span></div><span class="text-3xl font-extrabold text-[#52613F]/25 font-mono">01</span></div><h3 class="text-lg font-bold text-[#2E3328] mb-2">Kostenlos registrieren</h3><p class="text-sm text-on-surface-variant leading-relaxed">Erstelle in unter 2 Minuten dein kostenloses Kundenkonto. Du erhältst sofort deine persönliche Kundennummer ohne Abo oder Grundgebühr.</p></div><div class="mt-6 pt-4 border-t border-[#DED3C3]/70 flex items-center gap-1.5 text-xs font-semibold text-[#52613F]"><span class="material-symbols-outlined text-[15px]">bolt</span><span>Sofort startklar · Keine Verpflichtung</span></div></div><div class="rounded-2xl p-8 border border-white/80 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl flex flex-col justify-between group" style="background: color-mix(in srgb, var(--theme-card) 85%, transparent); backdrop-filter: blur(14px); box-shadow: 0 10px 30px -10px color-mix(in srgb, var(--theme-deep) 8%, transparent);"><div><div class="flex items-center justify-between mb-6"><div class="w-12 h-12 rounded-2xl flex items-center justify-center text-white shadow-md transition-transform group-hover:scale-105" style="background: linear-gradient(135deg, var(--theme-strong) 0%, var(--theme-strong) 100%);" data-ui="icon-well"><span class="material-symbols-outlined text-[24px]">shopping_bag</span></div><span class="text-3xl font-extrabold text-[#52613F]/25 font-mono">02</span></div><h3 class="text-lg font-bold text-[#2E3328] mb-2">Adresse im Shop angeben</h3><p class="text-sm text-on-surface-variant leading-relaxed">Bestelle bei Amazon.de, Zalando, Otto oder eBay und gib als Lieferadresse die August-Borsig-Str. 2a zusammen mit deiner CHASKI-ID an.</p></div><div class="mt-6 pt-4 border-t border-[#DED3C3]/70 flex items-center gap-1.5 text-xs font-semibold text-[#52613F]"><span class="material-symbols-outlined text-[15px]" aria-hidden="true">badge</span><span>Deine CHASKI-ID im Adresszusatz</span></div></div><div class="rounded-2xl p-8 border-2 border-[#52613F]/40 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl flex flex-col justify-between group" style="background: linear-gradient(165deg, color-mix(in srgb, var(--theme-card) 95%, transparent) 0%, rgba(241,245,235,0.9) 100%); backdrop-filter: blur(14px); box-shadow: 0 12px 32px -10px color-mix(in srgb, var(--theme-deep) 12%, transparent);"><div><div class="flex items-center justify-between mb-6"><div class="w-12 h-12 rounded-2xl flex items-center justify-center text-white shadow-md transition-transform group-hover:scale-105" style="background: linear-gradient(135deg, var(--theme-strong) 0%, var(--theme-strong) 100%);" data-ui="icon-well"><span class="material-symbols-outlined text-[24px]">mark_email_read</span></div><span class="text-3xl font-extrabold text-[#52613F] font-mono">03</span></div><h3 class="text-lg font-bold text-[#2E3328] mb-2">Benachrichtigung &amp; Abholung</h3><p class="text-sm text-on-surface-variant leading-relaxed">Sobald dein Paket eintrifft, wirst du per E-Mail informiert. Hole es bequem an der Theke oder rund um die Uhr am Schließfach per PIN-Code ab.</p></div><div class="mt-6 pt-4 border-t border-[#52613F]/20 flex items-center gap-1.5 text-xs font-bold text-[#3E4A32]"><span class="material-symbols-outlined text-[15px] text-[#596744]">check_circle</span><span>Inkl. 30 Tage freie Lagerzeit</span></div></div></div><div class="mt-12 text-center flex flex-col items-center justify-center"><a data-ui="primary" class="inline-flex items-center justify-center text-[15px] font-bold text-white px-8 py-3.5 rounded-full transition-all shadow-lg hover:shadow-xl hover:scale-[1.02] active:scale-[0.98] group" href="#registrieren" style="background: linear-gradient(135deg, var(--theme-strong) 0%, var(--theme-strong) 100%); box-shadow: 0 8px 24px -4px color-mix(in srgb, var(--theme-deep) 42%, transparent);"><span>Jetzt kostenlos registrieren</span><span class="material-symbols-outlined text-[18px] ml-2 transition-transform group-hover:translate-x-1">arrow_forward</span></a><div class="flex items-center gap-2 mt-3 text-xs text-on-surface-variant"><span class="material-symbols-outlined text-[15px] text-[#596744]">verified_user</span><span>Dauert nur 2 Minuten · Keine Grundgebühr oder Abo · Sofortige CHASKI-ID</span></div></div></div></section>
+<!-- SECTION 3: VERGLEICH (Schweiz-Direktversand vs. CHASKI) -->
+<section class="relative py-20" data-palette="sage"><div class="section-inner max-w-container-max mx-auto px-6"><div class="absolute -left-20 top-1/3 w-80 h-80 rounded-full pointer-events-none" style="background: radial-gradient(circle, color-mix(in srgb, var(--theme-accent) 6%, transparent) 0%, color-mix(in srgb, var(--theme-canvas) 0%, transparent) 70%); filter: blur(60px);"></div><div class="absolute -right-20 top-1/3 w-80 h-80 rounded-full pointer-events-none" style="background: radial-gradient(circle, color-mix(in srgb, var(--theme-accent) 15%, transparent) 0%, color-mix(in srgb, var(--theme-canvas) 0%, transparent) 70%); filter: blur(60px);"></div><div class="text-center max-w-xl mx-auto mb-14 relative z-10"><span class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-bold tracking-wider text-[#52613F] uppercase mb-3 border border-[#52613F]/20" style="background: linear-gradient(135deg, color-mix(in srgb, var(--theme-tint) 90%, transparent) 0%, color-mix(in srgb, var(--theme-companion) 70%, transparent) 100%);"><span class="material-symbols-outlined text-[15px]">payments</span> Kostenvorteil Schweiz</span><h2 class="text-2xl lg:text-3xl font-bold text-[#2E3328] tracking-tight">Direktversand in die Schweiz vs. CHASKI</h2><p class="text-sm text-on-surface-variant mt-2">Transparenter Vergleich ohne versteckte Zoll- oder Vorweisegebühren.</p></div><div class="grid grid-cols-1 md:grid-cols-2 gap-8 relative z-10"><div data-comparison="negative" class="p-8 rounded-3xl border border-[#DED3C3] shadow-sm flex flex-col justify-between transition-all duration-300 hover:shadow-md" style="background: color-mix(in srgb, var(--theme-card) 75%, transparent); backdrop-filter: blur(14px);"><div><div class="flex items-center justify-between mb-4"><div class="flex items-center gap-3"><div class="w-9 h-9 rounded-xl flex items-center justify-center" style="background: var(--theme-tint);" data-ui="icon-well"><span class="material-symbols-outlined text-[#BA1A1A] text-[20px]">close</span></div><h3 class="text-lg font-bold text-on-surface">Direktversand in die Schweiz</h3></div></div><p class="text-xs text-on-surface-variant mb-6 leading-relaxed">Reguläre Auslandszustellung durch deutsche &amp; internationale Onlineshops.</p><ul class="space-y-4 text-sm text-on-surface-variant"><li class="flex items-start gap-3"><div class="w-5 h-5 rounded-full flex items-center justify-center shrink-0 mt-0.5" style="background: var(--theme-tint);" data-ui="list-icon"><span class="material-symbols-outlined text-[#BA1A1A] text-[13px]">close</span></div><span><strong>25 – 45 CHF Versandpauschale</strong> pro Bestellung</span></li><li class="flex items-start gap-3"><div class="w-5 h-5 rounded-full flex items-center justify-center shrink-0 mt-0.5" style="background: var(--theme-tint);" data-ui="list-icon"><span class="material-symbols-outlined text-[#BA1A1A] text-[13px]">close</span></div><span><strong>Zoll- &amp; Vorweisegebühren:</strong> oft 18–35 CHF extra an der Haustür</span></li><li class="flex items-start gap-3"><div class="w-5 h-5 rounded-full flex items-center justify-center shrink-0 mt-0.5" style="background: var(--theme-tint);" data-ui="list-icon"><span class="material-symbols-outlined text-[#BA1A1A] text-[13px]">close</span></div><span><strong>Ausschluss von Lieferungen:</strong> Viele Shops liefern gar nicht in die Schweiz</span></li><li class="flex items-start gap-3"><div class="w-5 h-5 rounded-full flex items-center justify-center shrink-0 mt-0.5" style="background: var(--theme-tint);" data-ui="list-icon"><span class="material-symbols-outlined text-[#BA1A1A] text-[13px]">close</span></div><span><strong>Teure Rücksendungen:</strong> Komplizierte Zollpapiere für Retouren</span></li></ul></div><div class="mt-8 p-4 rounded-2xl border border-[#DED3C3] text-xs text-on-surface-variant flex items-center gap-2.5" style="background: color-mix(in srgb, var(--theme-canvas) 85%, transparent);"><span class="material-symbols-outlined text-[#BA1A1A] text-[18px]">warning</span><span>Unvorhersehbare Extrakosten und langwierige Lieferzeiten an der Grenze.</span></div></div><div class="p-8 rounded-3xl border-2 border-[#52613F]/50 flex flex-col justify-between transition-all duration-300 hover:shadow-2xl relative overflow-hidden" style="background: linear-gradient(165deg, color-mix(in srgb, var(--theme-card) 95%, transparent) 0%, color-mix(in srgb, var(--theme-tint) 90%, transparent) 100%); backdrop-filter: blur(16px); box-shadow: 0 16px 40px -12px color-mix(in srgb, var(--theme-deep) 18%, transparent);"><div class="absolute top-0 right-0 w-36 h-36 rounded-bl-full pointer-events-none" style="background: radial-gradient(circle at top right, color-mix(in srgb, var(--theme-accent) 30%, transparent) 0%, color-mix(in srgb, var(--theme-card) 0%, transparent) 70%);"></div><div class="relative z-10"><div class="flex items-center justify-between mb-4"><div class="flex items-center gap-3"><div class="w-9 h-9 rounded-xl flex items-center justify-center text-white shadow-sm" style="background: linear-gradient(135deg, var(--theme-strong) 0%, var(--theme-strong) 100%);" data-ui="icon-well"><span class="material-symbols-outlined text-[20px]">check</span></div><div><h3 class="text-lg font-bold text-[#2E3328]">Mit CHASKI Lieferadresse</h3><span class="text-xs font-semibold text-[#596744]">Die clevere Bodensee-Alternative</span></div></div></div><p class="text-xs text-on-surface-variant mb-6 leading-relaxed">Deutsche Inlandsbestellung mit persönlicher Abholung oder 24/7 Schließfach.</p><ul class="space-y-4 text-sm text-[#2E3328]"><li class="flex items-start gap-3"><div class="w-5 h-5 rounded-full flex items-center justify-center shrink-0 mt-0.5 text-white" style="background: var(--theme-strong);" data-ui="list-icon"><span class="material-symbols-outlined text-[13px]">check</span></div><span><strong>Gratis Versand &amp; Inlandstarife:</strong> Abholgebühr schon ab 1,50 €</span></li><li class="flex items-start gap-3"><div class="w-5 h-5 rounded-full flex items-center justify-center shrink-0 mt-0.5 text-white" style="background: var(--theme-strong);" data-ui="list-icon"><span class="material-symbols-outlined text-[13px]">check</span></div><span><strong>19% deutsche MwSt. sparen:</strong> Belege vor Ort abstempeln lassen</span></li><li class="flex items-start gap-3"><div class="w-5 h-5 rounded-full flex items-center justify-center shrink-0 mt-0.5 text-white" style="background: var(--theme-strong);" data-ui="list-icon"><span class="material-symbols-outlined text-[13px]">check</span></div><span><strong>Volles deutsches Sortiment:</strong> Amazon, IKEA, eBay, Kleinanzeigen etc.</span></li><li class="flex items-start gap-3"><div class="w-5 h-5 rounded-full flex items-center justify-center shrink-0 mt-0.5 text-white" style="background: var(--theme-strong);" data-ui="list-icon"><span class="material-symbols-outlined text-[13px]">check</span></div><span><strong>Anprobe vor Ort &amp; kostenlose Retouren:</strong> Keine Zollformulare</span></li></ul></div><div class="mt-8 p-4 rounded-2xl text-white flex items-center gap-4 shadow-lg relative z-10" style="background: linear-gradient(135deg, var(--theme-strong) 0%, var(--theme-strong) 100%);" data-surface="dark"><div class="w-11 h-11 rounded-xl flex items-center justify-center border border-white/20" style="background: color-mix(in srgb, var(--theme-card) 15%, transparent);" data-ui="icon-well"><span class="material-symbols-outlined text-2xl text-[#F2E8CF]">savings</span></div><div><span class="text-[11px] uppercase font-semibold tracking-wider text-[#F2E8CF] block">Durchschnittliche Ersparnis</span><span class="text-lg font-bold text-white tracking-tight">ca. 30 – 60 CHF pro Einkauf</span></div></div></div></div></div></section>
+<!-- SECTION 4: PREISE & RECHNER (Exakt nach Vorlage IMAGE_18) -->
+<section class="relative overflow-hidden w-full py-20 border-y border-[#DED3C3]/80" id="preise" style="background: linear-gradient(180deg, var(--theme-tint) 0%, var(--theme-wash) 50%, var(--theme-tint) 100%);" data-palette="sage"><div class="absolute top-10 right-10 w-96 h-96 rounded-full pointer-events-none" style="background: radial-gradient(circle, color-mix(in srgb, var(--theme-accent) 20%, transparent) 0%, color-mix(in srgb, var(--theme-tint) 0%, transparent) 70%); filter: blur(70px);"></div><div class="absolute inset-0 pointer-events-none opacity-[0.04]" style="background-image: radial-gradient(var(--theme-strong) 1px, transparent 1px); background-size: 20px 20px;"></div><div class="max-w-container-max mx-auto px-6 relative z-10"><div class="text-center max-w-2xl mx-auto mb-12"><span class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-bold tracking-wider text-[#3E4A32] uppercase mb-3 border border-[#52613F]/20" style="background: color-mix(in srgb, var(--theme-card) 75%, transparent); backdrop-filter: blur(8px);"><span class="material-symbols-outlined text-[15px] text-[#596744]">price_check</span> Transparente Tarife</span><h2 class="text-2xl lg:text-3xl font-bold text-[#2E3328] tracking-tight">Preise &amp; Größenrechner</h2><p class="text-sm text-on-surface-variant mt-2">Kalkuliere vorab deine Abholgebühr oder prüfe alle Tarife auf einen Blick. Keine Grundgebühr, keine Mitgliedschaft – Bezahlung erst bei Abholung.</p></div><div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start"><div class="lg:col-span-5 p-6 sm:p-7 rounded-3xl border border-white/90 shadow-lg" style="background: color-mix(in srgb, var(--theme-card) 92%, transparent); backdrop-filter: blur(16px);"><div class="mb-5 h-44 rounded-2xl overflow-hidden relative border border-[#DED3C3] shadow-sm group"><img alt="Paketmessung und Verpackung an der CHASKI Packstation" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBK-E90joUqHuI2r96rz6OUJUHZjWDlA3Lq3I5q3DikO_BoRokgq7rmJ1LzoGP2hrf5QNRrs7CV80W7o3ETkfQ8m0x1G0Uhn_E7zkXNlixz9_tHHd_md5oK-4jiJgkDdAqiQJ_Z0Ush3UO7IS7-MMMlfAmbaKRTYmFpELpW8OrvKXHCsQjhws-O2m4WGCgajsOb-rmRagfpdxj8bgtD3N503-NX1eZyql5QlExVkdIvc-RVV49Q7qmaPqmj-z66VRIAdw"/><div class="absolute inset-0 bg-gradient-to-t from-[#2D3727]/70 via-transparent to-transparent"></div><div class="absolute bottom-3 left-3 right-3 flex items-center justify-between text-white"><span class="text-xs font-bold">Maße ermitteln &amp; direkt einsparen</span></div></div><div class="flex items-center justify-between pb-4 mb-5 border-b border-[#DED3C3]/80"><div class="flex items-center gap-2.5"><div class="w-9 h-9 rounded-xl flex items-center justify-center text-white shadow-sm" style="background: linear-gradient(135deg, var(--theme-strong) 0%, var(--theme-strong) 100%);" data-ui="icon-well"><span class="material-symbols-outlined text-[20px]">calculate</span></div><div><h3 class="text-base font-bold text-[#2E3328]">Live-Größenrechner</h3><span class="text-[11px] text-on-surface-variant">Echtzeit-Preisermittlung nach Maßen</span></div></div></div><div class="mb-5"><span class="text-xs font-bold text-[#2E3328] block mb-2">Sendungsart wählen:</span><div class="grid grid-cols-2 gap-2 p-1 bg-[#EEF0E6] rounded-xl border border-[#DED3C3]"><button class="py-2 px-3 rounded-lg text-xs font-bold text-center transition-all bg-white text-[#2E3328] shadow-sm" id="calc-mode-std" type="button">Standard-Paket<span class="block text-[10px] font-normal text-on-surface-variant">L + Kürzeste Seite</span></button><button class="py-2 px-3 rounded-lg text-xs font-semibold text-center transition-all text-on-surface-variant hover:text-[#2E3328]" id="calc-mode-sp" type="button">Sperrgut<span class="block text-[10px] font-normal text-on-surface-variant">L + 2×B + 2×H</span></button></div></div><div class="space-y-3.5 mb-6"><div class="bg-[#FAF6ED] p-3 rounded-xl border border-[#DED3C3]"><label class="flex justify-between items-center text-xs font-semibold text-[#2E3328] mb-1.5" for="inp-l"><span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[15px] text-[#596744]">straighten</span> Länge (in cm)</span><span class="text-[11px] font-normal text-on-surface-variant">Längste Seite</span></label><div class="relative flex items-center"><input class="w-full bg-white border border-[#DED3C3] rounded-lg px-3 py-2 text-sm font-bold text-[#2E3328] focus:outline-none focus:border-[#52613F] focus:ring-1 focus:ring-[#52613F] pr-10" id="inp-l" min="1" placeholder="z.B. 40" type="number" value="40"/><span class="absolute right-3 text-xs font-semibold text-on-surface-variant pointer-events-none">cm</span></div></div><div class="bg-[#FAF6ED] p-3 rounded-xl border border-[#DED3C3]"><label class="flex justify-between items-center text-xs font-semibold text-[#2E3328] mb-1.5" for="inp-b"><span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[15px] text-[#596744]">width</span> Kürzeste Seite / Breite (in cm)</span><span class="text-[11px] font-normal text-on-surface-variant" id="label-b-hint">Kürzeste Kante</span></label><div class="relative flex items-center"><input class="w-full bg-white border border-[#DED3C3] rounded-lg px-3 py-2 text-sm font-bold text-[#2E3328] focus:outline-none focus:border-[#52613F] focus:ring-1 focus:ring-[#52613F] pr-10" id="inp-b" min="1" placeholder="z.B. 20" type="number" value="20"/><span class="absolute right-3 text-xs font-semibold text-on-surface-variant pointer-events-none">cm</span></div></div><div class="bg-[#FAF6ED] p-3 rounded-xl border border-[#DED3C3] hidden" id="wrap-inp-h"><label class="flex justify-between items-center text-xs font-semibold text-[#2E3328] mb-1.5" for="inp-h"><span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[15px] text-[#596744]">height</span> Höhe (in cm)</span><span class="text-[11px] font-normal text-on-surface-variant">Für Gurtmaß</span></label><div class="relative flex items-center"><input class="w-full bg-white border border-[#DED3C3] rounded-lg px-3 py-2 text-sm font-bold text-[#2E3328] focus:outline-none focus:border-[#52613F] focus:ring-1 focus:ring-[#52613F] pr-10" id="inp-h" min="1" placeholder="z.B. 15" type="number" value="15"/><span class="absolute right-3 text-xs font-semibold text-on-surface-variant pointer-events-none">cm</span></div></div></div><div class="p-6 rounded-2xl border-2 border-[#52613F] shadow-xl text-white relative overflow-hidden" style="background: linear-gradient(145deg, var(--theme-strong) 0%, var(--theme-deep) 100%);" data-surface="dark"><div class="absolute -right-8 -bottom-8 w-36 h-36 rounded-full pointer-events-none opacity-20" style="background: radial-gradient(circle, var(--theme-companion) 0%, transparent 70%);"></div><div class="relative z-10"><div class="flex items-center justify-between pb-3 mb-3 border-b border-white/20"><div class="flex items-center gap-1.5"><span class="text-[11px] font-bold uppercase tracking-wider text-[#DED3C3]" id="calc-sum-type">Gurtmaß: L + Kürzeste</span></div><span class="font-mono text-sm font-extrabold text-[#F2E8CF] px-2.5 py-0.5 rounded-full bg-white/10 border border-white/20" id="calc-sum-val">60 cm</span></div><div class="flex items-baseline justify-between pt-1"><div><span class="text-[11px] uppercase tracking-wider text-[#A3B18A] block font-bold mb-1">Ergebnis / Kategorie</span><h4 class="text-lg font-extrabold text-white tracking-tight" id="calc-result-cat">Paket M (51 – 80 cm)</h4></div><div class="text-right"><div class="text-4xl font-extrabold text-[#F2E8CF] tracking-tight leading-none" id="calc-result-price">5,00 €</div><span class="text-[11px] text-[#DED3C3] block font-medium mt-1">Abholgebühr inkl. MwSt.</span></div></div><div class="mt-4 pt-3 border-t border-white/15 flex items-center justify-between text-xs text-[#F2E8CF]"><span class="flex items-center gap-1"><span class="material-symbols-outlined text-[15px] text-[#A3B18A]">inventory_2</span> 30 Tage freie Lagerzeit</span><span class="text-[#A3B18A] font-semibold flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">check_circle</span> Keine Grundgebühr</span></div></div></div></div><div class="lg:col-span-7 bg-white rounded-3xl p-6 sm:p-7 border border-[#DED3C3] shadow-lg"><div class="flex flex-wrap items-center justify-between pb-4 mb-4 border-b border-[#DED3C3]"><div class="flex items-center gap-2.5"><div class="w-9 h-9 rounded-xl flex items-center justify-center text-[#52613F] bg-[#E6EBDD]" data-ui="icon-well"><span class="material-symbols-outlined text-[20px]">view_list</span></div><div><h3 class="text-base font-bold text-[#2E3328]">Vollständige Tariftabelle</h3><span class="text-[11px] text-on-surface-variant">Alle Paketgrößen, Paletten &amp; Spezialtarife</span></div></div><span class="text-[11px] font-medium text-on-surface-variant px-2.5 py-1 rounded-full bg-[#FAF6ED] border border-[#DED3C3]">Stand 2025</span></div><div class="overflow-x-auto"><table class="w-full text-left text-xs border-collapse"><thead><tr class="border-b border-[#DED3C3] text-on-surface-variant uppercase tracking-wider font-semibold text-[11px]"><th class="py-2.5 px-3">Kategorie</th><th class="py-2.5 px-3">Maßstab / Gurtmaß</th><th class="py-2.5 px-3">Freie Lagerzeit</th><th class="py-2.5 px-3 text-right">Preis</th></tr></thead><tbody class="divide-y divide-[#EEF0E6] text-[#2E3328]"><tr class="hover:bg-[#FAF6ED]"><td class="py-2 px-3 font-bold flex items-center gap-2"><span class="material-symbols-outlined text-[15px] text-[#596744]">mail</span> Brief</td><td class="py-2 px-3 text-on-surface-variant">Standard &amp; Einschreiben</td><td class="py-2 px-3 text-on-surface-variant">30 Tage frei</td><td class="py-2 px-3 text-right font-extrabold text-[#3E4A32]">1,50 €</td></tr><tr class="hover:bg-[#FAF6ED]"><td class="py-2 px-3 font-bold flex items-center gap-2"><span class="material-symbols-outlined text-[15px] text-[#596744]">markunread_mailbox</span> Versandtasche</td><td class="py-2 px-3 text-on-surface-variant">Luftpolstertasche bis 35 cm</td><td class="py-2 px-3 text-on-surface-variant">30 Tage frei</td><td class="py-2 px-3 text-right font-extrabold text-[#3E4A32]">3,00 €</td></tr><tr class="hover:bg-[#FAF6ED]"><td class="py-2 px-3 font-bold flex items-center gap-2"><span class="material-symbols-outlined text-[15px] text-[#596744]">package_2</span> Paket XS</td><td class="py-2 px-3 text-on-surface-variant">bis 35 cm (L + Kürzeste)</td><td class="py-2 px-3 text-on-surface-variant">30 Tage frei</td><td class="py-2 px-3 text-right font-extrabold text-[#3E4A32]">3,00 €</td></tr><tr class="hover:bg-[#FAF6ED]"><td class="py-2 px-3 font-bold flex items-center gap-2"><span class="material-symbols-outlined text-[15px] text-[#596744]">package_2</span> Paket S</td><td class="py-2 px-3 text-on-surface-variant">36 – 50 cm (L + Kürzeste)</td><td class="py-2 px-3 text-on-surface-variant">30 Tage frei</td><td class="py-2 px-3 text-right font-extrabold text-[#3E4A32]">4,00 €</td></tr><tr class="hover:bg-[#FAF6ED] bg-[#E6EBDD]/30"><td class="py-2 px-3 font-bold flex items-center gap-2"><span class="material-symbols-outlined text-[15px] text-[#596744]">package_2</span> Paket M</td><td class="py-2 px-3 text-on-surface-variant">51 – 80 cm (L + Kürzeste)</td><td class="py-2 px-3 text-on-surface-variant">30 Tage frei</td><td class="py-2 px-3 text-right font-extrabold text-[#3E4A32]">5,00 €</td></tr><tr class="hover:bg-[#FAF6ED]"><td class="py-2 px-3 font-bold flex items-center gap-2"><span class="material-symbols-outlined text-[15px] text-[#596744]">package_2</span> Paket L</td><td class="py-2 px-3 text-on-surface-variant">81 – 120 cm (L + Kürzeste)</td><td class="py-2 px-3 text-on-surface-variant">30 Tage frei</td><td class="py-2 px-3 text-right font-extrabold text-[#3E4A32]">7,00 €</td></tr><tr class="hover:bg-[#FAF6ED]"><td class="py-2 px-3 font-bold flex items-center gap-2"><span class="material-symbols-outlined text-[15px] text-[#596744]">package_2</span> Paket XL</td><td class="py-2 px-3 text-on-surface-variant">121 – 150 cm (L + Kürzeste)</td><td class="py-2 px-3 text-on-surface-variant">30 Tage frei</td><td class="py-2 px-3 text-right font-extrabold text-[#3E4A32]">10,00 €</td></tr><tr class="hover:bg-[#FAF6ED]"><td class="py-2 px-3 font-bold flex items-center gap-2"><span class="material-symbols-outlined text-[15px] text-[#596744]">package_2</span> Paket XXL</td><td class="py-2 px-3 text-on-surface-variant">151 – 200 cm (L + Kürzeste)</td><td class="py-2 px-3 text-on-surface-variant">30 Tage frei</td><td class="py-2 px-3 text-right font-extrabold text-[#3E4A32]">15,00 €</td></tr><tr class="hover:bg-[#FAF6ED]"><td class="py-2 px-3 font-bold flex items-center gap-2"><span class="material-symbols-outlined text-[15px] text-[#596744]">pallet</span> Sperrgut S</td><td class="py-2 px-3 text-on-surface-variant">bis 350 cm (L + 2×B + 2×H)</td><td class="py-2 px-3 text-on-surface-variant">14 Tage frei</td><td class="py-2 px-3 text-right font-extrabold text-[#3E4A32]">20,00 €</td></tr><tr class="hover:bg-[#FAF6ED]"><td class="py-2 px-3 font-bold flex items-center gap-2"><span class="material-symbols-outlined text-[15px] text-[#596744]">pallet</span> Sperrgut M</td><td class="py-2 px-3 text-on-surface-variant">bis 500 cm (L + 2×B + 2×H)</td><td class="py-2 px-3 text-on-surface-variant">14 Tage frei</td><td class="py-2 px-3 text-right font-extrabold text-[#3E4A32]">25,00 €</td></tr><tr class="hover:bg-[#FAF6ED]"><td class="py-2 px-3 font-bold flex items-center gap-2"><span class="material-symbols-outlined text-[15px] text-[#596744]">inventory</span> Europalette</td><td class="py-2 px-3 text-on-surface-variant">bis 120 × 80 cm</td><td class="py-2 px-3 text-on-surface-variant">14 Tage frei</td><td class="py-2 px-3 text-right font-extrabold text-[#3E4A32]">25,00 €</td></tr><tr class="hover:bg-[#FAF6ED] bg-[#E6EBDD]/20"><td class="py-2 px-3 font-bold flex items-center gap-2"><span class="material-symbols-outlined text-[15px] text-[#596744]">inventory_2</span> Übermaßpalette</td><td class="py-2 px-3 text-on-surface-variant">größer als 120 × 80 cm</td><td class="py-2 px-3 text-on-surface-variant">14 Tage frei</td><td class="py-2 px-3 text-right font-extrabold text-[#3E4A32]">35,00 €</td></tr><tr class="hover:bg-[#FAF6ED]"><td class="py-2 px-3 font-bold flex items-center gap-2"><span class="material-symbols-outlined text-[15px] text-[#596744]">directions_car</span> PKW-Überführung</td><td class="py-2 px-3 text-on-surface-variant">KFZ- &amp; Fahrzeugzustellungen</td><td class="py-2 px-3 text-on-surface-variant">Spezial-Anfrage</td><td class="py-2 px-3 text-right font-bold text-[#596744]">auf Anfrage</td></tr><tr class="hover:bg-[#FAF6ED]"><td class="py-2 px-3 font-bold flex items-center gap-2"><span class="material-symbols-outlined text-[15px] text-[#596744]">outgoing_mail</span> Vorfrankierte Pakete</td><td class="py-2 px-3 text-on-surface-variant">Versandannahme / Retourenversand</td><td class="py-2 px-3 text-on-surface-variant">Sofortversand</td><td class="py-2 px-3 text-right font-extrabold text-[#3E4A32]">ab 5,00 €</td></tr></tbody></table></div><div class="mt-4 space-y-2.5"><div class="p-3 rounded-xl bg-[#E6EBDD] border border-[#52613F]/20 flex items-center gap-2.5 text-xs text-[#2E3328]"><span class="material-symbols-outlined text-[18px] text-[#52613F] shrink-0">local_shipping</span><span class="font-medium"><strong>Speditionshinweis:</strong> Speditionslieferungen sind nur nach vorheriger Absprache möglich.</span></div><div class="p-3 rounded-xl bg-[#FAF6ED] border border-[#DED3C3] text-xs text-on-surface-variant"><div class="font-bold text-[#2E3328] mb-1 flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px] text-[#596744]">calendar_clock</span><span>Tageszuschläge nach Ablauf der freien Lagerzeit:</span></div><div class="grid grid-cols-1 sm:grid-cols-3 gap-2 text-[11px] pt-1"><div class="p-1.5 rounded bg-white border border-[#DED3C3]"><span class="font-bold text-[#3E4A32]">0,50 € / Tag</span> (Paket XS, S, M)<span class="block text-on-surface-variant">ab dem 31. Tag</span></div><div class="p-1.5 rounded bg-white border border-[#DED3C3]"><span class="font-bold text-[#3E4A32]">1,00 € / Tag</span> (Paket L, XL, XXL)<span class="block text-on-surface-variant">ab dem 31. Tag</span></div><div class="p-1.5 rounded bg-white border border-[#DED3C3]"><span class="font-bold text-[#3E4A32]">5,00 € / Tag</span> (Sperrgut &amp; Palette)<span class="block text-on-surface-variant">ab dem 15. Tag</span></div></div></div><div class="p-2.5 rounded-xl bg-[#FAF6ED] border border-[#DED3C3] flex items-start gap-2 text-[11px] text-on-surface-variant"><span class="material-symbols-outlined text-[15px] text-[#596744] shrink-0 mt-0.5">info</span><span><strong>Versand vorfrankierter Pakete:</strong> Nur für registrierte Kunden mit ausreichend vorfrankierten Paketen und keinem Wohnsitz in Deutschland.</span></div></div></div></div></div></section>
+<!-- SECTION 5: SERVICES & VOR-ORT-ATMOSPHÄRE (Store-Fotos Grid) -->
+<section class="relative py-20" id="services" data-palette="lavender"><div class="section-inner max-w-container-max mx-auto px-6"><div class="absolute -left-32 bottom-10 w-96 h-96 rounded-full pointer-events-none" style="background: radial-gradient(circle, color-mix(in srgb, var(--theme-accent) 15%, transparent) 0%, color-mix(in srgb, var(--theme-canvas) 0%, transparent) 70%); filter: blur(80px);"></div><div class="text-center max-w-2xl mx-auto mb-14 relative z-10"><span class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-bold tracking-wider text-[#52613F] uppercase mb-3 border border-[#52613F]/20" style="background: linear-gradient(135deg, color-mix(in srgb, var(--theme-tint) 90%, transparent) 0%, color-mix(in srgb, var(--theme-companion) 70%, transparent) 100%);"><span class="material-symbols-outlined text-[15px]">storefront</span> Unser Store &amp; Abholhub in Konstanz</span><h2 class="text-2xl lg:text-3xl font-bold text-[#2E3328] tracking-tight">Einladend. Natürlich. Rund um die Uhr für dich da.</h2><p class="text-sm text-on-surface-variant mt-2">Erlebe unsere moderne Filiale in der August-Borsig-Straße 2a – mit herzlichem Thekenservice, eigener Packstation, Umkleidekabine und 24/7 PIN-Schließfächern.</p></div><!-- 6-Item Curated Store Showcase Grid --><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 relative z-10"><div class="rounded-3xl overflow-hidden border border-white/90 shadow-sm flex flex-col group transition-all duration-300 hover:-translate-y-1 hover:shadow-xl" style="background: color-mix(in srgb, var(--theme-card) 88%, transparent); backdrop-filter: blur(14px);"><div class="h-64 overflow-hidden relative"><img alt="CHASKI Gebäude in Konstanz mit Parkplätzen" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZwsAOLw07B-Lmp9itIicDVuzddcEOBLobsEwQD_xFSL9eXpLXiS6HVbs7q60P5j4XuKPGVoPmN1pCftPoHB4QW3Z6ataJJ8oikixD_acRF-j8pycY2SvcBQHqMwu0Dw0FDbDtmEYkpyFDI_vkgHWMBrSRS9PdTo8Me4TBTkQVibMSrkgUbkuwNv9A4n1Ab83WTZRTGlqS-XYFSASig4eFqv-5I_GS2TytLAL25x5VkxkNvkrTjbmKyFs2TfQhtK97Kw"/><div class="absolute top-3 left-3 px-2.5 py-1 rounded-full text-[11px] font-bold text-[#3E4A32] border border-white/80 shadow-sm" style="background: color-mix(in srgb, var(--theme-card) 92%, transparent); backdrop-filter: blur(6px);">Zufahrt &amp; Parken</div></div><div class="p-5 flex-1 flex flex-col justify-between"><div><h3 class="text-base font-bold text-[#2E3328] mb-1.5">Zentral &amp; staufrei ankommen</h3><p class="text-xs text-on-surface-variant leading-relaxed">August-Borsig-Str. 2a in Industriegebiet Konstanz. Nur 5 Minuten ab Grenze Kreuzlingen – komplett staufrei mit kostenlosen Parkplätzen direkt vor der Tür.</p></div><div class="mt-4 pt-3 border-t border-[#DED3C3]/70 text-[11px] font-medium text-on-surface-variant flex items-center gap-1.5"><span class="material-symbols-outlined text-[15px] text-[#596744]">near_me</span><span>Direkt bei OBI &amp; Kaufland</span></div></div></div><div class="rounded-3xl overflow-hidden border border-white/90 shadow-sm flex flex-col group transition-all duration-300 hover:-translate-y-1 hover:shadow-xl" style="background: color-mix(in srgb, var(--theme-card) 88%, transparent); backdrop-filter: blur(14px);"><div class="h-64 overflow-hidden relative"><img alt="CHASKI Empfangstheke mit nachhaltiger Palettenwand" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAlIVpv_sy6yAPRX2QH1jIlPd7_LlzaYXP0TZxEZ0C3g3FJQo7FUgp7rao3JPrSutwHkxrSDVykxDFVAHY4Ltiy0Fyh0395LZ4qYzjEVIJxJGUTdv45rB0RY7pPEwMPry2f5IUsRXTBKb2U_g8OEaLKpwtGoyW0vz1WjyAyiVk4D-xjYY9sf1nq0iEB1_-uTRz4PasK-AQaxkhgL3tSnuYPOwMpYs_s2IO9oEc5p3QBFWGMmJCz9_mVuW6W8dF66f0x9w"/><div class="absolute top-3 left-3 px-2.5 py-1 rounded-full text-[11px] font-bold text-[#3E4A32] border border-white/80 shadow-sm" style="background: color-mix(in srgb, var(--theme-card) 92%, transparent); backdrop-filter: blur(6px);">Theke &amp; Beratung</div></div><div class="p-5 flex-1 flex flex-col justify-between"><div><h3 class="text-base font-bold text-[#2E3328] mb-1.5">Persönliche Übergabe &amp; Empfang</h3><p class="text-xs text-on-surface-variant leading-relaxed">Unser herzliches Team empfängt dich an unserer charakteristischen Holz-Theke. Wir unterstützen persönlich bei Ausfuhrscheinen, Zollstempeln und Fragen.</p></div><div class="mt-4 pt-3 border-t border-[#DED3C3]/70 text-[11px] font-medium text-on-surface-variant flex items-center gap-1.5"><span class="material-symbols-outlined text-[15px] text-[#596744]">schedule</span><span>Mo–Fr: 16:00–19:00 · Sa: 10:00–13:00</span></div></div></div><div class="rounded-3xl overflow-hidden border border-white/90 shadow-sm flex flex-col group transition-all duration-300 hover:-translate-y-1 hover:shadow-xl" style="background: color-mix(in srgb, var(--theme-card) 88%, transparent); backdrop-filter: blur(14px);"><div class="h-64 overflow-hidden relative"><img alt="Mitarbeiterin beim Verpacken an der CHASKI Packstation" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDUPaOY3rs1FBR4tVDOy-PUYXtZI4ksagUENxvvpjPmcJYF7SmmOKirXp8M6nNz3iRVjnz363zYKSD2wVNINYv_P01eXUOAIimDfRYxrT6JmUXGLve656jXewWXCLBzX9IvYHy_dAAdunckvz1cOHNpYRjFFFS90fQMawAcQcVN87RuQf7ZLVhRjHPDZe_aYpug00yt4mrcMpyg6uO1IYPiaDlby5OV5cdQWihkqI7_QsfutPgmdM2-auKBCcUFPUPgjA"/><div class="absolute top-3 left-3 px-2.5 py-1 rounded-full text-[11px] font-bold text-[#3E4A32] border border-white/80 shadow-sm" style="background: color-mix(in srgb, var(--theme-card) 92%, transparent); backdrop-filter: blur(6px);">Packstation</div></div><div class="p-5 flex-1 flex flex-col justify-between"><div><h3 class="text-base font-bold text-[#2E3328] mb-1.5">Verpacken, Prüfen &amp; Retouren</h3><p class="text-xs text-on-surface-variant leading-relaxed">Kostenlose Nutzung unserer Packtische: Pakete vor Ort öffnen, Inhalt prüfen und Kartonagen umweltfreundlich direkt bei uns entsorgen.</p></div><div class="mt-4 pt-3 border-t border-[#DED3C3]/70 text-[11px] font-medium text-on-surface-variant flex items-center gap-1.5"><span class="material-symbols-outlined text-[15px] text-[#596744]">recycling</span><span>Kostenlose Karton- &amp; Altpapierentsorgung</span></div></div></div><div class="rounded-3xl overflow-hidden border border-white/90 shadow-sm flex flex-col group transition-all duration-300 hover:-translate-y-1 hover:shadow-xl" style="background: color-mix(in srgb, var(--theme-card) 88%, transparent); backdrop-filter: blur(14px);"><div class="h-64 overflow-hidden relative"><img alt="Private CHASKI Umkleidekabine mit dreiteiligem Spiegel" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDPlQNX117WnexJHVKTV03SykRo5ioESKVyN9PHQm0HxvpF0fdJRZKkonyOznthIAwUzsVNmEUu-4iCXTxpqKVqZ58GBtt02LEk3WiWlMPFW3abShk3opOC9oCSAtiygZTnDK-cvUsjEEA9TqiihOfcrbxmPux8-8QYzeCyYMJbIzSrBbdDJgU8LUTM1lqr9YTVbx56yEgpvST9EmC9dv55cGM8NN-f5N3Sq8ZGGZy7r4SdNSEzNt-EWRS0oGAQm_oTMQ"/><div class="absolute top-3 left-3 px-2.5 py-1 rounded-full text-[11px] font-bold text-[#3E4A32] border border-white/80 shadow-sm" style="background: color-mix(in srgb, var(--theme-card) 92%, transparent); backdrop-filter: blur(6px);">Umkleidekabine</div></div><div class="p-5 flex-1 flex flex-col justify-between"><div><h3 class="text-base font-bold text-[#2E3328] mb-1.5">Direkt vor Ort anprobieren</h3><p class="text-xs text-on-surface-variant leading-relaxed">Kleidung und Schuhe aus Onlineshops direkt in unserer diskreten Umkleide mit 3-teiligem Spiegel anprobieren. Passt etwas nicht? Sofort als Retoure abgeben!</p></div><div class="mt-4 pt-3 border-t border-[#DED3C3]/70 text-[11px] font-medium text-on-surface-variant flex items-center gap-1.5"><span class="material-symbols-outlined text-[15px] text-[#596744]">keyboard_return</span><span>Keine Zollprobleme bei Rücksendungen</span></div></div></div><div class="rounded-3xl overflow-hidden border border-white/90 shadow-sm flex flex-col group transition-all duration-300 hover:-translate-y-1 hover:shadow-xl" style="background: color-mix(in srgb, var(--theme-card) 88%, transparent); backdrop-filter: blur(14px);"><div class="h-64 overflow-hidden relative"><img alt="Paketübergabe am Tresen vor CHASKI Wand" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBxz0GUE9snOpM_SF5MDJCHzJaNpP26HaPEzG6U3Vq3R-rLvppmq4LDPpYg6bSN6iMc-1XDi_Hff3q6Uf9rFL8mMmPO6TPcMUh-cIMVaR-gxDudcC9x07wUVAeM18bLTs1reox2or8r4pMmU6m0IutL8rMgLOYu178TrvqToebqTeJs7bt5OUHQf1A99EJofDC9JKSPrgpHANDcyHuR7dPkp4oeVPs_ZdLDMYfIeBuw4O3s94YKhb_nC19WacrbbzsXSA"/><div class="absolute top-3 left-3 px-2.5 py-1 rounded-full text-[11px] font-bold text-[#3E4A32] border border-white/80 shadow-sm" style="background: color-mix(in srgb, var(--theme-card) 92%, transparent); backdrop-filter: blur(6px);">Schnelle Abholung</div></div><div class="p-5 flex-1 flex flex-col justify-between"><div><h3 class="text-base font-bold text-[#2E3328] mb-1.5">Sekundenschnelle Abholung</h3><p class="text-xs text-on-surface-variant leading-relaxed">Einfach deine CHASKI-Kundennummer nennen oder Barcode vorzeigen: Dein Paket liegt griffbereit bereit. Schneller als jeder Paketshop.</p></div><div class="mt-4 pt-3 border-t border-[#DED3C3]/70 text-[11px] font-medium text-on-surface-variant flex items-center gap-1.5"><span class="material-symbols-outlined text-[15px] text-[#596744]">credit_card</span><span>TWINT, Apple Pay, Bar (CHF &amp; EUR)</span></div></div></div><div class="rounded-3xl overflow-hidden border border-white/90 shadow-sm flex flex-col group transition-all duration-300 hover:-translate-y-1 hover:shadow-xl" style="background: color-mix(in srgb, var(--theme-card) 88%, transparent); backdrop-filter: blur(14px);"><div class="h-64 overflow-hidden relative"><img alt="CHASKI Storefront und Schaufenster in Konstanz" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCn8fkjWUQZJgWbSd6P2XgrKw4GOWZx3Fq6STpt6Mz6KQcMKyQixWjvLN-4XG5PrDUNwPI-1GU6g7vkKTSZSxa2ZzNxpRdQp74inQD--7tuHqwHgeOw0UXairDC8uR8s6NpRNaQ5yRtiDXMQXwSVNfi-9UEHD01y_bNDaEc41JnUw0pHAX6lqK6nx7kcdjAPx8WNJ1eyY-Zs9KTzXd--4GFfJ0-9SBPDZq_9kBfH-_FtUY5RngVN69SvvLitUmI5oARqQ"/><div class="absolute top-3 left-3 px-2.5 py-1 rounded-full text-[11px] font-bold text-[#3E4A32] border border-white/80 shadow-sm" style="background: color-mix(in srgb, var(--theme-card) 92%, transparent); backdrop-filter: blur(6px);">24/7 Schließfächer</div></div><div class="p-5 flex-1 flex flex-col justify-between"><div><h3 class="text-base font-bold text-[#2E3328] mb-1.5">Eingang &amp; 24/7 Schließfächer</h3><p class="text-xs text-on-surface-variant leading-relaxed">Komm vorbei wann es dir passt. Mit deinem persönlichen PIN öffnest du Eingangstür und dein Schließfach rund um die Uhr – auch an Sonn- und Feiertagen.</p></div><div class="mt-4 pt-3 border-t border-[#DED3C3]/70 text-[11px] font-medium text-on-surface-variant flex items-center gap-1.5"><span class="material-symbols-outlined text-[15px] text-[#596744]">lock_open</span><span>365 Tage im Jahr autonom abholen</span></div></div></div></div><!-- Bottom Highlight Banner with Details & Card Image --><div class="mt-10 rounded-2xl p-5 sm:p-6 border border-[#DED3C3] bg-white flex flex-col md:flex-row items-center justify-between gap-6 shadow-sm relative z-10"><div class="flex items-center gap-4"><div class="w-16 h-16 rounded-xl overflow-hidden shrink-0 border border-[#DED3C3]"><img alt="CHASKI Visitenkarten &amp; Gutscheine" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAh9x1kfdGxIksNiuZXI2PD1-jjpixaFMI4HVb9UN55MQH24OdiNGiwZj7Nop6tmvU_DeGLSaSW7K6C3dM4_-jDayT5jOVpse6C7dZuRjs-EXwqy4nHEX2fVbolDL7gmhKCrAiLYMaYSmvuQrYhJUOXioJOQQkYOSrQWEA29H52iuD81dz4BBf7R9gfqUnhLuSxRDEbMN92Bl3OJohR-yBWHhfsYBkHNud907nHosVVu4BcVSuON_hQ_QBm3jqT1pBTNg"/></div><div><span class="inline-flex items-center gap-1 text-[11px] font-bold uppercase tracking-wider text-[#52613F] bg-[#E6EBDD] px-2 py-0.5 rounded"><span class="material-symbols-outlined text-[13px]">loyalty</span> Neukunden-Aktion</span><h4 class="text-sm sm:text-base font-bold text-[#2E3328] mt-1">50% Rabatt auf deine ersten 2 Lieferungen</h4><p class="text-xs text-on-surface-variant">Nimm dir vor Ort unsere CHASKI-Karte mit oder profitiere direkt bei der Online-Registrierung.</p></div></div><a data-ui="primary" class="inline-flex items-center justify-center text-xs font-bold text-white px-5 py-3 rounded-full shrink-0 transition-all hover:scale-[1.02] active:scale-[0.98]" href="#registrieren" style="background: linear-gradient(135deg, var(--theme-strong) 0%, var(--theme-strong) 100%); box-shadow: 0 4px 14px -2px color-mix(in srgb, var(--theme-deep) 35%, transparent);"><span>Jetzt Kundenkarte sichern</span><span class="material-symbols-outlined text-[15px] ml-1.5">arrow_forward</span></a></div></div></section>
+<!-- ABOUT CHASKI: brand story teaser -->
+<section class="relative pb-20 scroll-mt-24" id="ueber-chaski" aria-labelledby="ueber-chaski-title" data-palette="lavender"><div class="section-inner max-w-container-max mx-auto px-6">
+  <div class="group grid grid-cols-1 lg:grid-cols-12 overflow-hidden rounded-3xl bg-white border border-[#DED3C3] shadow-sm">
+    <figure class="relative h-64 sm:h-80 lg:h-auto lg:min-h-[420px] lg:col-span-5 overflow-hidden m-0">
+      <img class="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105 motion-reduce:transition-none motion-reduce:group-hover:transform-none" src="../../../BIlder/2025/07/JPEG-Tiny/Innen/chaski-lieferadresse-laden-innenansicht-15.jpg" alt="Hände legen zwei CHASKI-Pakete in ein hölzernes Schließfach" loading="lazy" decoding="async"/>
+      
+    </figure>
+    <div class="lg:col-span-7 flex items-center p-7 sm:p-10 lg:p-12">
+      <div class="max-w-xl">
+        <span class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-bold tracking-wider text-[#52613F] uppercase mb-3 border border-[#52613F]/20" style="background: linear-gradient(135deg, color-mix(in srgb, var(--theme-tint) 90%, transparent) 0%, color-mix(in srgb, var(--theme-companion) 70%, transparent) 100%);">
+          <span class="material-symbols-outlined text-[15px]" aria-hidden="true">directions_run</span>
+          Über CHASKI
+        </span>
+        <h2 class="text-2xl lg:text-3xl font-bold text-[#2E3328] tracking-tight" id="ueber-chaski-title">Wer oder was ist CHASKI?</h2>
+        <p class="text-sm sm:text-base text-on-surface-variant leading-relaxed mt-3">Als Chaski bezeichneten die Inkas einen Läufer, der Nachrichten überbrachte. Der damalige Postbote sozusagen.</p>
+        <a data-ui="primary" class="inline-flex items-center justify-center text-[14px] font-semibold text-white px-5 py-3 rounded-full mt-6 transition-all shadow-md hover:shadow-lg hover:scale-[1.02] active:scale-[0.98] motion-reduce:transition-none motion-reduce:hover:transform-none focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#8A8F68]" href="https://b40mcp-a.myrdbx.io/ueber-uns/" style="background: linear-gradient(135deg, var(--theme-strong) 0%, var(--theme-strong) 100%); box-shadow: 0 4px 14px -2px color-mix(in srgb, var(--theme-deep) 28%, transparent);">
+          <span>Mehr über uns</span>
+          <span class="material-symbols-outlined text-[17px] ml-1.5" aria-hidden="true">arrow_forward</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</div></section>
+<!-- CUSTOMER REVIEWS: static visual draft, excerpts supplied in the reference screenshot.
+     No live Google feed or verified aggregate rating is connected. -->
+<style>
+  .chaski-reviews { background:var(--theme-tint); border-block:1px solid var(--theme-line); padding:80px 0; scroll-margin-top:100px; }
+  .chaski-reviews__inner { max-width:1200px; margin:auto; padding:0 24px; }
+  .chaski-reviews__heading { display:flex; align-items:flex-end; justify-content:space-between; gap:24px; margin-bottom:32px; }
+  .chaski-reviews h2 { margin:0 0 12px; color:var(--theme-ink); font-size:30px; font-weight:700; letter-spacing:-.025em; line-height:1.25; text-wrap:balance; }
+  .chaski-reviews__intro { margin:0; color:var(--theme-muted); font-size:14px; line-height:1.7; }
+  .chaski-reviews__source { display:flex; align-items:center; gap:10px; flex-shrink:0; color:var(--theme-strong); font-size:13px; font-weight:600; padding-bottom:4px; }
+  .chaski-reviews__source svg { width:21px; height:21px; }
+  .chaski-reviews__track { display:flex; gap:24px; overflow-x:auto; scroll-snap-type:x mandatory; scrollbar-width:none; padding:2px; margin:-2px; }
+  .chaski-review { flex:0 0 calc((100% - 48px)/3); min-width:0; display:flex; flex-direction:column; background:#fff; border:1px solid var(--theme-line); border-radius:16px; padding:28px; scroll-snap-align:start; }
+  .chaski-review__stars { color:#E9A008; font-size:21px; letter-spacing:2px; line-height:1; margin-bottom:20px; }
+  .chaski-review blockquote { margin:0 0 26px; color:var(--theme-deep); font-size:15px; line-height:1.85; flex:1; }
+  .chaski-review__person { display:flex; align-items:center; gap:12px; padding-top:20px; border-top:1px solid var(--theme-tint); }
+  .chaski-review__avatar { display:flex; align-items:center; justify-content:center; width:40px; height:40px; border-radius:50%; background:var(--theme-companion); color:var(--theme-strong); font-size:16px; font-weight:600; flex-shrink:0; }
+  .chaski-review__name { display:block; font-size:13px; font-weight:700; color:var(--theme-strong); }
+  .chaski-review__label { display:block; font-size:12px; color:var(--theme-muted); margin-top:3px; }
+  .chaski-reviews__footer { display:flex; align-items:center; justify-content:space-between; gap:20px; margin-top:24px; }
+  .chaski-reviews__note { color:var(--theme-muted); font-size:12px; line-height:1.6; margin:0; }
+  .chaski-reviews__controls { display:none; gap:8px; flex-shrink:0; }
+  .chaski-reviews__controls button { width:44px; height:44px; display:grid; place-items:center; border:1px solid var(--theme-line); border-radius:50%; background:transparent; color:var(--theme-strong); cursor:pointer; font-size:22px; }
+  .chaski-reviews__controls button:hover { background:var(--theme-companion); }
+  .chaski-reviews__controls button:disabled { opacity:.35; cursor:default; }
+  .chaski-reviews :focus-visible { outline:2px solid var(--theme-strong); outline-offset:4px; }
+  @media(max-width:900px) { .chaski-review { flex-basis:calc((100% - 24px)/2); } .chaski-reviews__controls { display:flex; } }
+  @media(max-width:600px) { .chaski-reviews { padding:56px 0; } .chaski-reviews__heading { align-items:flex-start; flex-direction:column; gap:16px; margin-bottom:24px; } .chaski-reviews h2 { font-size:26px; } .chaski-review { flex-basis:88%; padding:24px; } .chaski-reviews__track { gap:16px; } .chaski-reviews__footer { align-items:center; } }
+</style>
+<section class="chaski-reviews" id="kundenbewertungen" aria-labelledby="kundenbewertungen-title" data-palette="sage">
+  <div class="chaski-reviews__inner">
+    <div class="chaski-reviews__heading">
+      <div>
+        <h2 id="kundenbewertungen-title">Das sagen unsere Kunden</h2>
+        <p class="chaski-reviews__intro">Persönlicher Service. Unkomplizierte Abholung. Gute Erfahrungen.</p>
+      </div>
+      <div class="chaski-reviews__source">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M21.6 12.23c0-.71-.06-1.39-.18-2.05H12v3.88h5.38a4.6 4.6 0 0 1-2 3.02v2.51h3.24c1.9-1.75 2.98-4.33 2.98-7.36z"/><path fill="#34A853" d="M12 22c2.7 0 4.96-.9 6.62-2.41l-3.24-2.51c-.9.6-2.04.97-3.38.97-2.61 0-4.83-1.76-5.62-4.13H3.04v2.59A10 10 0 0 0 12 22z"/><path fill="#FBBC05" d="M6.38 13.92a6 6 0 0 1 0-3.84V7.49H3.04a10 10 0 0 0 0 9.02l3.34-2.59z"/><path fill="#EA4335" d="M12 5.95c1.47 0 2.79.5 3.82 1.49l2.86-2.86A9.58 9.58 0 0 0 12 2a10 10 0 0 0-8.96 5.49l3.34 2.59C7.17 7.71 9.39 5.95 12 5.95z"/></svg>
+        <span>Kundenstimmen auf Google</span>
+      </div>
+    </div>
+    <div class="chaski-reviews__track" id="kundenbewertungen-liste" tabindex="0" role="region" aria-label="Kundenbewertungen" aria-roledescription="Karussell" tabindex="0">
+      <article class="chaski-review" aria-label="Bewertung von Liridona Bu">
+        <div class="chaski-review__stars" role="img" aria-label="5 von 5 Sternen">★★★★★</div>
+        <blockquote>Ich kann Chaski in Konstanz nur empfehlen! Einfach richtig angenehmer Laden😊 super unkompliziert, total freundlich und perfekt für uns…</blockquote>
+        <div class="chaski-review__person"><span class="chaski-review__avatar" aria-hidden="true">L</span><div><span class="chaski-review__name">Liridona Bu</span><span class="chaski-review__label">Google-Rezension</span></div></div>
+      </article>
+      <article class="chaski-review" aria-label="Bewertung von Philip">
+        <div class="chaski-review__stars" role="img" aria-label="5 von 5 Sternen">★★★★★</div>
+        <blockquote>Ich kann den Paketshop CHASKI nur wärmstens empfehlen! Alle Mitarbeiter sind äußerst freundlich, stets zuvorkommend und immer hilfsbereit…</blockquote>
+        <div class="chaski-review__person"><span class="chaski-review__avatar" aria-hidden="true">P</span><div><span class="chaski-review__name">Philip</span><span class="chaski-review__label">Google-Rezension</span></div></div>
+      </article>
+      <article class="chaski-review" aria-label="Bewertung von Felix Dold">
+        <div class="chaski-review__stars" role="img" aria-label="5 von 5 Sternen">★★★★★</div>
+        <blockquote>Ich bin begeistert vom Service von Chaski Konstanz! Der Versand war schnell, zuverlässig und völlig unkompliziert. Mein Paket kam…</blockquote>
+        <div class="chaski-review__person"><span class="chaski-review__avatar" aria-hidden="true">F</span><div><span class="chaski-review__name">Felix Dold</span><span class="chaski-review__label">Google-Rezension</span></div></div>
+      </article>
+    </div>
+    <div class="chaski-reviews__footer">
+      
+      <span id="review-position" aria-live="polite" aria-atomic="true"></span><div class="chaski-reviews__controls" aria-label="Bewertungen durchblättern">
+        <button type="button" data-review-direction="-1" aria-label="Vorherige Bewertung" aria-controls="kundenbewertungen-liste" disabled><span class="material-symbols-outlined" aria-hidden="true">arrow_back</span></button>
+        <button type="button" data-review-direction="1" aria-label="Nächste Bewertung" aria-controls="kundenbewertungen-liste"><span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FILIAL-CTA: DEUTSCHE LIEFERADRESSE IN KONSTANZ -->
+<style>
+  .chaski-branch-cta { padding:80px 24px; background:var(--theme-canvas); scroll-margin-top:100px; }
+  .chaski-branch-cta__frame { position:relative; display:grid; grid-template-columns:minmax(270px,.82fr) minmax(0,1.45fr); max-width:1200px; margin:0 auto; overflow:hidden; border:1px solid var(--theme-line); border-radius:16px; background:#fff; }
+  .chaski-branch-cta__frame::after { content:""; position:absolute; right:-90px; bottom:-110px; width:320px; height:320px; border-radius:50%; background:radial-gradient(circle,color-mix(in srgb, var(--theme-companion) 85%, transparent) 0%,color-mix(in srgb, var(--theme-companion) 0%, transparent) 70%); pointer-events:none; }
+  .chaski-branch-cta__station { position:relative; z-index:1; display:flex; flex-direction:column; justify-content:space-between; padding:40px; color:#fff; background:linear-gradient(155deg,var(--theme-strong) 0%,var(--theme-deep) 100%); }
+  .chaski-branch-cta__station::before { content:""; position:absolute; inset:0; opacity:.12; background-image:radial-gradient(#fff 1px,transparent 1px); background-size:22px 22px; pointer-events:none; }
+  .chaski-branch-cta__station > * { position:relative; z-index:1; }
+  .chaski-branch-cta__status { display:inline-flex; align-items:center; gap:8px; align-self:flex-start; margin:0 0 56px; padding:7px 11px; border:1px solid color-mix(in srgb, var(--theme-card) 24%, transparent); border-radius:9999px; color:var(--theme-companion); font-size:12px; font-weight:700; line-height:1; }
+  .chaski-branch-cta__status-dot { width:8px; height:8px; border-radius:50%; background:var(--theme-accent); box-shadow:0 0 0 4px color-mix(in srgb, var(--theme-accent) 14%, transparent); }
+  .chaski-branch-cta__pin { display:grid; place-items:center; width:48px; height:48px; margin-bottom:22px; border-radius:12px; color:var(--theme-strong); background:var(--theme-companion); }
+  .chaski-branch-cta__station h3 { max-width:12ch; margin:0 0 12px; font-size:24px; font-weight:700; line-height:1.25; letter-spacing:-.02em; text-wrap:balance; }
+  .chaski-branch-cta__address { margin:0; color:var(--theme-line); font-size:14px; line-height:1.7; }
+  .chaski-branch-cta__distance { display:flex; align-items:center; gap:8px; margin:34px 0 0; padding-top:20px; border-top:1px solid color-mix(in srgb, var(--theme-card) 18%, transparent); color:var(--theme-companion); font-size:12px; font-weight:600; }
+  .chaski-branch-cta__content { position:relative; z-index:1; padding:clamp(40px,6vw,72px); }
+  .chaski-branch-cta__label { display:inline-flex; align-items:center; gap:7px; margin:0 0 16px; color:var(--theme-strong); font-size:12px; font-weight:700; line-height:1.2; letter-spacing:.04em; text-transform:uppercase; }
+  .chaski-branch-cta__content h2 { max-width:18ch; margin:0; color:var(--theme-ink); font-size:clamp(28px,3.1vw,40px); font-weight:700; line-height:1.15; letter-spacing:-.03em; text-wrap:balance; }
+  .chaski-branch-cta__intro { max-width:64ch; margin:20px 0 0; color:var(--theme-muted); font-size:16px; line-height:1.7; text-wrap:pretty; }
+  .chaski-branch-cta__route { position:relative; display:grid; grid-template-columns:repeat(3,1fr); gap:0; margin:32px 0; padding:0; list-style:none; }
+  .chaski-branch-cta__route::before { content:""; position:absolute; top:14px; left:14px; right:calc(33.333% - 14px); height:1px; background:var(--theme-line); }
+  .chaski-branch-cta__route li { position:relative; padding:42px 24px 0 0; color:var(--theme-muted); font-size:13px; line-height:1.55; }
+  .chaski-branch-cta__route li::before { content:""; position:absolute; top:8px; left:8px; width:13px; height:13px; border:3px solid var(--theme-tint); border-radius:50%; background:var(--theme-strong); box-shadow:0 0 0 1px var(--theme-accent); }
+  .chaski-branch-cta__route strong { display:block; margin-bottom:4px; color:var(--theme-strong); font-size:14px; }
+  .chaski-branch-cta__actions { display:flex; flex-wrap:wrap; align-items:center; gap:14px; }
+  .chaski-branch-cta__primary,.chaski-branch-cta__secondary { min-height:48px; display:inline-flex; align-items:center; justify-content:center; gap:8px; padding:12px 20px; border-radius:9999px; font-size:14px; font-weight:700; transition:transform .2s ease,background-color .2s ease,color .2s ease; }
+  .chaski-branch-cta__primary { color:#fff; background:linear-gradient(135deg,var(--theme-strong) 0%,var(--theme-strong) 100%); box-shadow:0 4px 14px -2px color-mix(in srgb, var(--theme-deep) 35%, transparent); }
+  .chaski-branch-cta__secondary { color:var(--theme-strong); border:1px solid var(--theme-line); background:#fff; }
+  .chaski-branch-cta__primary:hover,.chaski-branch-cta__secondary:hover { transform:translateY(-2px); }
+  .chaski-branch-cta__secondary:hover { background:var(--theme-tint); }
+  .chaski-branch-cta__primary:focus-visible,.chaski-branch-cta__secondary:focus-visible { outline:2px solid var(--theme-strong); outline-offset:4px; }
+  @media(max-width:820px) {
+    .chaski-branch-cta__frame { grid-template-columns:1fr; }
+    .chaski-branch-cta__station { padding:32px; }
+    .chaski-branch-cta__status { margin-bottom:40px; }
+    .chaski-branch-cta__station h3 { max-width:none; }
+    .chaski-branch-cta__distance { margin-top:24px; }
+  }
+  @media(max-width:600px) {
+    .chaski-branch-cta { padding:56px 16px; }
+    .chaski-branch-cta__station,.chaski-branch-cta__content { padding:28px 24px; }
+    .chaski-branch-cta__content h2 { font-size:28px; }
+    .chaski-branch-cta__route { grid-template-columns:1fr; gap:18px; margin:28px 0; }
+    .chaski-branch-cta__route::before { top:8px; bottom:8px; left:14px; right:auto; width:1px; height:auto; }
+    .chaski-branch-cta__route li { padding:0 0 0 42px; }
+    .chaski-branch-cta__route li::before { top:3px; }
+    .chaski-branch-cta__actions { align-items:stretch; flex-direction:column; }
+    .chaski-branch-cta__primary,.chaski-branch-cta__secondary { width:100%; }
+  }
+  @media(prefers-reduced-motion:reduce) {
+    .chaski-branch-cta__primary,.chaski-branch-cta__secondary { transition:none; }
+    .chaski-branch-cta__primary:hover,.chaski-branch-cta__secondary:hover { transform:none; }
+  }
+</style>
+<section class="chaski-branch-cta" id="lieferadresse-konstanz" aria-labelledby="lieferadresse-konstanz-title" data-palette="sage">
+  <div class="chaski-branch-cta__frame">
+    <aside class="chaski-branch-cta__station" aria-label="CHASKI Filiale in Konstanz" data-surface="dark">
+      <div>
+        <p class="chaski-branch-cta__status">Deine Filiale in Konstanz</p>
+        <span class="chaski-branch-cta__pin material-symbols-outlined" aria-hidden="true">storefront</span>
+        <h3>Pakete dort abholen, wo es für dich passt.</h3>
+        <p class="chaski-branch-cta__address">CHASKI Lieferadresse<br>August-Borsig-Str. 2a<br>78467 Konstanz</p>
+      </div>
+      <p class="chaski-branch-cta__distance"><span class="material-symbols-outlined text-[18px]" aria-hidden="true">near_me</span>5 Minuten ab Kreuzlingen, mit 24/7-Abholung</p>
+    </aside>
+    <div class="chaski-branch-cta__content">
+      <p class="chaski-branch-cta__label"><span class="material-symbols-outlined text-[17px]" aria-hidden="true">inventory_2</span>Paketempfang ohne Umwege</p>
+      <h2 id="lieferadresse-konstanz-title">Deine deutsche Lieferadresse in Konstanz</h2>
+      <p class="chaski-branch-cta__intro">Bestelle in deutschen und europäischen Onlineshops, nutze unsere Filialadresse als Lieferziel und umgehe hohe internationale Versandkosten. Wir nehmen deine Sendung sicher an und informieren dich, sobald sie zur Abholung bereitliegt.</p>
+      <ol class="chaski-branch-cta__route" aria-label="So nutzt du deine CHASKI Lieferadresse">
+        <li><strong>Adresse eintragen</strong>Unsere Adresse mit deiner persönlichen Kundennummer im Onlineshop angeben.</li>
+        <li><strong>Nachricht erhalten</strong>Wir informieren dich per E-Mail, sobald dein Paket in der Filiale eingetroffen ist.</li>
+        <li><strong>Flexibel abholen</strong>An der Theke oder außerhalb der Öffnungszeiten rund um die Uhr am Schließfach.</li>
+      </ol>
+      <div class="chaski-branch-cta__actions">
+        <a data-ui="primary" class="chaski-branch-cta__primary group" href="https://b40mcp-a.myrdbx.io/lieferadresse-deutschland/">Deutsche Lieferadresse nutzen<span class="material-symbols-outlined text-[18px] transition-transform group-hover:translate-x-1" aria-hidden="true">arrow_forward</span></a>
+        <a data-ui="text-link" class="chaski-branch-cta__secondary" href="#kontakt"><span class="material-symbols-outlined text-[18px]" aria-hidden="true">location_on</span>Filiale und Anfahrt ansehen</a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- SECTION 6: FAQ -->
+<section class="w-full bg-[#EEF0E6] py-16 lg:py-20 border-y border-[#DED3C3]/70" id="faq" data-palette="lavender"><div class="absolute inset-0 pointer-events-none opacity-[0.05]" style="background-image: radial-gradient(var(--theme-strong) 1px, transparent 1px); background-size: 24px 24px;"></div><div class="max-w-container-max mx-auto px-6 relative z-10"><div class="text-center max-w-xl mx-auto mb-12"><span class="text-xs font-bold tracking-wider text-[#52613F] uppercase block mb-2">Häufige Fragen</span><h2 class="text-2xl lg:text-3xl font-bold text-[#35402D]">Klar &amp; auf den Punkt</h2><p class="text-sm text-on-surface-variant mt-2">Alles Wissenswerte für deine erste Lieferung nach Konstanz.</p></div><div class="max-w-2xl mx-auto space-y-3"><details class="group bg-white rounded-xl p-5 border border-[#DED3C3] shadow-sm" open=""><summary class="flex items-center justify-between cursor-pointer list-none font-semibold text-sm text-[#35402D]"><span>Wie genau adressiere ich meine Pakete im Onlineshop?</span><span class="material-symbols-outlined text-[#52613F] text-[20px] transition-transform group-open:rotate-180">expand_more</span></summary><p class="mt-3 text-xs text-on-surface-variant leading-relaxed border-t border-[#EEF0E6] pt-3">Gib deinen vollen Vor- und Nachnamen an. In das Adresszusatz- oder Firmenfeld setzt du deine persönliche Kundennummer (z. B. <em>CH-12345</em>). Als Anschrift verwendest du <strong>August-Borsig-Str. 2a, 78467 Konstanz</strong>. Unser System ordnet das Paket sofort deinem Konto zu.</p></details><details class="group bg-white rounded-xl p-5 border border-[#DED3C3] shadow-sm"><summary class="flex items-center justify-between cursor-pointer list-none font-semibold text-sm text-[#35402D]"><span>Gibt es eine monatliche Grundgebühr oder ein Abo?</span><span class="material-symbols-outlined text-[#52613F] text-[20px] transition-transform group-open:rotate-180">expand_more</span></summary><p class="mt-3 text-xs text-on-surface-variant leading-relaxed border-t border-[#EEF0E6] pt-3">Nein, niemals. Bei CHASKI gibt es weder Mitgliedsbeiträge noch Grundgebühren. Du bezahlst ausschließlich die Abholgebühr pro tatsächlich empfangenem Paket (z.B. 3,00 € für ein XS-Paket). Wenn du monatelang nichts bestellst, zahlst du exakt 0,00 €.</p></details><details class="group bg-white rounded-xl p-5 border border-[#DED3C3] shadow-sm"><summary class="flex items-center justify-between cursor-pointer list-none font-semibold text-sm text-[#35402D]"><span>Wie funktioniert die 24/7 Abholung an den Schließfächern?</span><span class="material-symbols-outlined text-[#52613F] text-[20px] transition-transform group-open:rotate-180">expand_more</span></summary><p class="mt-3 text-xs text-on-surface-variant leading-relaxed border-t border-[#EEF0E6] pt-3">Sobald deine Sendung einsortiert ist, erhältst du per E-Mail deinen persönlichen PIN-Code. Mit diesem öffnest du die Eingangstür zur Abhol-Lounge und dein persönliches Schließfach zu jeder Tages- oder Nachtzeit – auch sonntags und an Feiertagen.</p></details><details class="group bg-white rounded-xl p-5 border border-[#DED3C3] shadow-sm"><summary class="flex items-center justify-between cursor-pointer list-none font-semibold text-sm text-[#35402D]"><span>Wie lange kann ich meine Pakete kostenlos lagern?</span><span class="material-symbols-outlined text-[#52613F] text-[20px] transition-transform group-open:rotate-180">expand_more</span></summary><p class="mt-3 text-xs text-on-surface-variant leading-relaxed border-t border-[#EEF0E6] pt-3">Alle Standardpakete lagern bei uns <strong>volle 30 Tage vollkommen kostenlos</strong> (Sperrgut 14 Tage). So kannst du problemlos mehrere Bestellungen aus unterschiedlichen Shops sammeln und mit einer einzigen Fahrt nach Konstanz mitnehmen.</p></details></div><div class="mt-10 text-center"><a data-ui="secondary" class="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full text-xs font-bold text-[#2E3328] bg-white border border-[#DED3C3] shadow-sm transition-all hover:bg-[#FAF6ED] hover:shadow-md hover:scale-[1.01] group" href="#faq"><span class="material-symbols-outlined text-[18px] text-[#596744]">help_outline</span><span>Alle Fragen &amp; Antworten im Hilfecenter ansehen</span><span class="material-symbols-outlined text-[16px] transition-transform group-hover:translate-x-1">arrow_forward</span></a></div></div></section>
+<!-- SECTION 7: CALL TO ACTION (Dunkles Moosgrün) -->
+<section class="py-20" id="registrieren" data-palette="sage"><div class="section-inner max-w-container-max mx-auto px-6"><div class="registration-panel relative overflow-hidden rounded-3xl p-8 sm:p-14 lg:p-16 text-center text-white shadow-2xl" style="background: linear-gradient(135deg, var(--theme-strong) 0%, var(--theme-deep) 100%);" data-surface="dark"><div class="absolute inset-0 pointer-events-none opacity-20"><img alt="CHASKI Filiale Atmosphäre" class="w-full h-full object-cover object-center" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5rUpwh7i3Op4-9crujcWX7Q3hO3vnjOQdz3C5BcUf52-9Z06gQjY6HpMlU9q7iAYByNJ8GVrs0tFWscYjkMxI3xKBTLx71NH1Be-ArjVHlE67Fc3qkjMk0HEqbpK6hnTyRZr8Ezb3l1k_gS8KXJsI6prfh_rGlgQP7kltrjQyS0f4eLIJ5hv0hiUYb82ynaP7nANp1ICkhHyw5JmbWC6x4vb7_4WizTa-YjuzmAlZhTPhjydnB8OGhD3e_ybGRHro1g"/><div class="absolute inset-0 bg-gradient-to-t from-[#2D3727] via-[#3E4A32]/80 to-[#2D3727]"></div></div><div class="absolute -top-24 -left-24 w-80 h-80 rounded-full pointer-events-none" style="background: radial-gradient(circle, color-mix(in srgb, var(--theme-accent) 30%, transparent) 0%, rgba(0,0,0,0) 70%); filter: blur(50px);"></div><div class="absolute -bottom-24 -right-24 w-80 h-80 rounded-full pointer-events-none" style="background: radial-gradient(circle, color-mix(in srgb, var(--theme-accent) 40%, transparent) 0%, rgba(0,0,0,0) 70%); filter: blur(50px);"></div><div class="max-w-2xl mx-auto relative z-10"><span class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider text-[#F2E8CF] mb-4 border border-white/20" style="background: color-mix(in srgb, var(--theme-card) 10%, transparent); backdrop-filter: blur(8px);"><span class="material-symbols-outlined text-[15px]">timer</span> In 2 Minuten einsatzbereit</span><h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold leading-tight mb-4 tracking-tight">Jetzt kostenlose deutsche Lieferadresse anlegen</h2><p class="text-sm sm:text-base text-[#DED3C3] max-w-lg mx-auto mb-8 font-normal leading-relaxed">Bestelle noch heute versandkostenfrei in deutschen Shops und hole deine Pakete bequem in Konstanz ab.</p><div class="flex flex-wrap items-center justify-center gap-4"><a data-ui="primary" class="inline-flex items-center justify-center text-[15px] font-bold bg-white text-[#2E3328] px-8 py-3.5 rounded-full transition-all shadow-lg hover:scale-[1.02] active:scale-[0.98] group" href="#"><span class="material-symbols-outlined text-[18px] mr-2 text-[#596744]">how_to_reg</span><span>Jetzt kostenlos registrieren</span><span class="material-symbols-outlined text-[18px] ml-1.5 text-[#596744] transition-transform group-hover:translate-x-1">arrow_forward</span></a><a data-ui="text-link" class="inline-flex items-center justify-center text-[15px] font-semibold text-white px-6 py-3.5 rounded-full transition-all border border-white/30 hover:bg-white/10" href="#preise"><span class="material-symbols-outlined text-[18px] mr-2 text-[#F2E8CF]">calculate</span><span>Preise berechnen</span></a></div><div class="flex flex-wrap items-center justify-center gap-6 mt-10 text-xs text-[#F2E8CF]/90 font-medium"><span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px] text-[#A3B18A]">check_circle</span> Keine Kreditkarte nötig</span><span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px] text-[#A3B18A]">check_circle</span> 0 € Grundgebühr &amp; kein Abo</span><span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px] text-[#A3B18A]">check_circle</span> Sofort freigeschaltete CHASKI-ID</span></div></div></div></div></section>
+<!-- SECTION 8: KONTAKT & ANFAHRT -->
+<section class="pb-16" id="kontakt" data-palette="sage"><div class="section-inner max-w-container-max mx-auto px-6"><div class="bg-white p-6 sm:p-8 rounded-3xl border border-[#DED3C3] shadow-lg"><div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch"><div class="lg:col-span-6 flex flex-col justify-between space-y-6"><div><div class="grid grid-cols-1 sm:grid-cols-2 gap-6 pb-6 border-b border-[#EEF0E6]"><div><span class="text-xs font-bold text-[#52613F] uppercase block mb-1.5">Standort</span><h4 class="text-base font-bold text-[#35402D] mb-2">CHASKI Lieferadresse</h4><p class="text-xs text-on-surface-variant leading-relaxed">August-Borsig-Str. 2a<br/>78467 Konstanz<br/><span class="font-medium text-[#35402D]">Industriegebiet</span></p><p class="text-xs text-on-surface-variant mt-2 flex items-center gap-1.5"><span class="material-symbols-outlined text-[15px] text-[#596744]">local_parking</span> Kostenlose Parkplätze vor der Tür</p></div><div><span class="text-xs font-bold text-[#52613F] uppercase block mb-1.5">Öffnungszeiten</span><h4 class="text-base font-bold text-[#35402D] mb-2">Theke &amp; 24/7 Automat</h4><ul class="text-xs text-on-surface-variant space-y-1.5"><li><strong>Mo – Fr:</strong> 16:00 – 19:00 Uhr (Theke)</li><li><strong>Sa:</strong> 10:00 – 13:00 Uhr (Theke)</li><li class="text-[#52613F] font-bold pt-1 flex items-center gap-1"><span class="material-symbols-outlined text-[15px]">lock_clock</span> 24/7 Abholung per PIN</li></ul></div></div><div class="pt-6"><span class="text-xs font-bold text-[#52613F] uppercase block mb-1.5">Kundenservice</span><h4 class="text-base font-bold text-[#35402D] mb-2">Persönliche Unterstützung</h4><p class="text-xs text-on-surface-variant mb-3">Hilfe bei Ausfuhrbelegen, Zollabstempelung und Paketabholungen:</p><div class="flex flex-wrap gap-3"><a data-ui="secondary" class="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl bg-[#FAF6ED] border border-[#DED3C3] text-xs font-semibold text-[#35402D] hover:bg-[#EEF0E6] transition-colors" href="tel:+4975319913820"><span class="material-symbols-outlined text-[16px] text-[#52613F]">call</span><span>+49 (0) 7531 991 38 20</span></a><a data-ui="secondary" class="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl bg-[#FAF6ED] border border-[#DED3C3] text-xs font-semibold text-[#35402D] hover:bg-[#EEF0E6] transition-colors" href="#"><span class="material-symbols-outlined text-[16px] text-[#52613F]">chat</span><span>WhatsApp Support</span></a></div></div></div><div class="proximity-note"><span class="material-symbols-outlined" aria-hidden="true">near_me</span><span><strong>5 Min. ab Kreuzlingen</strong><span class="proximity-note__label">Kurzer Weg zu unserer Lieferadresse</span></span></div></div><div class="lg:col-span-6 flex flex-col"><div class="relative rounded-2xl overflow-hidden border border-[#DED3C3] shadow-inner bg-[#F0E6D9] h-72 sm:h-80 flex-1 min-h-[280px]"><div class="absolute inset-0" style="background: linear-gradient(135deg, var(--theme-companion) 0%, var(--theme-companion) 100%);"><svg class="w-full h-full opacity-60" preserveaspectratio="none" viewbox="0 0 400 300"><path d="M0,50 Q120,40 200,90 T400,120" fill="none" stroke="#FFFFFF" stroke-width="16"></path><path d="M0,50 Q120,40 200,90 T400,120" fill="none" stroke="#C4AE95" stroke-width="10"></path><path d="M150,0 L160,300" fill="none" stroke="#FFFFFF" stroke-width="14"></path><path d="M150,0 L160,300" fill="none" stroke="#C4AE95" stroke-width="8"></path><path d="M20,200 L380,180" fill="none" stroke="#FFFFFF" stroke-width="12"></path><path d="M20,200 L380,180" fill="none" stroke="#C4AE95" stroke-width="6"></path><rect fill="#D8C3AB" height="60" opacity="0.5" rx="4" width="70" x="60" y="80"></rect><text fill="#625849" font-size="10" font-weight="bold" x="75" y="115">Kaufland</text><rect fill="#D8C3AB" height="55" opacity="0.5" rx="4" width="65" x="230" y="60"></rect><text fill="#625849" font-size="10" font-weight="bold" x="250" y="92">OBI</text></svg></div><div class="absolute top-3 left-3 bg-white/90 backdrop-blur-md px-2.5 py-1 rounded-lg border border-[#DED3C3] text-[11px] font-bold text-[#2E3328] shadow-sm flex items-center gap-1.5"> Industriegebiet Konstanz</div><div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center pointer-events-none z-10"><div class="bg-[#3E4A32] text-white px-3 py-1 rounded-full text-[11px] font-bold shadow-lg border border-white/40 mb-1 flex items-center gap-1"><span class="material-symbols-outlined text-[13px] text-[#A3B18A]">location_on</span> CHASKI August-Borsig-Str. 2a</div><div class="w-8 h-8 rounded-full bg-[#52613F] border-2 border-white shadow-xl flex items-center justify-center text-white animate-pulse" data-ui="icon-well"><span class="material-symbols-outlined text-[18px]">pin_drop</span></div></div><div class="absolute bottom-3 right-3 z-10"><a class="inline-flex items-center gap-1.5 px-3 py-2 rounded-xl bg-white text-[#2E3328] border border-[#DED3C3] shadow-md text-xs font-bold transition-all hover:scale-[1.02] hover:bg-[#FAF6ED] active:scale-[0.98]" href="https://maps.google.com/?q=August-Borsig-Str.+2a+78467+Konstanz" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[16px] text-[#596744]">directions</span><span>Route planen in Google Maps</span></a></div></div></div></div></div></div></section>
+</main>
+<!-- FOOTER -->
+<footer class="w-full bg-[#EEF0E6] border-t border-[#DED3C3] py-12">
+<div class="max-w-container-max mx-auto px-6">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+<div>
+<img alt="CHASKI" class="h-8 w-auto mb-3 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAIQRyDfl5xfjdBHiZ97GcIoCjzQ-tvjWVYMHZdLWiUYe6AV8kwwtdoWCoYHN2toYODPxYoC2BZTJYWDK_eN0QBITwKcfz9x1pKjHvaHQYhbdEI0Mo5J2VfWWqRkooOsv_kxpzIVfhNVyQL6VdtEhUxounhhBirAcx-k1zaGitceSgk0avdO48v69byI2r8f8MJr6Vu0qXRF6fXEiLm5dvn-tX5zczWoNC9bH8slQXNDMIA1QC_8V3Rhr1B20CjHoAa1Q"/>
+<p class="text-xs text-on-surface-variant leading-relaxed">
+            Ihre zuverlässige deutsche Lieferadresse in Konstanz. Schnelle Paketannahme, 30 Tage freie Lagerzeit und 24/7 Abholung für Schweizer Kunden.
+          </p>
+</div>
+<div>
+<h5 class="text-xs font-bold uppercase tracking-wider text-[#35402D] mb-3">Navigation</h5>
+<ul class="text-xs text-on-surface-variant space-y-2">
+<li><a class="hover:text-[#35402D]" href="#so-funktionierts">So funktioniert's</a></li>
+<li><a class="hover:text-[#35402D]" href="#services">Services vor Ort</a></li>
+<li><a class="hover:text-[#35402D]" href="#preise">Preise &amp; Rechner</a></li>
+<li><a class="hover:text-[#35402D]" href="#faq">Häufige Fragen</a></li>
+</ul>
+</div>
+<div>
+<h5 class="text-xs font-bold uppercase tracking-wider text-[#35402D] mb-3">Zahlung vor Ort</h5>
+<p class="text-xs text-on-surface-variant leading-relaxed mb-2">
+            Flexibel an der Theke oder am Schließfach zahlen:
+          </p>
+<ul class="text-xs text-on-surface-variant space-y-1">
+<li>• TWINT &amp; Apple Pay</li>
+<li>• CHF &amp; EUR Bargeld</li>
+<li>• PostFinance, Debit- &amp; Kreditkarten</li>
+</ul>
+</div>
+<div>
+<h5 class="text-xs font-bold uppercase tracking-wider text-[#35402D] mb-3">Rechtliches</h5>
+<ul class="text-xs text-on-surface-variant space-y-2">
+<li><a class="hover:text-[#35402D]" href="#">MwSt-Rückerstattung</a></li>
+<li><a class="hover:text-[#35402D]" href="#">AGB &amp; Nutzungsbedingungen</a></li>
+<li><a class="hover:text-[#35402D]" href="#">Datenschutz</a></li>
+<li><a class="hover:text-[#35402D]" href="#">Impressum</a></li>
+</ul>
+</div>
+</div>
+<div class="pt-6 border-t border-[#DED3C3] flex flex-col sm:flex-row items-center justify-between text-xs text-on-surface-variant gap-4">
+<span>© 2025 CHASKI Konstanz. Alle Rechte vorbehalten.</span>
+<span id="footer-shop-status" role="status" title="Reguläre Öffnungszeiten der Theke in Europe/Berlin, einschließlich Feiertagen in Baden-Württemberg.">Öffnungsstatus wird geladen</span>
+</div>
+</div>
+</footer>
+<!-- CALCULATOR JS -->
+<script>
+    function updateCalculator() {
+      const len = parseInt(document.getElementById('calc-len').value, 10);
+      const wid = parseInt(document.getElementById('calc-wid').value, 10);
+      
+      document.getElementById('txt-len').innerText = len + ' cm';
+      document.getElementById('txt-wid').innerText = wid + ' cm';
+
+      const sum = len + wid;
+      document.getElementById('out-sum').innerText = sum + ' cm';
+
+      let cat = '';
+      let price = '';
+
+      if (sum <= 35) {
+        cat = 'Paket XS (bis 35 cm)';
+        price = '3,00 €';
+      } else if (sum <= 50) {
+        cat = 'Paket S (36 – 50 cm)';
+        price = '4,00 €';
+      } else if (sum <= 80) {
+        cat = 'Paket M (51 – 80 cm ★ Beliebt)';
+        price = '5,00 €';
+      } else if (sum <= 120) {
+        cat = 'Paket L (81 – 120 cm)';
+        price = '7,00 €';
+      } else if (sum <= 150) {
+        cat = 'Paket XL (121 – 150 cm)';
+        price = '10,00 €';
+      } else if (sum <= 200) {
+        cat = 'Paket XXL (151 – 200 cm)';
+        price = '15,00 €';
+      } else {
+        cat = 'Sperrgut (über 200 cm)';
+        price = 'ab 20,00 €';
+      }
+
+      document.getElementById('out-cat').innerText = cat;
+      document.getElementById('out-price').innerText = price;
+    }
+  </script>
+
+<!-- Alternative: Botanical. Inhalt, DOM-Aufbau und Skripte aus code.html.
+     Pastellfarben dienen als Flächen; dunkle Ableitungen als Text/Aktionsfarben.
+     Outfit 100–900 / Manrope 200–800; bestehende font-mono bleibt unverändert. -->
+
+
+
+<style id="botanical-design-system">
+  :root {
+    --sage:#A3B18A; --cream:#F2E8CF; 
+    --olive:#8A8F68; --lavender:#A89BBE; --beige:#D8C3AB;
+    --font-heading:'Outfit',sans-serif; --font-body:'Manrope',sans-serif;
+  }
+  [data-palette="sage"] {
+    --theme-canvas:#FAF6ED; --theme-tint:#F2F5EC; --theme-wash:#EBF0E3;
+    --theme-card:#FFFCF5; --theme-accent:var(--sage); --theme-companion:var(--cream);
+    --theme-ink:#2E3328; --theme-muted:#555F4B; --theme-strong:#455538;
+    --theme-deep:#303D2A; --theme-line:#CFD6C0; --theme-on-dark:#FFFFFF;
+  }
+
+  [data-palette="lavender"] {
+    --theme-canvas:#FAF8FC; --theme-tint:#F5F2F8; --theme-wash:#EEEAF3;
+    --theme-card:#FDFBFE; --theme-accent:var(--lavender); --theme-companion:var(--beige);
+    --theme-ink:#37303F; --theme-muted:#635A6B; --theme-strong:#635477;
+    --theme-deep:#463951; --theme-line:#D6CBDD; --theme-on-dark:#FFFFFF;
+  }
+  body { background:var(--theme-canvas); color:var(--theme-ink); font-family:var(--font-body); }
+  h1,h2,h3,h4,h5,h6 { font-family:var(--font-heading); }
+  h1 { font-weight:800 !important; letter-spacing:-.035em !important; }
+  h2 { font-weight:750 !important; letter-spacing:-.025em !important; }
+  h3,h4 { font-weight:700; } h5,h6 { font-weight:650; }
+  input,button,select,textarea { font-family:inherit; }
+  .font-mono { font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,'Liberation Mono','Courier New',monospace; }
+  ::selection { background:var(--theme-accent); color:var(--theme-ink); }
+  :focus-visible { outline:2px solid var(--theme-strong); outline-offset:4px; }
+  header { background:color-mix(in srgb,var(--theme-canvas) 94%,transparent) !important; border-color:var(--theme-line); }
+  h1 > span { color:var(--theme-ink) !important; background-image:none !important; }
+
+  /* Surface hierarchy: canvas > tinted field > light card > dark action. */
+  #so-funktionierts, #preise, .chaski-reviews, #faq {
+    background:radial-gradient(ellipse at 12% 0%,color-mix(in srgb,var(--theme-accent) 7%,transparent),transparent 60%),
+               linear-gradient(135deg,var(--theme-tint),var(--theme-wash) 58%,var(--theme-tint)) !important;
+    border-color:var(--theme-line);
+  }
+  main > section:first-child {
+    isolation:isolate;
+    background:radial-gradient(ellipse at 95% 18%,color-mix(in srgb,var(--sage) 30%,transparent),transparent 56%),
+               radial-gradient(ellipse at 8% 84%,color-mix(in srgb,var(--cream) 65%,transparent),transparent 58%),
+               linear-gradient(125deg,#FAF6ED,#F4EBD7 52%,#E9EEDF);
+  }
+  /* Paper grain and a quiet shipping/grid rhythm, only in the hero. */
+  main > section:first-child::before,main > section:first-child::after {
+    content:""; position:absolute; inset:0; pointer-events:none; z-index:0;
+  }
+  main > section:first-child::before {
+    opacity:.055;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Cpath filter='url(%23n)' opacity='.65' d='M0 0h180v180H0z'/%3E%3C/svg%3E");
+  }
+  main > section:first-child::after {
+    background-image:repeating-linear-gradient(115deg,transparent 0 95px,rgba(69,85,56,.065) 96px,transparent 97px 192px);
+    mask-image:linear-gradient(to right,transparent 5%,#000 80%);
+  }
+  main > section:first-child > .absolute { display:none; }
+  #so-funktionierts .grid > .group .w-12 {
+    background:linear-gradient(135deg,var(--theme-accent),var(--theme-tint)) !important;
+    color:var(--theme-deep); box-shadow:0 3px 10px color-mix(in srgb,var(--theme-deep) 10%,transparent);
+  }
+  #so-funktionierts .font-mono { color:var(--theme-strong) !important; }
+  main > section:nth-of-type(3) .grid > div:first-child {
+    background:linear-gradient(145deg,var(--theme-card),var(--theme-canvas)) !important;
+    border-color:var(--theme-line);
+  }
+  main > section:nth-of-type(3) .grid > div:nth-child(2) {
+    background:linear-gradient(145deg,var(--theme-card),var(--theme-tint)) !important;
+    border-color:var(--theme-accent);
+  }
+
+  /* A single Lavender/Beige family across every service card. */
+  #services, #ueber-chaski { background:var(--theme-canvas); }
+  #services .grid > .group {
+    background:linear-gradient(155deg,var(--theme-card),var(--theme-tint)) !important;
+    border-color:var(--theme-line) !important;
+  }
+  #services .grid > .group .absolute.top-3 {
+    background:var(--theme-companion) !important; color:var(--theme-deep) !important;
+    border-color:color-mix(in srgb,var(--theme-card) 80%,transparent);
+  }
+  #services .grid > .group .p-5 > div { border-color:var(--theme-line); }
+
+  .chaski-review { background:var(--theme-card); border-color:var(--theme-line); }
+  .chaski-review__avatar { background:var(--theme-accent); color:var(--theme-deep); }
+  .chaski-review__person { border-color:var(--theme-line); }
+  .chaski-reviews__controls button { border-color:var(--theme-accent); }
+  .chaski-reviews__controls button:hover { background:var(--theme-companion); }
+  .chaski-branch-cta { background:var(--theme-canvas); }
+  .chaski-branch-cta__frame { background:var(--theme-card); border-color:var(--theme-line); }
+  .chaski-branch-cta__station { background:linear-gradient(155deg,var(--theme-strong),var(--theme-deep)); }
+  .chaski-branch-cta__address { color:var(--theme-tint); }
+  .chaski-branch-cta__status,.chaski-branch-cta__distance { color:var(--theme-companion); }
+  .chaski-branch-cta__pin { background:var(--theme-companion); color:var(--theme-deep); }
+  .chaski-branch-cta__route li::before { background:var(--theme-strong); border-color:var(--theme-canvas); }
+  #faq details { background:var(--theme-card); border-color:var(--theme-line); }
+  #faq details[open] { background:var(--theme-card); border-color:var(--theme-accent); }
+  #faq details[open] summary { color:var(--theme-strong); }
+  #registrieren .registration-panel { background:linear-gradient(135deg,var(--theme-strong),var(--theme-deep)) !important; }
+  #registrieren a { background:var(--theme-companion) !important; color:var(--theme-deep) !important; }
+  footer { background:linear-gradient(145deg,var(--theme-tint),var(--theme-canvas)) !important; border-color:var(--theme-line); }
+  .bg-\[\#3E4A32\] { background-color:var(--theme-strong) !important; }
+  .bg-\[\#3E4A32\]\/80 { background-color:color-mix(in srgb,var(--theme-strong) 80%,transparent) !important; }
+  .bg-\[\#52613F\] { background-color:var(--theme-strong) !important; }
+  .bg-\[\#52613F\]\/90 { background-color:color-mix(in srgb,var(--theme-strong) 90%,transparent) !important; }
+  .bg-\[\#A3B18A\] { background-color:var(--theme-accent) !important; }
+  .bg-\[\#E6EBDD\] { background-color:var(--theme-tint) !important; }
+  .bg-\[\#E6EBDD\]\/20 { background-color:color-mix(in srgb,var(--theme-tint) 20%,transparent) !important; }
+  .bg-\[\#E6EBDD\]\/30 { background-color:color-mix(in srgb,var(--theme-tint) 30%,transparent) !important; }
+  .bg-\[\#EEF0E6\] { background-color:var(--theme-tint) !important; }
+  .bg-\[\#EEF0E6\]\/70 { background-color:color-mix(in srgb,var(--theme-tint) 70%,transparent) !important; }
+  .bg-\[\#FFDAD6\]\/60 { background-color:color-mix(in srgb,var(--theme-tint) 60%,transparent) !important; }
+  .bg-\[\#F0E6D9\] { background-color:var(--theme-tint) !important; }
+  .bg-\[\#FAF6ED\] { background-color:var(--theme-canvas) !important; }
+  .bg-\[\#FAF6ED\]\/90 { background-color:color-mix(in srgb,var(--theme-canvas) 90%,transparent) !important; }
+  .border-\[\#52613F\] { border-color:var(--theme-strong) !important; }
+  .border-\[\#52613F\]\/20 { border-color:color-mix(in srgb,var(--theme-strong) 20%,transparent) !important; }
+  .border-\[\#52613F\]\/30 { border-color:color-mix(in srgb,var(--theme-strong) 30%,transparent) !important; }
+  .border-\[\#52613F\]\/40 { border-color:color-mix(in srgb,var(--theme-strong) 40%,transparent) !important; }
+  .border-\[\#52613F\]\/50 { border-color:color-mix(in srgb,var(--theme-strong) 50%,transparent) !important; }
+  .border-\[\#BA1A1A\]\/20 { border-color:color-mix(in srgb,var(--theme-muted) 20%,transparent) !important; }
+  .border-\[\#DED3C3\] { border-color:var(--theme-line) !important; }
+  .border-\[\#DED3C3\]\/70 { border-color:color-mix(in srgb,var(--theme-line) 70%,transparent) !important; }
+  .border-\[\#DED3C3\]\/80 { border-color:color-mix(in srgb,var(--theme-line) 80%,transparent) !important; }
+  .border-\[\#EEF0E6\] { border-color:var(--theme-tint) !important; }
+  .focus\:border-\[\#52613F\]:focus { border-color:var(--theme-strong) !important; }
+  .focus\:ring-\[\#52613F\]:focus { --tw-ring-color:var(--theme-strong) !important; }
+  .from-\[\#2D3727\] { --tw-gradient-from:var(--theme-deep) !important; }
+  .from-\[\#2D3727\]\/70 { --tw-gradient-from:color-mix(in srgb,var(--theme-deep) 70%,transparent) !important; }
+  .hover\:bg-\[\#EEF0E6\]:hover { background-color:var(--theme-tint) !important; }
+  .hover\:bg-\[\#FAF6ED\]:hover { background-color:var(--theme-canvas) !important; }
+  .hover\:text-\[\#2E3328\]:hover { color:var(--theme-ink) !important; }
+  .hover\:text-\[\#35402D\]:hover { color:var(--theme-strong) !important; }
+  .text-\[\#2E3328\] { color:var(--theme-ink) !important; }
+  .text-\[\#303B2A\] { color:var(--theme-deep) !important; }
+  .text-\[\#35402D\] { color:var(--theme-strong) !important; }
+  .text-\[\#3E4A32\] { color:var(--theme-strong) !important; }
+  .text-\[\#52613F\] { color:var(--theme-strong) !important; }
+  .text-\[\#52613F\]\/25 { color:color-mix(in srgb,var(--theme-strong) 25%,transparent) !important; }
+  .text-\[\#596744\] { color:var(--theme-strong) !important; }
+  .text-\[\#BA1A1A\] { color:var(--theme-muted) !important; }
+  .text-\[\#A3B18A\] { color:var(--theme-accent) !important; }
+  .text-\[\#DED3C3\] { color:var(--theme-line) !important; }
+  .text-\[\#F2E8CF\] { color:var(--theme-on-dark) !important; }
+  .text-\[\#F2E8CF\]\/90 { color:color-mix(in srgb,var(--theme-on-dark) 90%,transparent) !important; }
+  .to-\[\#2D3727\] { --tw-gradient-to:var(--theme-deep) !important; }
+  .via-\[\#3E4A32\]\/80 { --tw-gradient-via:color-mix(in srgb,var(--theme-strong) 80%,transparent) !important; }
+
+  .text-on-surface { color:var(--theme-ink); }
+  .text-on-surface-variant { color:var(--theme-muted); }
+  .text-primary,.text-secondary { color:var(--theme-strong); }
+  .hover\:text-primary:hover { color:var(--theme-strong); }
+  .bg-white { background-color:var(--theme-card); }
+  .border-white { border-color:var(--theme-card); }
+</style>
+
+
+<style id="hero-grainient-style">
+  .grainient-hero { position:absolute; inset:0; z-index:0; overflow:hidden; pointer-events:none; }
+  .grainient-hero canvas { display:block; width:100%; height:100%; }
+  .grainient-hero::after {
+    content:""; position:absolute; inset:0;
+    background:linear-gradient(90deg,rgba(250,246,237,.76),rgba(250,246,237,.57) 48%,rgba(250,246,237,.25));
+  }
+  .grainient-hero:not([data-ready="true"]) { visibility:hidden; }
+  main > section:first-child:has(.grainient-hero[data-ready="true"])::before,
+  main > section:first-child:has(.grainient-hero[data-ready="true"])::after { display:none; }
+</style>
+<script src="hero-grainient.js" defer></script>
+
+
+
+
+
+<style id="botanical-comment-refinements">
+  /* Restrained area colours; semantic red stays local to shipping drawbacks. */
+  #so-funktionierts > .absolute, #preise > .absolute { opacity:.3; }
+  [data-comparison="negative"] { border-color:#E4C9C3 !important; }
+  [data-comparison="negative"] .material-symbols-outlined { color:#BA1A1A !important; }
+  [data-comparison="negative"] .w-9,
+  [data-comparison="negative"] .w-5 { background:#FFDAD6 !important; }
+  [data-comparison="negative"] .mt-8 { border-color:#E4C9C3 !important; background:#FFF8F5 !important; }
+  #services .grid > .group .absolute.top-3 {
+    background:rgba(255,255,255,.95) !important; color:#2E3328 !important;
+    border-color:rgba(255,255,255,.8) !important; box-shadow:0 2px 8px rgba(0,0,0,.08);
+  }
+  .chaski-branch-cta__status { color:#FFF !important; }
+  .chaski-branch-cta__pin { background:#FFF !important; color:#303D2A !important; }
+  [data-surface="dark"] { color:#FFF !important; }
+  [data-surface="dark"] :is(h1,h2,h3,h4,h5,h6,p,span,li,strong) { color:#FFF !important; }
+  [data-surface="dark"] .chaski-branch-cta__pin { color:#303D2A !important; }
+
+  /* Primary action: visible gradient, consistent white text. */
+  a[data-ui="primary"] {
+    background:linear-gradient(125deg,#657C50 0%,#455538 55%,#293721 100%) !important;
+    color:#FFF !important; border-color:transparent !important;
+    box-shadow:0 5px 16px -5px rgba(48,61,42,.3) !important;
+  }
+  a[data-ui="primary"] :is(span,.material-symbols-outlined) { color:#FFF !important; }
+  #registrieren a[data-ui="primary"] {
+    background:linear-gradient(125deg,#FFF 0%,#F5F7F2 100%) !important;
+    color:#303D2A !important;
+  }
+  #registrieren a[data-ui="primary"] :is(span,.material-symbols-outlined) { color:#303D2A !important; }
+
+  /* Secondary actions are links with an accessible target, no pill or shadow. */
+  a[data-ui="text-link"] {
+    display:inline-flex; align-items:center; justify-content:flex-start;
+    min-height:44px; padding:6px 0 !important; gap:6px;
+    background:transparent !important; border:0 !important; border-radius:0 !important;
+    color:var(--theme-strong) !important; box-shadow:none !important;
+    backdrop-filter:none !important; text-decoration:underline; text-underline-offset:4px;
+    text-decoration-thickness:1px; transform:none !important;
+  }
+  a[data-ui="text-link"] :is(span,.material-symbols-outlined) { color:inherit !important; }
+  a[data-ui="text-link"]:hover { text-decoration-thickness:2px; }
+  [data-surface="dark"] a[data-ui="text-link"], #registrieren a[data-ui="text-link"] { color:#FFF !important; }
+  #registrieren a[data-ui="text-link"] { background:transparent !important; }
+</style>
+
+
+<style id="botanical-round-two">
+  main > section { position:relative; isolation:isolate; width:100%; max-width:none; overflow:clip; }
+  .section-inner { position:relative; z-index:1; min-width:0; }
+  a, a:hover, a:focus-visible { text-decoration:none !important; }
+  a[data-ui="text-link"]:hover { opacity:.8; }
+  a[data-ui="secondary"] {
+    display:inline-flex; align-items:center; justify-content:center; gap:8px;
+    min-height:44px; padding:11px 20px !important; border-radius:9999px !important;
+    background:#FFF !important; color:var(--theme-strong) !important;
+    border:1px solid var(--theme-line) !important; box-shadow:0 2px 8px rgba(0,0,0,.04) !important;
+    text-decoration:none !important; backdrop-filter:none !important;
+  }
+  a[data-ui="secondary"] span { color:inherit !important; }
+  a[data-ui="secondary"]:hover { border-color:var(--theme-strong) !important; }
+
+  #preise {
+    background:radial-gradient(ellipse at 90% 10%,rgba(163,177,138,.055),transparent 65%),
+      linear-gradient(145deg,#FAFBF7,#F4F7F0) !important;
+  }
+  #preise > .absolute { display:none; }
+  #preise::before {
+    content:""; position:absolute; inset:0; pointer-events:none; opacity:.22;
+    background-image:radial-gradient(rgba(69,85,56,.22) .45px,transparent .65px);
+    background-size:12px 12px;
+  }
+  #services > .section-inner > .text-center > span,
+  #ueber-chaski .max-w-xl > span.inline-flex {
+    background:rgba(255,255,255,.65) !important; border-color:rgba(99,84,119,.12) !important;
+  }
+  main > section:first-child .lg\:col-span-7 > .inline-flex {
+    background:rgba(255,255,255,.22) !important; backdrop-filter:blur(14px) !important;
+    border-color:rgba(255,255,255,.5) !important;
+  }
+  main > section:first-child .absolute.bottom-4 {
+    background:rgba(255,255,255,.54) !important; backdrop-filter:blur(18px) saturate(110%) !important;
+    border-color:rgba(255,255,255,.65) !important;
+  }
+  [data-ui="icon-well"], .chaski-branch-cta__pin {
+    background:linear-gradient(135deg,var(--theme-accent),var(--theme-tint)) !important;
+    box-shadow:0 3px 10px color-mix(in srgb,var(--theme-deep) 10%,transparent) !important;
+    color:var(--theme-deep) !important;
+  }
+  [data-ui="icon-well"] > .material-symbols-outlined,
+  [data-surface="dark"] [data-ui="icon-well"] > .material-symbols-outlined { color:var(--theme-deep) !important; }
+  [data-comparison="negative"] [data-ui="icon-well"] {
+    background:linear-gradient(135deg,#FFDAD6,#FFF4F1) !important;
+  }
+  [data-comparison="negative"] [data-ui="icon-well"] > .material-symbols-outlined { color:#BA1A1A !important; }
+
+  .chaski-reviews__controls { display:flex; }
+  .chaski-reviews__footer { justify-content:flex-end; }
+  #review-position { font-size:12px; color:var(--theme-muted); }
+  .chaski-review { flex-basis:calc((100% - 24px)/2); }
+  @media(max-width:600px) { .chaski-review { flex-basis:100%; } }
+  #faq > .absolute { display:none; }
+  #faq::before {
+    content:""; position:absolute; inset:0; pointer-events:none;
+    background-image:radial-gradient(rgba(99,84,119,.10) .6px,transparent .8px);
+    background-size:16px 16px; opacity:.45;
+  }
+  #registrieren .registration-panel { isolation:isolate; }
+  #registrieren .registration-panel::before {
+    content:""; position:absolute; inset:0; pointer-events:none; z-index:0;
+    background:radial-gradient(ellipse at 4% 15%,rgba(163,177,138,.23),transparent 58%),
+      radial-gradient(ellipse at 95% 90%,rgba(138,143,104,.20),transparent 60%),
+      repeating-linear-gradient(115deg,transparent 0 95px,rgba(255,255,255,.035) 96px,transparent 97px 192px);
+  }
+  #registrieren .registration-panel::after {
+    content:""; position:absolute; inset:0; pointer-events:none; z-index:0; opacity:.055;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Cpath filter='url(%23n)' d='M0 0h180v180H0z'/%3E%3C/svg%3E");
+  }
+  #registrieren .registration-panel > .max-w-2xl { position:relative; z-index:1; }
+  #footer-shop-status { font-family:var(--font-body); color:var(--theme-muted); }
+</style>
+
+<script src="botanical-ui.js" defer></script>
+
+
+<style id="botanical-round-three">
+  [data-ui="hero-small-icon"] { box-shadow:none !important; }
+  [data-ui="list-icon"] { background:var(--theme-tint) !important; box-shadow:none !important; }
+  [data-ui="list-icon"] .material-symbols-outlined { color:var(--theme-strong) !important; }
+  [data-comparison="negative"] [data-ui="list-icon"] { background:#FFDAD6 !important; }
+  [data-comparison="negative"] [data-ui="list-icon"] .material-symbols-outlined { color:#BA1A1A !important; }
+  .chaski-reviews__controls .material-symbols-outlined { font-size:20px; }
+  #faq::before { opacity:.52; } /* +15.6% relative to .45; keep fine dots. */
+
+  #registrieren .registration-panel {
+    background:linear-gradient(135deg,#4B5E3D 0%,#2C3B26 55%,#394B30 100%) !important;
+    border:1px solid rgba(255,255,255,.13);
+    box-shadow:inset 0 1px 0 rgba(255,255,255,.16),inset 0 -1px 0 rgba(0,0,0,.15),0 24px 44px -20px rgba(32,44,26,.38);
+  }
+  #registrieren .registration-panel::before {
+    background:radial-gradient(ellipse at 8% 0%,rgba(163,177,138,.35),transparent 55%),
+      radial-gradient(ellipse at 95% 95%,rgba(163,177,138,.22),transparent 58%),
+      radial-gradient(ellipse at 50% 55%,transparent 30%,rgba(15,25,12,.18)),
+      repeating-linear-gradient(115deg,transparent 0 95px,rgba(255,255,255,.035) 96px,transparent 97px 192px);
+  }
+  #registrieren .registration-panel > .absolute.inset-0 { opacity:.13; }
+  #registrieren .registration-panel .max-w-2xl > .inline-flex {
+    background:rgba(255,255,255,.07) !important; border-color:rgba(215,228,204,.2) !important;
+    color:#DFE8D8 !important; font-weight:600;
+  }
+  #registrieren .registration-panel .max-w-2xl > .inline-flex span { color:#DFE8D8 !important; }
+  #registrieren .registration-panel h2 { color:#FFF !important; text-shadow:0 2px 16px rgba(0,0,0,.12); }
+  #registrieren .registration-panel .max-w-2xl > p { color:#DEE7D6 !important; }
+  #registrieren .registration-panel .max-w-2xl > .flex:last-child {
+    padding-top:22px; border-top:1px solid rgba(205,221,194,.15);
+  }
+  #registrieren .registration-panel .max-w-2xl > .flex:last-child > span { color:#CEDDC3 !important; }
+  #registrieren .registration-panel .max-w-2xl > .flex:last-child .material-symbols-outlined { color:#B6CBA7 !important; }
+  #registrieren a[data-ui="primary"] { box-shadow:0 7px 20px rgba(8,18,6,.2),inset 0 1px 0 #FFF !important; }
+
+  .proximity-note {
+    display:flex; align-items:center; gap:12px; margin-top:3px; padding:15px 0 0;
+    border-top:1px solid var(--theme-line); color:var(--theme-strong); font-size:13px;
+  }
+  .proximity-note > .material-symbols-outlined { font-size:23px; flex-shrink:0; }
+  .proximity-note strong { font-weight:650; }
+  .proximity-note__label { display:block; margin-top:3px; color:var(--theme-muted); font-size:12px; }
+
+  #footer-shop-status {
+    display:inline-flex; align-items:center; gap:9px; padding:8px 12px; min-height:34px;
+    background:#FFF; border:1px solid var(--theme-line); border-radius:9999px;
+    color:#455538; font-size:12px; font-weight:650;
+  }
+  #footer-shop-status::before { content:""; width:8px; height:8px; border-radius:50%; background:#BA1A1A; flex-shrink:0; }
+  #footer-shop-status[data-open="true"]::before { background:#526C3F; }
+  #footer-shop-status[data-open="false"] { color:#783D37; }
+</style>
+
+</body></html>

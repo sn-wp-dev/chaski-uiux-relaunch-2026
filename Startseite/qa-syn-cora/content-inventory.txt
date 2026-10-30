@@ -1,0 +1,68 @@
+
+SECTION 0 #hero
+
+DIRECT div ['absolute', 'inset-0', 'pointer-events-none', 'z-0', 'opacity-[0.06]']
+DIRECT div ['absolute', '-top-32', '-left-32', 'w-96', 'h-96', 'rounded-full', 'pointer-events-none']
+DIRECT div ['absolute', 'top-1/4', 'right-0', 'w-[500px]', 'h-[500px]', 'rounded-full', 'pointer-events-none']
+DIRECT div ['max-w-container-max', 'mx-auto', 'px-6', 'relative', 'z-10']
+Für Schweizer Grenzgänger & Online-Shopper Deine deutsche Lieferadresse in Konstanz. Pakete günstig nach Deutschland liefern lassen, bequem an der Grenze abholen und bis zu 80% Versand- und Zollkosten sparen. Lieferadresse anlegen Preise & Rechner 30 Tage gratis Lagerung 24/7 Schließfächer 5 Min. ab Kreuzlingen Geöffnet & 24/7 PIN 4.9 / 5 Echte Filiale mit Thekenservice · August-Borsig-Str. 2a
+
+SECTION 1 #so-funktionierts
+
+DIRECT div ['absolute', 'top-1/2', 'left-1/2', '-translate-x-1/2', '-translate-y-1/2', 'w-[700px]', 'h-[350px]', 'rounded-full', 'pointer-events-none']
+DIRECT div ['max-w-container-max', 'mx-auto', 'px-6', 'relative', 'z-10']
+Einfach & Schnell In 3 Schritten zur deutschen Adresse Kostenlos registrieren, Adresse angeben und Lieferungen flexibel in Konstanz abholen. 01 Kostenlos registrieren Erstelle in unter 2 Minuten dein kostenloses Kundenkonto. Du erhältst sofort deine persönliche Kundennummer ohne Abo oder Grundgebühr. Sofort startklar · Keine Verpflichtung 02 Adresse im Shop angeben Bestelle bei Amazon.de, Zalando, Otto oder eBay und gib als Lieferadresse die August-Borsig-Str. 2a zusammen mit deiner CHASKI-ID an. August-Borsig-Str. 2a / [Deine ID] 03 Benachrichtigung & Abholung Sobald dein Paket eintrifft, wirst du per E-Mail informiert. Hole es bequem an der Theke oder rund um die Uhr am Schließfach per PIN-Code ab. Inkl. 30 Tage freie Lagerzeit Jetzt kostenlos registrieren Dauert nur 2 Minuten · Keine Grundgebühr oder Abo · Sofortige CHASKI-ID
+
+SECTION 2 #hero
+
+DIRECT div ['absolute', '-left-20', 'top-1/3', 'w-80', 'h-80', 'rounded-full', 'pointer-events-none']
+DIRECT div ['absolute', '-right-20', 'top-1/3', 'w-80', 'h-80', 'rounded-full', 'pointer-events-none']
+DIRECT div ['text-center', 'max-w-xl', 'mx-auto', 'mb-14', 'relative', 'z-10']
+DIRECT div ['grid', 'grid-cols-1', 'md:grid-cols-2', 'gap-8', 'relative', 'z-10']
+Kostenvorteil Schweiz Direktversand in die Schweiz vs. CHASKI Transparenter Vergleich ohne versteckte Zoll- oder Vorweisegebühren. Direktversand in die Schweiz Teuer & träge Reguläre Auslandszustellung durch deutsche & internationale Onlineshops. 25 – 45 CHF Versandpauschale pro Bestellung Zoll- & Vorweisegebühren: oft 18–35 CHF extra an der Haustür Ausschluss von Lieferungen: Viele Shops liefern gar nicht in die Schweiz Teure Rücksendungen: Komplizierte Zollpapiere für Retouren Unvorhersehbare Extrakosten und langwierige Lieferzeiten an der Grenze. Mit CHASKI Lieferadresse Die clevere Bodensee-Alternative Empfohlen Deutsche Inlandsbestellung mit persönlicher Abholung oder 24/7 Schließfach. Gratis Versand & Inlandstarife: Abholgebühr schon ab 1,50 € 19% deutsche MwSt. sparen: Belege vor Ort abstempeln lassen Volles deutsches Sortiment: Amazon, IKEA, eBay, Kleinanzeigen etc. Anprobe vor Ort & kostenlose Retouren: Keine Zollformulare Durchschnittliche Ersparnis ca. 30 – 60 CHF pro Einkauf
+
+SECTION 3 #preise
+
+DIRECT div ['absolute', 'top-10', 'right-10', 'w-96', 'h-96', 'rounded-full', 'pointer-events-none']
+DIRECT div ['absolute', 'inset-0', 'pointer-events-none', 'opacity-[0.04]']
+DIRECT div ['max-w-container-max', 'mx-auto', 'px-6', 'relative', 'z-10']
+Transparente Tarife Preise & Größenrechner Kalkuliere vorab deine Abholgebühr oder prüfe alle Tarife auf einen Blick. Keine Grundgebühr, keine Mitgliedschaft – Bezahlung erst bei Abholung. Maße ermitteln & direkt einsparen Gurtmaß-System Live-Größenrechner Echtzeit-Preisermittlung nach Maßen Interaktiv Sendungsart wählen: Standard-Paket L + Kürzeste Seite Sperrgut L + 2×B + 2×H Länge (in cm) Längste Seite cm Kürzeste Seite / Breite (in cm) Kürzeste Kante cm Höhe (in cm) Für Gurtmaß cm Gurtmaß: L + Kürzeste 60 cm Ergebnis / Kategorie Paket M (51 – 80 cm) 5,00 € Abholgebühr inkl. MwSt. 30 Tage freie Lagerzeit Keine Grundgebühr Vollständige Tariftabelle Alle Paketgrößen, Paletten & Spezialtarife Stand 2025 Kategorie Maßstab / Gurtmaß Freie Lagerzeit Preis Brief Standard & Einschreiben 30 Tage frei 1,50 € Versandtasche Luftpolstertasche bis 35 cm 30 Tage frei 3,00 € Paket XS bis 35 cm (L + Kürzeste) 30 Tage frei 3,00 € Paket S 36 – 50 cm (L + Kürzeste) 30 Tage frei 4,00 € Paket M 51 – 80 cm (L + Kürzeste) 30 Tage frei 5,00 € Paket L 81 – 120 cm (L + Kürzeste) 30 Tage frei 7,00 € Paket XL 121 – 150 cm (L + Kürzeste) 30 Tage frei 10,00 € Paket XXL 151 – 200 cm (L + Kürzeste) 30 Tage frei 15,00 € Sperrgut S bis 350 cm (L + 2×B + 2×H) 14 Tage frei 20,00 € Sperrgut M bis 500 cm (L + 2×B + 2×H) 14 Tage frei 25,00 € Europalette bis 120 × 80 cm 14 Tage frei 25,00 € Übermaßpalette größer als 120 × 80 cm 14 Tage frei 35,00 € PKW-Überführung KFZ- & Fahrzeugzustellungen Spezial-Anfrage auf Anfrage Vorfrankierte Pakete Versandannahme / Retourenversand Sofortversand ab 5,00 € Speditionshinweis: Speditionslieferungen sind nur nach vorheriger Absprache möglich. Tageszuschläge nach Ablauf der freien Lagerzeit: 0,50 € / Tag (Paket XS, S, M) ab dem 31. Tag 1,00 € / Tag (Paket L, XL, XXL) ab dem 31. Tag 5,00 € / Tag (Sperrgut & Palette) ab dem 15. Tag Versand vorfrankierter Pakete: Nur für registrierte Kunden mit ausreichend vorfrankierten Paketen und keinem Wohnsitz in Deutschland.
+
+SECTION 4 #services
+
+DIRECT div ['absolute', '-left-32', 'bottom-10', 'w-96', 'h-96', 'rounded-full', 'pointer-events-none']
+DIRECT div ['text-center', 'max-w-2xl', 'mx-auto', 'mb-14', 'relative', 'z-10']
+DIRECT div ['grid', 'grid-cols-1', 'md:grid-cols-2', 'lg:grid-cols-3', 'gap-6', 'relative', 'z-10']
+DIRECT div ['mt-10', 'rounded-2xl', 'p-5', 'sm:p-6', 'border', 'border-[#DDE4D4]', 'bg-white', 'flex', 'flex-col', 'md:flex-row', 'items-center', 'justify-between', 'gap-6', 'shadow-sm', 'relative', 'z-10']
+Unser Store & Abholhub in Konstanz Einladend. Natürlich. Rund um die Uhr für dich da. Erlebe unsere moderne Filiale in der August-Borsig-Straße 2a – mit herzlichem Thekenservice, eigener Packstation, Umkleidekabine und 24/7 PIN-Schließfächern. Zufahrt & Parken Gratis Parkplätze Zentral & staufrei ankommen August-Borsig-Str. 2a in Konstanz-Stromeyersdorf. Nur 5 Minuten ab Grenze Kreuzlingen – komplett staufrei mit kostenlosen Parkplätzen direkt vor der Tür. Direkt bei OBI & Kaufland Theke & Beratung Vor-Ort-Team Persönliche Übergabe & Empfang Unser herzliches Team empfängt dich an unserer charakteristischen Holz-Theke. Wir unterstützen persönlich bei Ausfuhrscheinen, Zollstempeln und Fragen. Mo–Fr: 09:00–18:30 · Sa: 08:30–16:00 Packstation Auspack-Service Verpacken, Prüfen & Retouren Kostenlose Nutzung unserer Packtische: Pakete vor Ort öffnen, Inhalt prüfen und Kartonagen umweltfreundlich direkt bei uns entsorgen. Kostenlose Karton- & Altpapierentsorgung Umkleidekabine Mode-Anprobe Direkt vor Ort anprobieren Kleidung und Schuhe aus Onlineshops direkt in unserer diskreten Umkleide mit 3-teiligem Spiegel anprobieren. Passt etwas nicht? Sofort als Retoure abgeben! Keine Zollprobleme bei Rücksendungen Schnelle Abholung Sekundenschnell Sekundenschnelle Abholung Einfach deine CHASKI-Kundennummer nennen oder Barcode vorzeigen: Dein Paket liegt griffbereit bereit. Schneller als jeder Paketshop. TWINT, Apple Pay, Bar (CHF & EUR) 24/7 Schließfächer PIN-Zugang Eingang & 24/7 Schließfächer Komm vorbei wann es dir passt. Mit deinem persönlichen PIN öffnest du Eingangstür und dein Schließfach rund um die Uhr – auch an Sonn- und Feiertagen. 365 Tage im Jahr autonom abholen Neukunden-Aktion 50% Rabatt auf deine ersten 2 Lieferungen Nimm dir vor Ort unsere CHASKI-Karte mit oder profitiere direkt bei der Online-Registrierung. Jetzt Kundenkarte sichern
+
+SECTION 5 #ueber-chaski
+
+DIRECT div ['group', 'grid', 'grid-cols-1', 'lg:grid-cols-12', 'overflow-hidden', 'rounded-3xl', 'bg-white', 'border', 'border-[#DDE4D4]', 'shadow-sm']
+Ein Name mit Geschichte Über CHASKI Wer oder was ist CHASKI? Als Chaski bezeichneten die Inkas einen Läufer, der Nachrichten überbrachte. Der damalige Postbote sozusagen. Mehr über uns
+
+SECTION 6 #kundenbewertungen
+
+DIRECT div ['chaski-reviews__inner']
+Das sagen unsere Kunden Persönlicher Service. Unkomplizierte Abholung. Gute Erfahrungen. Kundenstimmen auf Google ★★★★★ Ich kann Chaski in Konstanz nur empfehlen! Einfach richtig angenehmer Laden😊 super unkompliziert, total freundlich und perfekt für uns… L Liridona Bu Google-Rezension ★★★★★ Ich kann den Paketshop CHASKI nur wärmstens empfehlen! Alle Mitarbeiter sind äußerst freundlich, stets zuvorkommend und immer hilfsbereit… P Philip Google-Rezension ★★★★★ Ich bin begeistert vom Service von Chaski Konstanz! Der Versand war schnell, zuverlässig und völlig unkompliziert. Mein Paket kam… F Felix Dold Google-Rezension Auszüge aus Kundenbewertungen auf Google. ← →
+
+SECTION 7 #lieferadresse-konstanz
+
+DIRECT div ['chaski-branch-cta__frame']
+Deine Filiale in Konstanz Pakete dort abholen, wo es für dich passt. CHASKI Logistikzentrum August-Borsig-Str. 2a 78467 Konstanz 5 Minuten ab Kreuzlingen, mit 24/7-Abholung Paketempfang ohne Umwege Deine deutsche Lieferadresse in Konstanz Bestelle in deutschen und europäischen Onlineshops, nutze unsere Filialadresse als Lieferziel und umgehe hohe internationale Versandkosten. Wir nehmen deine Sendung sicher an und informieren dich, sobald sie zur Abholung bereitliegt. Adresse eintragen Unsere Adresse mit deiner persönlichen Kundennummer im Onlineshop angeben. Nachricht erhalten Wir informieren dich per E-Mail, sobald dein Paket in der Filiale eingetroffen ist. Flexibel abholen An der Theke oder außerhalb der Öffnungszeiten rund um die Uhr am Schließfach. Deutsche Lieferadresse nutzen Filiale und Anfahrt ansehen
+
+SECTION 8 #faq
+
+DIRECT div ['absolute', 'inset-0', 'pointer-events-none', 'opacity-[0.05]']
+DIRECT div ['max-w-container-max', 'mx-auto', 'px-6', 'relative', 'z-10']
+Häufige Fragen Klar & auf den Punkt Alles Wissenswerte für deine erste Lieferung nach Konstanz. Wie genau adressiere ich meine Pakete im Onlineshop? Gib deinen vollen Vor- und Nachnamen an. In das Adresszusatz- oder Firmenfeld setzt du deine persönliche Kundennummer (z. B. CH-12345 ). Als Anschrift verwendest du August-Borsig-Str. 2a, 78467 Konstanz . Unser System ordnet das Paket sofort deinem Konto zu. Gibt es eine monatliche Grundgebühr oder ein Abo? Nein, niemals. Bei CHASKI gibt es weder Mitgliedsbeiträge noch Grundgebühren. Du bezahlst ausschließlich die Abholgebühr pro tatsächlich empfangenem Paket (z.B. 3,00 € für ein XS-Paket). Wenn du monatelang nichts bestellst, zahlst du exakt 0,00 €. Wie funktioniert die 24/7 Abholung an den Schließfächern? Sobald deine Sendung einsortiert ist, erhältst du per E-Mail deinen persönlichen PIN-Code. Mit diesem öffnest du die Eingangstür zur Abhol-Lounge und dein persönliches Schließfach zu jeder Tages- oder Nachtzeit – auch sonntags und an Feiertagen. Wie lange kann ich meine Pakete kostenlos lagern? Alle Standardpakete lagern bei uns volle 30 Tage vollkommen kostenlos (Sperrgut 14 Tage). So kannst du problemlos mehrere Bestellungen aus unterschiedlichen Shops sammeln und mit einer einzigen Fahrt nach Konstanz mitnehmen. Alle Fragen & Antworten im Hilfecenter ansehen
+
+SECTION 9 #registrieren
+
+DIRECT div ['relative', 'overflow-hidden', 'rounded-3xl', 'p-8', 'sm:p-14', 'lg:p-16', 'text-center', 'text-white', 'shadow-2xl']
+In 2 Minuten einsatzbereit Jetzt kostenlose deutsche Lieferadresse anlegen Bestelle noch heute versandkostenfrei in deutschen Shops und hole deine Pakete bequem in Konstanz ab. Jetzt kostenlos registrieren Preise berechnen Keine Kreditkarte nötig 0 € Grundgebühr & kein Abo Sofort freigeschaltete CHASKI-ID
+
+SECTION 10 #kontakt
+
+DIRECT div ['bg-white', 'p-6', 'sm:p-8', 'rounded-3xl', 'border', 'border-[#DDE4D4]', 'shadow-lg']
+Standort CHASKI Logistikzentrum August-Borsig-Str. 2a 78467 Konstanz Industriegebiet Stromeyersdorf Kostenlose Parkplätze vor der Tür Öffnungszeiten Theke & 24/7 Automat Mo – Fr: 09:00 – 18:30 Uhr (Theke) Sa: 08:30 – 16:00 Uhr (Theke) 24/7 Abholung per PIN Kundenservice Persönliche Unterstützung Hilfe bei Ausfuhrbelegen, Zollabstempelung und Paketabholungen: +49 (0) 7531 991 38 20 WhatsApp Support Grenznähe: 5 Min. ab Kreuzlingen · Direkt angebunden Staufrei anfahren Konstanz-Stromeyersdorf CHASKI August-Borsig-Str. 2a Route planen in Google Maps

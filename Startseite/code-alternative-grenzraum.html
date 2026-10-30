@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="de-CH">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Deine deutsche Lieferadresse in Konstanz. Wir nehmen deine Sendungen an. Du holst sie persönlich ab. Kostenlos registrieren und Paketpreise direkt einschätzen.">
+  <meta name="theme-color" content="#174bf2">
+  <title>CHASKI – Online bestellen. In Konstanz abholen.</title>
+  <link rel="preload" href="./assets-grenzraum/Satoshi-700.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="./assets-grenzraum/fonts.css">
+  <link rel="stylesheet" href="./grenzraum.css">
+  <script defer src="./assets-grenzraum/vendor/gsap.min.js"></script>
+  <script defer src="./assets-grenzraum/vendor/ScrollTrigger.min.js"></script>
+  <script defer src="./grenzraum-ui.js"></script>
+  <script defer src="./grenzraum-motion.js"></script>
+  <script type="module" src="./grenzraum-scene.mjs"></script>
+</head>
+<body data-signup-url="https://lieferadresse-konstanz.ch/registrierung/">
+  <a class="skip-link" href="#inhalt">Zum Inhalt</a>
+  <svg class="icon-definitions" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-up" viewBox="0 0 24 24"><path d="M6 18 18 6M6 6h12v12"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+    <symbol id="i-box" viewBox="0 0 24 24"><path d="m3 7 9-5 9 5v10l-9 5-9-5V7Zm0 0 9 5 9-5M12 12v10M7.5 4.5l9 5v4"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 1 1 14 0Z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 6v6l4 2"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+  </defs></svg>
+
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="CHASKI Startseite"><img src="./assets-grenzraum/logo.png" width="201" height="57" alt="CHASKI"></a>
+    <nav class="desktop-nav" aria-label="Hauptnavigation">
+      <a href="#vorteile">Dein Einkauf</a><a href="#abholung">Abholung</a><a href="#standort">Standort</a><a href="#faq">Fragen</a>
+    </nav>
+    <div class="header-actions"><a class="login-link" href="https://lieferadresse-konstanz.ch/login/">Login</a><a class="button button-primary button-small" href="https://lieferadresse-konstanz.ch/registrierung/">Registrieren <span class="button-arrow"><svg><use href="#i-arrow"/></svg></span></a></div>
+    <button id="nav-open" class="menu-toggle" type="button" aria-label="Menü öffnen" aria-controls="nav-dialog"><span></span><span></span></button>
+  </header>
+  <dialog id="nav-dialog" class="nav-dialog" aria-labelledby="nav-title">
+    <div class="dialog-top"><strong id="nav-title">CHASKI</strong><button id="nav-close" type="button" aria-label="Menü schließen">×</button></div>
+    <nav aria-label="Mobile Hauptnavigation"><a href="#preise">Ablauf &amp; Preise</a><a href="#vorteile">Dein Einkauf</a><a href="#abholung">Abholung</a><a href="#standort">Standort</a><a href="#faq">Fragen</a><a href="https://lieferadresse-konstanz.ch/login/">Login</a><a class="button button-primary" href="https://lieferadresse-konstanz.ch/registrierung/">Kostenlos registrieren <span class="button-arrow"><svg><use href="#i-arrow"/></svg></span></a></nav>
+  </dialog>
+
+  <main id="inhalt">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-intro">
+        <p class="hero-context">Deine deutsche Lieferadresse in Konstanz</p>
+        <h1 id="hero-title"><span class="hero-line">Online bestellen.</span><span class="hero-line">In <span class="headline-photo"><img src="./assets-grenzraum/handoff.webp" width="1000" height="1500" alt=""></span> Konstanz abholen.</span></h1>
+        <p class="hero-copy">Du wohnst in der Schweiz? Lass deine Einkäufe zu uns liefern.<br class="desktop-break"> Wir nehmen sie an. Du holst sie persönlich ab.</p>
+        <div class="hero-actions"><a class="button button-primary" href="https://lieferadresse-konstanz.ch/registrierung/">Kostenlos registrieren <span class="button-arrow"><svg><use href="#i-arrow"/></svg></span></a><a class="button button-secondary" href="#tarife" data-open-price>Paketpreis finden <svg><use href="#i-arrow"/></svg></a></div>
+      </div>
+
+      <section id="preise" class="workbench container" data-mode="journey" aria-label="So funktioniert CHASKI und was deine Sendung kostet">
+        <div class="workbench-top"><span class="workbench-name"><svg class="icon"><use href="#i-box"/></svg> Ein Paket. Alles erklärt.</span><div class="workbench-tabs" role="tablist" aria-label="Ablauf oder Preis"><button id="journey-tab" type="button" role="tab" data-workbench-mode="journey" aria-selected="true" aria-controls="journey-panel" tabindex="0">Ablauf verstehen</button><button id="price-tab" type="button" role="tab" data-workbench-mode="price" aria-selected="false" aria-controls="price-panel" tabindex="-1">Paketpreis finden</button></div></div>
+        <div class="workbench-body">
+          <div class="scene-well">
+            <div class="scene-caption"><span class="journey-only">Vom Shop bis in deine Hände.</span><span class="price-only">Deine Maße verändern das Paket.</span><span class="scene-caption-end">CHASKI / Konstanz</span></div>
+            <div id="parcel-stage" aria-hidden="true">
+              <canvas id="parcel-canvas"></canvas>
+              <div id="parcel-fallback"><svg viewBox="0 0 600 300" xmlns="http://www.w3.org/2000/svg"><ellipse cx="300" cy="255" rx="100" ry="15" fill="#142d3f" opacity=".1"/><path d="m300 45 120 60-120 65-120-65Z" fill="#d7b990"/><path d="m180 105 120 65v105l-120-65Z" fill="#bf9462"/><path d="m300 170 120-65v105l-120 65Z" fill="#cfa878"/><path d="m245 72 22-11 118 60-22 12Z" fill="#e8cfaa"/><path d="m363 133 22-12v71l-22 12Z" fill="#e8cfaa"/><path d="m207 147 68 37v42l-68-37Z" fill="#fff"/><text x="220" y="91" transform="matrix(1 .55 0 1 0 0)" fill="#174bf2" font-family="sans-serif" font-size="15" font-weight="700">CHASKI</text></svg></div>
+              <div class="journey-route"><span>Dein Onlineshop</span><span><b>CHASKI</b><br>Konstanz</span><span>Deine Abholung</span></div>
+            </div>
+            <div class="journey-controls journey-only" aria-label="Ablaufschritt auswählen"><button type="button" data-journey-step="0" aria-pressed="true"><span>01</span> Bestellen</button><button type="button" data-journey-step="1" aria-pressed="false"><span>02</span> Ankommen</button><button type="button" data-journey-step="2" aria-pressed="false"><span>03</span> Abholen</button></div>
+            <div id="gr-result" class="price-result price-only" role="status" aria-live="polite" aria-atomic="true"><div><span id="gr-size" class="price-size">Paket M</span><span class="price-total" id="gr-total">5,00 €</span><p id="gr-explanation">Annahme inklusive 30 Tagen Lagerung.</p></div><dl><div><dt>Annahme je Sendung</dt><dd id="gr-unit">5,00 €</dd></div><div><dt>Zusätzliche Lagerung</dt><dd id="gr-storage">0,00 €</dd></div></dl></div>
+          </div>
+          <div class="tool-well">
+            <div id="journey-panel" role="tabpanel" aria-labelledby="journey-tab">
+              <span class="tool-kicker">Deine Lieferadresse. Dein Einkauf.</span><h2 id="step-title">Du bestellst online.</h2><p id="step-text">Registriere dich kostenlos und bestätige deine E-Mail. Danach nutzt du deine CHASKI-Kundennummer für die Lieferadresse im Onlineshop.</p><p id="step-note" class="tool-note">Die Lieferadresse ist keine Rechnungsadresse.</p><a id="step-link" class="text-link" href="https://lieferadresse-konstanz.ch/registrierung/">Deine Lieferadresse anlegen <svg><use href="#i-up"/></svg></a>
+              <div class="delivery-label"><svg class="icon"><use href="#i-pin"/></svg><div><strong>Dein Einkauf kommt hier an</strong><span>August-Borsig-Straße 2A<br>78467 Konstanz, Deutschland</span></div></div>
+            </div>
+            <div id="price-panel" role="tabpanel" aria-labelledby="price-tab" hidden>
+              <h2>Was kostet deine Sendung?</h2><p class="calculator-intro">Gib die Außenmaße in Zentimetern ein.</p>
+              <form id="gr-price-form">
+                <label class="field">Sendungsart<select id="gr-type" name="type"><option value="parcel">Paket</option><option value="bulky">Sperrgut</option><option value="letter">Brief</option><option value="pallet">Europalette bis 120 × 80 cm</option></select></label>
+                <fieldset id="gr-dimensions" class="dimension-fields"><legend>Außenmaße <span>in cm</span></legend><label>Länge<input id="gr-length" name="length" type="number" inputmode="decimal" min="0.1" max="1000" step="0.1" value="40" required></label><label>Breite<input id="gr-width" name="width" type="number" inputmode="decimal" min="0.1" max="1000" step="0.1" value="30" required></label><label>Höhe<input id="gr-height" name="height" type="number" inputmode="decimal" min="0.1" max="1000" step="0.1" value="20" required></label></fieldset>
+                <div class="range-heading"><label for="gr-days">Lagerdauer</label><output id="gr-days-label" for="gr-days">10 Tage</output></div><input id="gr-days" class="days-range" name="days" type="range" min="1" max="45" step="1" value="10"><div class="range-endpoints"><span>1 Tag</span><span>45 Tage</span></div>
+                <details class="calculator-more"><summary>Mehrere gleich große Sendungen?</summary><label class="field">Anzahl<input id="gr-count" name="count" type="number" inputmode="numeric" min="1" max="20" step="1" value="1" required></label></details>
+                <button class="calculator-submit text-link" type="submit">Preis aktualisieren <svg><use href="#i-arrow"/></svg></button>
+              </form>
+              <p class="calculator-note">Paketgrößen: längste + kürzeste Seite. Lagerfrist ab Erhalt unserer Eingangsbestätigung. Sperrgut und Paletten bitte vorab mit uns absprechen. <a href="#tarife">Alle Tarife</a></p>
+            </div>
+          </div>
+        </div>
+        <noscript><style>.workbench-tabs,.journey-controls,.menu-toggle{display:none}.noscript-steps{padding:24px 34px;margin:0;font-size:14px;line-height:1.6}.noscript-steps li+li{margin-top:12px}</style><ol class="noscript-steps"><li>Registriere dich kostenlos und bestätige deine E-Mail. Nutze danach deine persönliche CHASKI-Lieferadresse im Onlineshop.</li><li>Wir nehmen deine Sendung an und senden dir unsere Eingangsbestätigung.</li><li>Hol deine Sendung während unserer Ladenzeiten ab. 24/7 Click &amp; Collect benötigt eine separate Freischaltung.</li></ol><p class="noscript-message">Der interaktive Rechner benötigt JavaScript. Alle Annahmegebühren findest du weiter unten in der <a href="#tarife">Preistabelle</a>.</p></noscript>
+      </section>
+      <ul class="benefit-strip container"><li><svg class="icon"><use href="#i-check"/></svg>Kostenlos registrieren</li><li><svg class="icon"><use href="#i-check"/></svg>Pakete ab 3 €</li><li><svg class="icon"><use href="#i-check"/></svg>30 Tage Paketlagerung inklusive*</li><li><svg class="icon"><use href="#i-check"/></svg>24/7 nach separater Freischaltung</li></ul>
+      <p class="storage-footnote container">* Ab Erhalt unserer Eingangsbestätigung. Für Sperrgut und Paletten gelten 14 Tage.</p>
+    </section>
+
+    <section id="vorteile" class="shopping-section container" aria-labelledby="shopping-title">
+      <div class="section-heading"><h2 id="shopping-title">Dein Einkauf endet<br>nicht am Tresen.</h2><p>Erst anschauen. Dann einpacken.<br>Wir haben den Platz dafür.</p></div>
+      <div class="service-stack">
+        <article class="service-card service-card-one"><div class="service-story"><span class="section-index">01 / Ankommen &amp; ausprobieren</span><h3>Passt es?<br>Finde es hier heraus.</h3><p>Nutze unsere Umkleide, um deinen Einkauf direkt anzuprobieren. An der Packstation kannst du deine Sendung öffnen und wieder verpacken.</p><div class="service-mini-photo"><img src="./assets-grenzraum/fitting.webp" width="900" height="1355" alt="Die Umkleide mit Spiegel bei CHASKI" loading="lazy"><span>Eine echte Umkleide.<br>Direkt im Laden.</span></div></div><figure><img src="./assets-grenzraum/packstation.webp" width="1400" height="933" alt="Packstation im CHASKI-Laden mit Platz zum Öffnen und Verpacken" loading="lazy"><figcaption>Packstation · August-Borsig-Straße 2A</figcaption></figure></article>
+        <article class="service-card service-card-two"><div class="service-story"><span class="section-index">02 / Mitnehmen &amp; zurückgeben</span><h3>Du nimmst mit,<br>was bleiben soll.</h3><p>Verpackungen kannst du bei uns entsorgen. Und wenn etwas zurückgeht, nehmen wir deine fertig frankierte Rücksendung kostenlos entgegen.</p><a class="text-link" href="https://lieferadresse-konstanz.ch/services-vorteile-deutsche-lieferadresse-konstanz/">Unsere Services ansehen <svg><use href="#i-up"/></svg></a><p class="service-fineprint">Kostenlose Rückgabe für registrierte Kunden mit Schweizer Wohnsitz. Das Rücksendeporto ist nicht enthalten.</p></div><figure><img src="./assets-grenzraum/handoff.webp" width="1000" height="1500" alt="Persönliche Paketübergabe am CHASKI-Tresen" loading="lazy"><figcaption>Persönlicher Service · CHASKI Konstanz</figcaption></figure></article>
+      </div>
+    </section>
+
+    <section class="room-section container" aria-label="Zeit für deine Abholung"><p class="scrub-copy">Mehrere Bestellungen?<br><span data-scrub-text>Wir bewahren deine Pakete auf, bis du sie zusammen abholst. So planst du deinen Besuch passend zu deinem Alltag.</span></p><div class="room-meta"><span><svg class="icon"><use href="#i-clock"/></svg>30 Tage für normale Sendungen inklusive</span><p>Ab Erhalt unserer Eingangsbestätigung.<br>Sperrgut und Paletten: 14 Tage.</p></div></section>
+
+    <section id="abholung" class="pickup-section" aria-labelledby="pickup-title"><div class="container">
+      <div class="section-heading"><h2 id="pickup-title">Deine Abholung.<br>Zu deiner Zeit.</h2><p>Persönlich am Tresen oder außerhalb der<br class="desktop-break"> Ladenzeiten nach separater Freischaltung.</p></div>
+      <div class="pickup-options"><article class="pickup-counter"><div class="pickup-top"><span class="pickup-label">Im Laden</span><svg class="icon"><use href="#i-box"/></svg></div><h3>Wir sind für dich da.</h3><dl class="opening-hours"><div><dt>Montag bis Freitag</dt><dd>16–19 Uhr</dd></div><div><dt>Samstag</dt><dd>10–13 Uhr</dd></div></dl><p>Abholen, anprobieren, auspacken oder eine frankierte Rücksendung abgeben.</p><a class="text-link" href="#standort">Deine Anfahrt planen <svg><use href="#i-arrow"/></svg></a><small>An deutschen Feiertagen bleibt der Laden geschlossen.</small></article><article class="pickup-flex"><div class="pickup-top"><span class="pickup-label">Click &amp; Collect</span><svg class="icon"><use href="#i-clock"/></svg></div><div class="hours-art" aria-hidden="true">24<span>/</span>7</div><h3>Auch nach Ladenschluss.</h3><p>Du bist registriert? Nach separater Freischaltung kannst du unser 24/7 Click &amp; Collect zur Abholung nutzen.</p><a class="button button-light" href="https://lieferadresse-konstanz.ch/kontakt/">Freischaltung anfragen <span class="button-arrow"><svg><use href="#i-up"/></svg></span></a><small>Die Kontoaktivierung per E-Mail schaltet diesen Service noch nicht frei.</small></article></div>
+    </div></section>
+
+    <section id="tarife" class="tariff-section container" aria-labelledby="tariff-title"><div class="tariff-intro"><span class="section-index">Preise, die du vorher kennst.</span><h2 id="tariff-title">Die Sendung zählt.<br>Die Größe entscheidet.</h2><p>Wir berechnen die Annahme pro Sendung. Bei Paketen addierst du die längste und die kürzeste Seite.</p><a class="button button-secondary" href="#tarife" data-open-price>Mit deinen Maßen rechnen <svg><use href="#i-arrow"/></svg></a><p class="tariff-payment">Zahlung vor Ort: bar in EUR oder CHF und mit Karte.</p></div><div class="tariff-data"><table><caption>Paketannahme · längste + kürzeste Seite</caption><thead><tr><th scope="col">Größe</th><th scope="col">Maßsumme</th><th scope="col">Annahme</th></tr></thead><tbody><tr><th scope="row">XS</th><td>bis 35 cm</td><td>3 €</td></tr><tr><th scope="row">S</th><td>bis 50 cm</td><td>4 €</td></tr><tr><th scope="row">M</th><td>bis 80 cm</td><td>5 €</td></tr><tr><th scope="row">L</th><td>bis 120 cm</td><td>7 €</td></tr><tr><th scope="row">XL</th><td>bis 150 cm</td><td>10 €</td></tr><tr><th scope="row">XXL</th><td>bis 200 cm</td><td>15 €</td></tr></tbody></table><p class="table-note">Nach 30 kostenlosen Tagen: XS, S, M je 0,50 € pro zusätzlichem Tag. L, XL, XXL je 1 € pro zusätzlichem Tag.</p>
+        <details class="other-tariffs"><summary>Briefe, Umschläge, Sperrgut &amp; Paletten <svg class="icon"><use href="#i-plus"/></svg></summary><dl><div><dt>Brief</dt><dd>1,50 €</dd></div><div><dt>Umschlag bis 35 cm</dt><dd>3 €</dd></div><div><dt>Sperrgut bis 350 cm Gurtmaß</dt><dd>20 €</dd></div><div><dt>Sperrgut bis 500 cm Gurtmaß</dt><dd>25 €</dd></div><div><dt>Europalette bis 120 × 80 cm</dt><dd>25 €</dd></div></dl><p>Gurtmaß = längste Seite + 2 × Breite + 2 × Höhe. Für Sperrgut und Paletten sind 14 Tage inklusive, danach 5 € je zusätzlichem Tag. Bitte vor Lieferung mit uns absprechen. Größere Sendungen auf Anfrage.</p><p>Die kostenlose Lagerfrist beginnt mit dem Erhalt unserer Eingangsbestätigung.</p></details>
+      </div></section>
+
+    <section id="standort" class="location-section container" aria-labelledby="location-title"><figure class="location-photo"><img src="./assets-grenzraum/storefront.webp" width="1100" height="1650" alt="CHASKI-Laden an der August-Borsig-Straße 2A in Konstanz" loading="lazy"><figcaption><svg class="icon"><use href="#i-pin"/></svg>Hier holst du deine Sendung ab.</figcaption></figure><div class="location-content"><span class="section-index">Ein echter Laden. Ein fester Ort.</span><h2 id="location-title">Wir sehen uns<br>in Konstanz.</h2><address>August-Borsig-Straße 2A<br>78467 Konstanz · Deutschland</address><p>Du findest uns gegenüber von Kaufland und OBI. Kostenlose Parkplätze gibt es dort ebenfalls.</p><a class="button button-primary" href="https://www.google.com/maps/dir/?api=1&amp;destination=August-Borsig-Stra%C3%9Fe+2A+78467+Konstanz" target="_blank" rel="noopener">Route öffnen <span class="button-arrow"><svg><use href="#i-up"/></svg></span></a><div class="location-contact"><span>Noch etwas offen?</span><a href="mailto:kontakt@chaski-lieferadresse.ch">Schreib uns <svg><use href="#i-up"/></svg></a></div></div></section>
+
+    <section id="faq" class="faq-section container" aria-labelledby="faq-title"><div><h2 id="faq-title">Gut zu wissen.<br>Bevor du bestellst.</h2><a class="text-link" href="https://lieferadresse-konstanz.ch/faq-deutsche-lieferadresse/">Alle Fragen ansehen <svg><use href="#i-up"/></svg></a></div><div class="faq-list">
+      <details><summary>Wer kann sich registrieren? <svg class="icon"><use href="#i-plus"/></svg></summary><p>Unser Service richtet sich an Personen ab 18 Jahren mit Wohnsitz in der Schweiz. Deine Staatsangehörigkeit spielt dabei keine Rolle.</p></details>
+      <details><summary>Wie erhalte ich meine Lieferadresse? <svg class="icon"><use href="#i-plus"/></svg></summary><p>Registriere dich kostenlos und bestätige deine E-Mail über den Link, den wir dir schicken. Damit aktivierst du dein Kundenkonto. Deine Lieferadresse enthält deine CHASKI-Kundennummer und deinen Namen.</p><div class="address-example">CHASKI [Kundennummer]<br>c/o [Vorname Nachname]<br>August-Borsig-Straße 2A<br>78467 Konstanz<br>Deutschland</div><p>Nutze sie als Lieferadresse. Als Rechnungsadresse gibst du deine eigene Adresse an.</p></details>
+      <details><summary>Woher weiß ich, dass mein Paket da ist? <svg class="icon"><use href="#i-plus"/></svg></summary><p>Wir schicken dir unsere Eingangsbestätigung. Bitte warte auf diese Bestätigung von CHASKI, bevor du zur Abholung kommst. Eine Zustellmeldung des Paketdienstes ist noch keine Eingangsbestätigung von uns.</p></details>
+      <details><summary>Wie lange kann meine Sendung bei euch bleiben? <svg class="icon"><use href="#i-plus"/></svg></summary><p>Für normale Sendungen sind 30 Kalendertage kostenlos. Für Sperrgut und Paletten sind es 14 Tage. Die Frist beginnt mit dem Erhalt unserer Eingangsbestätigung. Danach gelten die <a href="#tarife">Lagergebühren</a>.</p></details>
+      <details><summary>Kann ich sofort rund um die Uhr abholen? <svg class="icon"><use href="#i-plus"/></svg></summary><p>24/7 Click &amp; Collect benötigt eine separate Freischaltung nach deiner Registrierung. Die E-Mail-Bestätigung deines Kundenkontos reicht dafür noch nicht aus. <a href="https://lieferadresse-konstanz.ch/kontakt/">Frag die Freischaltung bei uns an.</a></p></details>
+      <details><summary>Was muss ich bei der Einreise in die Schweiz beachten? <svg class="icon"><use href="#i-plus"/></svg></summary><p>Wenn du deine Einkäufe selbst in die Schweiz mitnimmst, beachte die geltenden Schweizer Einfuhrregeln. Aktuelle Informationen findest du direkt beim <a href="https://www.bazg.admin.ch/de/waren-anmelden-einfuhr-private" target="_blank" rel="noopener">Bundesamt für Zoll und Grenzsicherheit</a>.</p></details>
+    </div></section>
+
+    <section class="closing-section container" aria-labelledby="closing-title"><div><p>Dein nächster Einkauf kann kommen.</p><h2 id="closing-title">Die Lieferadresse<br>haben wir.</h2></div><div class="closing-action"><a class="button button-light" href="https://lieferadresse-konstanz.ch/registrierung/">Kostenlos registrieren <span class="button-arrow"><svg><use href="#i-arrow"/></svg></span></a><p>Für Personen mit Schweizer Wohnsitz.<br>Kundenkonto per E-Mail selbst aktivieren.</p></div></section>
+  </main>
+  <footer class="site-footer container"><a class="brand" href="#" aria-label="CHASKI Startseite"><img src="./assets-grenzraum/logo.png" width="201" height="57" alt="CHASKI"></a><p>Deine deutsche Lieferadresse.<br>Dein Einkauf. Deine Abholung.</p><nav aria-label="Rechtliches und Kontakt"><a href="https://lieferadresse-konstanz.ch/kontakt/">Kontakt</a><a href="https://lieferadresse-konstanz.ch/agb/">AGB</a><a href="https://lieferadresse-konstanz.ch/datenschutz/">Datenschutz</a><a href="https://lieferadresse-konstanz.ch/impressum/">Impressum</a></nav></footer>
+</body>
+</html>
+
+

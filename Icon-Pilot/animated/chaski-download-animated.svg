@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" role="img" aria-labelledby="dl-title" class="chaski-download is-playing">
+  <title id="dl-title">Download-Pfeil mit Ablage</title>
+<style>/* Scoped classes also work when multiple icons are embedded in a document. */
+.chaski-paket .lid { transform-origin: 130px 100px; }
+.chaski-brief .check { transform-origin: 178px 90px; }
+.chaski-brief .envelope { transform-origin: 128px 160px; }
+.chaski-download .tray { transform-origin: 128px 198px; }
+.chaski-paket.is-playing .lid { animation: chaski-lid 3.6s cubic-bezier(.4,0,.2,1) infinite; }
+.chaski-brief.is-playing .check { animation: chaski-check 3.6s ease-in-out infinite; }
+.chaski-brief.is-playing .envelope { animation: chaski-envelope 3.6s ease-in-out infinite; }
+.chaski-download.is-playing .arrow { animation: chaski-arrow 3.6s ease-in-out infinite; }
+.chaski-download.is-playing .tray { animation: chaski-tray 3.6s ease-in-out infinite; }
+@keyframes chaski-lid {
+  0%, 12%, 64%, 100% { transform: translateY(0) rotate(0); }
+  30%, 42% { transform: translateY(-16px) rotate(-4deg); }
+  54% { transform: translateY(1px) rotate(0); }
+}
+@keyframes chaski-check {
+  0%, 10% { transform: translateY(9px) scale(.65); opacity: 0; }
+  28% { transform: translateY(-3px) scale(1.09); opacity: 1; }
+  38%, 84% { transform: translateY(0) scale(1); opacity: 1; }
+  100% { transform: translateY(9px) scale(.65); opacity: 0; }
+}
+@keyframes chaski-envelope {
+  0%, 18%, 50%, 100% { transform: translateY(0); }
+  32% { transform: translateY(2px); }
+}
+@keyframes chaski-arrow {
+  0%, 10%, 64%, 100% { transform: translateY(0); }
+  28% { transform: translateY(14px); }
+  40% { transform: translateY(-5px); }
+  51% { transform: translateY(2px); }
+}
+@keyframes chaski-tray {
+  0%, 23%, 46%, 100% { transform: scaleY(1); }
+  30% { transform: scaleY(.95); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .chaski-paket *, .chaski-brief *, .chaski-download * { animation: none !important; }
+}
+</style>
+  <defs>
+    <linearGradient id="dl-tray" x1="69" y1="157" x2="162" y2="206" gradientUnits="userSpaceOnUse"><stop stop-color="#F6F8F3"/><stop offset=".48" stop-color="#E3EAD8"/><stop offset="1" stop-color="#586937"/></linearGradient>
+    <linearGradient id="dl-arrow" x1="98" y1="56" x2="155" y2="168" gradientUnits="userSpaceOnUse"><stop stop-color="#E3EAD8"/><stop offset=".35" stop-color="#586937"/><stop offset=".7" stop-color="#4A562D"/><stop offset="1" stop-color="#2D351B"/></linearGradient>
+    <linearGradient id="dl-light" x1="113" y1="65" x2="131" y2="151" gradientUnits="userSpaceOnUse"><stop stop-color="#FFFFFF" stop-opacity=".8"/><stop offset="1" stop-color="#E3EAD8" stop-opacity=".08"/></linearGradient>
+    <radialGradient id="dl-shadow"><stop stop-color="#252D15" stop-opacity=".18"/><stop offset="1" stop-color="#252D15" stop-opacity="0"/></radialGradient>
+    <filter id="dl-soft" x="-30%" y="-25%" width="160%" height="160%"><feDropShadow dx="0" dy="5" stdDeviation="3" flood-color="#252D15" flood-opacity=".12"/></filter>
+  </defs>
+  <ellipse class="ground" cx="130" cy="213" rx="79" ry="13" fill="url(#dl-shadow)"/>
+  <g class="tray">
+    <path d="M65 160V184Q65 198 79 198H179Q193 198 193 184V160" fill="none" stroke="#4A562D" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" transform="translate(2 5)"/>
+    <path d="M65 160V184Q65 198 79 198H179Q193 198 193 184V160" fill="none" stroke="url(#dl-tray)" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M62 158V183Q62 195 78 195H176" fill="none" stroke="#FFFFFF" stroke-opacity=".6" stroke-width="2.3" stroke-linecap="round"/>
+    <path d="M190 158V180" fill="none" stroke="#F6F8F3" stroke-opacity=".55" stroke-width="2" stroke-linecap="round"/>
+  </g>
+  <g class="arrow" filter="url(#dl-soft)">
+    <path d="M128 62V150M96 122 128 154 160 122" fill="none" stroke="#252D15" stroke-width="22" stroke-linecap="round" stroke-linejoin="round" transform="translate(2 5)"/>
+    <path d="M128 62V150M96 122 128 154 160 122" fill="none" stroke="url(#dl-arrow)" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M123 62V134M94 118 125 149M136 144 158 120" fill="none" stroke="url(#dl-light)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

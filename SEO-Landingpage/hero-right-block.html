@@ -1,0 +1,278 @@
+<!--
+  CHASKI · Rechter Hero-Bereich
+  Kopierbarer, statischer HTML-Block. Die umgebende Seite sollte Plus Jakarta Sans laden.
+  Der Block benötigt kein JavaScript und kein externes Icon- oder Grafik-Asset.
+-->
+<style>
+  .chaski-hero-right,
+  .chaski-hero-right * { box-sizing: border-box; }
+
+  .chaski-hero-right {
+    --chaski-bg: #F6F8F3;
+    --chaski-sage: #E3EAD8;
+    --chaski-card: #FFFFFF;
+    --chaski-primary: #2D351B;
+    --chaski-primary-deep: #2E381B;
+    --chaski-secondary: #4E5C32;
+    --chaski-muted: #4E5549;
+    --chaski-line: #DDE4D4;
+    --chaski-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+      "Liberation Mono", "Courier New", monospace;
+
+    width: 100%;
+    max-width: 560px;
+    margin: 0 auto;
+    color: var(--chaski-primary);
+    font-family: "Plus Jakarta Sans", sans-serif;
+  }
+
+  .chaski-hero-right .chaski-mono {
+    font-family: var(--chaski-mono);
+    font-variant-numeric: tabular-nums;
+  }
+
+  .chaski-hero-right .chaski-route {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 0 12px 24px;
+    color: var(--chaski-secondary);
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: .12em;
+    line-height: 1.4;
+  }
+
+  .chaski-hero-right .chaski-route-line {
+    height: 1px;
+    flex: 1 1 auto;
+    background: var(--chaski-line);
+  }
+
+  .chaski-hero-right .chaski-icon {
+    display: block;
+    width: 20px;
+    height: 20px;
+    flex: 0 0 auto;
+    fill: currentColor;
+  }
+
+  .chaski-hero-right .chaski-value-card {
+    position: relative;
+    padding: 34px 36px 48px;
+    overflow: hidden;
+    border: 1px solid var(--chaski-line);
+    border-radius: 24px;
+    background: var(--chaski-card);
+    box-shadow: 0 12px 32px -4px rgba(43, 51, 26, .06);
+  }
+
+  .chaski-hero-right .chaski-step {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: var(--chaski-secondary);
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: .08em;
+    line-height: 1.4;
+  }
+
+  .chaski-hero-right .chaski-step .chaski-mono {
+    font-size: 14px;
+  }
+
+  .chaski-hero-right .chaski-amount {
+    display: flex;
+    align-items: baseline;
+    gap: 14px;
+    margin-top: 18px;
+    color: var(--chaski-primary);
+    line-height: 1.1;
+  }
+
+  .chaski-hero-right .chaski-amount-value {
+    font-size: clamp(76px, 12vw, 112px);
+    font-weight: 700;
+    letter-spacing: -.07em;
+  }
+
+  .chaski-hero-right .chaski-amount-unit {
+    font-size: 25px;
+    font-weight: 600;
+  }
+
+  .chaski-hero-right .chaski-value-caption {
+    margin: 4px 0 0;
+    color: var(--chaski-muted);
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .chaski-hero-right .chaski-meter {
+    position: relative;
+    height: 7px;
+    margin-top: 30px;
+    overflow: visible;
+    border-radius: 4px;
+    background: var(--chaski-sage);
+  }
+
+  .chaski-hero-right .chaski-meter-fill {
+    display: block;
+    width: 65%;
+    height: 100%;
+    border-radius: 4px;
+    background: var(--chaski-secondary);
+  }
+
+  .chaski-hero-right .chaski-meter-marker {
+    position: absolute;
+    top: -5px;
+    left: 65%;
+    width: 2px;
+    height: 17px;
+    background: var(--chaski-primary);
+  }
+
+  .chaski-hero-right .chaski-scale {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    margin-top: 10px;
+    color: var(--chaski-muted);
+    font-size: 9px;
+    line-height: 1.5;
+  }
+
+  .chaski-hero-right .chaski-scale span:last-child { text-align: right; }
+
+  .chaski-hero-right .chaski-quantity-card {
+    position: relative;
+    margin: -22px 0 0 48px;
+    padding: 28px 30px;
+    border: 1px solid var(--chaski-primary);
+    border-radius: 16px;
+    background: linear-gradient(135deg, #3F4525, var(--chaski-primary-deep));
+    box-shadow: 0 12px 32px -4px rgba(43, 51, 26, .1);
+  }
+
+  .chaski-hero-right .chaski-quantity-card .chaski-step { color: var(--chaski-sage); }
+
+  .chaski-hero-right .chaski-quantity-title {
+    margin: 18px 0 0;
+    color: #FFFFFF;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: -.025em;
+    line-height: 1.3;
+  }
+
+  .chaski-hero-right .chaski-quantity-copy {
+    margin: 10px 0 0;
+    color: var(--chaski-sage);
+    font-size: 13px;
+    line-height: 1.7;
+  }
+
+  .chaski-hero-right .chaski-quantity-note {
+    display: block;
+    margin-top: 7px;
+    color: var(--chaski-sage);
+    font-size: 10px;
+    line-height: 1.6;
+  }
+
+  .chaski-hero-right .chaski-footnote {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin: 24px 12px 0;
+    color: var(--chaski-muted);
+    font-size: 11px;
+    line-height: 1.7;
+  }
+
+  .chaski-hero-right .chaski-footnote .chaski-icon {
+    width: 18px;
+    height: 18px;
+    margin-top: 2px;
+    color: var(--chaski-secondary);
+  }
+
+  .chaski-hero-right .chaski-footnote p { margin: 0; }
+  .chaski-hero-right .chaski-footnote strong { color: var(--chaski-primary); }
+
+  @media (max-width: 767px) {
+    .chaski-hero-right .chaski-route {
+      gap: 12px;
+      padding: 0 10px 18px;
+      font-size: 9px;
+    }
+
+    .chaski-hero-right .chaski-value-card { padding: 28px 26px 42px; }
+
+    .chaski-hero-right .chaski-amount-value { font-size: clamp(82px, 25vw, 100px); }
+    .chaski-hero-right .chaski-amount-unit { font-size: 22px; }
+
+    .chaski-hero-right .chaski-quantity-card {
+      margin-left: 22px;
+      padding: 24px;
+    }
+
+    .chaski-hero-right .chaski-quantity-title { font-size: 23px; }
+    .chaski-hero-right .chaski-footnote { margin-inline: 8px; }
+  }
+
+  @media (max-width: 359px) {
+    .chaski-hero-right .chaski-value-card { padding-inline: 20px; }
+    .chaski-hero-right .chaski-quantity-card { margin-left: 12px; }
+    .chaski-hero-right .chaski-scale { font-size: 8px; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .chaski-hero-right * { scroll-behavior: auto; }
+  }
+</style>
+
+<section class="chaski-hero-right" aria-label="Warenwert und Freimengen für die Einreise">
+  <div class="chaski-route" aria-hidden="true">
+    <span>DEUTSCHLAND</span>
+    <span class="chaski-route-line"></span>
+    <svg class="chaski-icon" viewBox="0 0 24 24" focusable="false">
+      <path d="M12 4 10.59 5.41 16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8-8-8Z"></path>
+    </svg>
+    <span>SCHWEIZ</span>
+  </div>
+
+  <div class="chaski-value-card">
+    <div class="chaski-step"><span class="chaski-mono">01</span> WARENWERT PRÜFEN</div>
+    <div class="chaski-amount">
+      <span class="chaski-amount-value chaski-mono">150</span>
+      <span class="chaski-amount-unit">CHF</span>
+    </div>
+    <p class="chaski-value-caption">pro Person und Tag</p>
+    <div class="chaski-meter" role="img" aria-label="Bis 150 CHF mehrwertsteuerfrei, darüber MWST-pflichtig">
+      <span class="chaski-meter-fill"></span>
+      <i class="chaski-meter-marker" aria-hidden="true"></i>
+    </div>
+    <div class="chaski-scale" aria-hidden="true">
+      <span>mehrwertsteuerfrei*</span>
+      <span>MWST-pflichtig</span>
+    </div>
+  </div>
+
+  <div class="chaski-quantity-card">
+    <div class="chaski-step"><span class="chaski-mono">02</span> FREIMENGEN PRÜFEN</div>
+    <h2 class="chaski-quantity-title">Auch die Menge zählt.</h2>
+    <p class="chaski-quantity-copy">Lebensmittel · Alkohol · Tabak</p>
+    <span class="chaski-quantity-note">Zusätzlich zum Warenwert beachten.</span>
+  </div>
+
+  <div class="chaski-footnote">
+    <svg class="chaski-icon" viewBox="0 0 24 24" focusable="false">
+      <path d="M11 7h2v2h-2v-2Zm0 4h2v6h-2v-6Zm1-9C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2Zm0 18a8 8 0 1 1 0-16 8 8 0 0 1 0 16Z"></path>
+    </svg>
+    <p>*Über <strong class="chaski-mono">150</strong> CHF fällt grundsätzlich MWST auf den <strong>gesamten Warenwert</strong> an.</p>
+  </div>
+</section>

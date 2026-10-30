@@ -1,0 +1,337 @@
+{
+  "results": [
+    {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "h1": 1,
+      "brokenImages": [],
+      "overflows": [],
+      "switchWorks": true,
+      "priceWorks": true,
+      "addressWorks": true,
+      "copyWorks": true,
+      "faqKeyboardWorks": true
+    },
+    {
+      "width": 1050,
+      "scrollWidth": 1050,
+      "h1": 1,
+      "brokenImages": [],
+      "overflows": [],
+      "switchWorks": true,
+      "priceWorks": true,
+      "addressWorks": true,
+      "copyWorks": true,
+      "faqKeyboardWorks": true
+    },
+    {
+      "width": 768,
+      "scrollWidth": 768,
+      "h1": 1,
+      "brokenImages": [],
+      "overflows": [],
+      "switchWorks": true,
+      "priceWorks": true,
+      "addressWorks": true,
+      "copyWorks": true,
+      "faqKeyboardWorks": true,
+      "menuOpens": true,
+      "menuCloses": true
+    },
+    {
+      "width": 390,
+      "scrollWidth": 390,
+      "h1": 1,
+      "brokenImages": [],
+      "overflows": [],
+      "switchWorks": true,
+      "priceWorks": true,
+      "addressWorks": true,
+      "copyWorks": true,
+      "faqKeyboardWorks": true,
+      "menuOpens": true,
+      "menuCloses": true
+    },
+    {
+      "width": 320,
+      "scrollWidth": 320,
+      "h1": 1,
+      "brokenImages": [],
+      "overflows": [],
+      "switchWorks": true,
+      "priceWorks": true,
+      "addressWorks": true,
+      "copyWorks": true,
+      "faqKeyboardWorks": true,
+      "menuOpens": true,
+      "menuCloses": true
+    }
+  ],
+  "calculatorChecks": [
+    {
+      "mode": "parcel",
+      "dims": [
+        25,
+        10,
+        10
+      ],
+      "count": 1,
+      "expected": "3,00",
+      "passed": true
+    },
+    {
+      "mode": "parcel",
+      "dims": [
+        25.009999999999998,
+        10,
+        10
+      ],
+      "count": 1,
+      "expected": "4,00",
+      "passed": true
+    },
+    {
+      "mode": "parcel",
+      "dims": [
+        40,
+        10,
+        10
+      ],
+      "count": 1,
+      "expected": "4,00",
+      "passed": true
+    },
+    {
+      "mode": "parcel",
+      "dims": [
+        40.01,
+        10,
+        10
+      ],
+      "count": 1,
+      "expected": "5,00",
+      "passed": true
+    },
+    {
+      "mode": "parcel",
+      "dims": [
+        70,
+        10,
+        10
+      ],
+      "count": 1,
+      "expected": "5,00",
+      "passed": true
+    },
+    {
+      "mode": "parcel",
+      "dims": [
+        70.01,
+        10,
+        10
+      ],
+      "count": 1,
+      "expected": "7,00",
+      "passed": true
+    },
+    {
+      "mode": "parcel",
+      "dims": [
+        110,
+        10,
+        10
+      ],
+      "count": 1,
+      "expected": "7,00",
+      "passed": true
+    },
+    {
+      "mode": "parcel",
+      "dims": [
+        110.01,
+        10,
+        10
+      ],
+      "count": 1,
+      "expected": "10,00",
+      "passed": true
+    },
+    {
+      "mode": "parcel",
+      "dims": [
+        140,
+        10,
+        10
+      ],
+      "count": 1,
+      "expected": "10,00",
+      "passed": true
+    },
+    {
+      "mode": "parcel",
+      "dims": [
+        140.01,
+        10,
+        10
+      ],
+      "count": 1,
+      "expected": "15,00",
+      "passed": true
+    },
+    {
+      "mode": "parcel",
+      "dims": [
+        190,
+        10,
+        10
+      ],
+      "count": 1,
+      "expected": "15,00",
+      "passed": true
+    },
+    {
+      "mode": "parcel",
+      "dims": [
+        190.01,
+        10,
+        10
+      ],
+      "count": 1,
+      "expected": "Sperrgut prüfen",
+      "passed": true
+    },
+    {
+      "mode": "parcel",
+      "dims": [
+        20,
+        40,
+        30
+      ],
+      "count": 3,
+      "expected": "15,00",
+      "passed": true
+    },
+    {
+      "mode": "parcel",
+      "dims": [
+        0,
+        40,
+        30
+      ],
+      "count": 1,
+      "expected": "gültige Maße",
+      "passed": true
+    },
+    {
+      "mode": "parcel",
+      "dims": [
+        20,
+        40,
+        30
+      ],
+      "count": 1.5,
+      "expected": "gültige Maße",
+      "passed": true
+    },
+    {
+      "mode": "bulky",
+      "dims": [
+        150,
+        50,
+        50
+      ],
+      "count": 1,
+      "expected": "20,00",
+      "passed": true
+    },
+    {
+      "mode": "bulky",
+      "dims": [
+        150.01,
+        50,
+        50
+      ],
+      "count": 1,
+      "expected": "25,00",
+      "passed": true
+    },
+    {
+      "mode": "bulky",
+      "dims": [
+        300,
+        50,
+        50
+      ],
+      "count": 2,
+      "expected": "50,00",
+      "passed": true
+    },
+    {
+      "mode": "bulky",
+      "dims": [
+        300.01,
+        50,
+        50
+      ],
+      "count": 1,
+      "expected": "Preis auf Anfrage",
+      "passed": true
+    }
+  ],
+  "schedule": [
+    {
+      "date": "2026-10-30T15:00:00Z",
+      "open": "1",
+      "passed": true
+    },
+    {
+      "date": "2026-10-30T18:00:00Z",
+      "open": "0",
+      "passed": true
+    },
+    {
+      "date": "2026-10-31T09:00:00Z",
+      "open": "1",
+      "passed": true
+    },
+    {
+      "date": "2026-10-31T12:00:00Z",
+      "open": "0",
+      "passed": true
+    },
+    {
+      "date": "2026-11-01T11:00:00Z",
+      "open": "0",
+      "passed": true
+    },
+    {
+      "date": "2027-01-06T16:00:00Z",
+      "open": "0",
+      "passed": true
+    },
+    {
+      "date": "2027-03-26T16:00:00Z",
+      "open": "0",
+      "passed": true
+    }
+  ],
+  "dismissWorks": true,
+  "errors": [],
+  "failures": [],
+  "links": [
+    {
+      "url": "http://127.0.0.1:8773/Kunden-Seiten/login.html",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8773/Kunden-Seiten/registrierung.html",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8773/Click%20%26%20Collect/code.html",
+      "status": 200
+    }
+  ],
+  "reducedMotion": "auto",
+  "noJsWorks": true
+}

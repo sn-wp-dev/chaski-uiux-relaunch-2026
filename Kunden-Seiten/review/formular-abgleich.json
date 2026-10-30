@@ -1,0 +1,114 @@
+{
+  "registrierung": {
+    "source": "https://lieferadresse-konstanz.ch/registrierung/",
+    "checked": "2026-09-16",
+    "fields": [
+      {
+        "name": "user_email",
+        "type": "email",
+        "required": "required"
+      },
+      {
+        "name": "user_pass",
+        "type": "password",
+        "required": "required"
+      },
+      {
+        "name": "user_confirm_password",
+        "type": "password",
+        "required": "required"
+      },
+      {
+        "name": "select_1677437825",
+        "required": "required"
+      },
+      {
+        "name": "first_name",
+        "type": "text",
+        "required": "required"
+      },
+      {
+        "name": "last_name",
+        "type": "text",
+        "required": "required"
+      },
+      {
+        "name": "input_box_1685480790",
+        "type": "text",
+        "maxlength": "50"
+      },
+      {
+        "name": "input_box_1677437939",
+        "type": "text",
+        "required": "required",
+        "maxlength": "50"
+      },
+      {
+        "name": "input_box_1677437943",
+        "type": "text",
+        "required": "required",
+        "maxlength": "50"
+      },
+      {
+        "name": "number_box_1677437972",
+        "type": "number",
+        "required": "required"
+      },
+      {
+        "name": "input_box_1677437985",
+        "type": "text",
+        "required": "required",
+        "maxlength": "50"
+      },
+      {
+        "name": "country_1759830968",
+        "required": "required"
+      },
+      {
+        "name": "phone_1685480996",
+        "type": "text"
+      },
+      {
+        "name": "input_box_1677438359",
+        "type": "text"
+      },
+      {
+        "name": "select_1689280150"
+      },
+      {
+        "name": "input_box_1710094287",
+        "type": "text"
+      },
+      {
+        "name": "check_box_1676414304[]",
+        "type": "checkbox",
+        "required": "required"
+      },
+      {
+        "name": "check_box_1689019888217[]",
+        "type": "checkbox",
+        "required": "required"
+      }
+    ],
+    "all_names_preserved": true
+  },
+  "login": {
+    "source": "https://lieferadresse-konstanz.ch/login/",
+    "checked": "2026-09-16",
+    "fields": [
+      {
+        "name": "username",
+        "type": "text"
+      },
+      {
+        "name": "password",
+        "type": "password"
+      },
+      {
+        "name": "rememberme",
+        "type": "checkbox"
+      }
+    ],
+    "all_names_preserved": true
+  }
+}

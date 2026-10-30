@@ -1,0 +1,62 @@
+[
+  {
+    "height": 1121,
+    "id": "start",
+    "top": 0
+  },
+  {
+    "height": 1421,
+    "id": "so-funktionierts",
+    "top": 1121
+  },
+  {
+    "height": 1100,
+    "id": "vergleich",
+    "top": 2542
+  },
+  {
+    "height": 1624,
+    "id": "preise",
+    "top": 3642
+  },
+  {
+    "height": 1763,
+    "id": "services",
+    "top": 5266
+  },
+  {
+    "height": 656,
+    "id": "ueber-chaski",
+    "top": 7029
+  },
+  {
+    "height": 733,
+    "id": "kundenbewertungen",
+    "top": 7685
+  },
+  {
+    "height": 974,
+    "id": "lieferadresse-konstanz",
+    "top": 8418
+  },
+  {
+    "height": 965,
+    "id": "faq",
+    "top": 9392
+  },
+  {
+    "height": 785,
+    "id": "registrieren",
+    "top": 10357
+  },
+  {
+    "height": 709,
+    "id": "kontakt",
+    "top": 11142
+  },
+  {
+    "height": 671,
+    "id": "footer",
+    "top": 11851
+  }
+]
