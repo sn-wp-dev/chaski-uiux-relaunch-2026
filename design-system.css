@@ -1,0 +1,72 @@
+/* CHASKI Relaunch 2026 shared UI primitives. See DESIGN-SYSTEM.md. */
+:root{
+  --chaski-bg:#F6F8F3;--chaski-surface:#fff;--chaski-section:#EDF1E7;--chaski-tint:#E3EAD8;
+  --chaski-primary:#2D351B;--chaski-strong:#252D15;--chaski-moss:#4A562D;--chaski-accent:#586937;
+  --chaski-ink:#191C19;--chaski-muted:#4E5549;--chaski-line:#DDE4D4;--chaski-sage:#E3EAD8;
+  --chaski-container:1200px;--chaski-radius-sm:8px;--chaski-radius-md:12px;--chaski-radius-lg:16px;
+  --chaski-pill:9999px;--chaski-shadow:0 6px 18px -4px rgba(46,56,27,.3);
+  --chaski-shadow-panel:0 12px 32px -4px rgba(43,51,26,.1);
+  --chaski-space-1:8px;--chaski-space-2:16px;--chaski-space-3:24px;--chaski-space-4:32px;--chaski-space-5:48px;--chaski-space-6:64px;--chaski-space-7:80px;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:104px;background:var(--chaski-bg)}
+body{margin:0;background:var(--chaski-bg);color:var(--chaski-ink);font-family:'Plus Jakarta Sans',sans-serif;font-size:15px;line-height:1.8;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+img{display:block;max-width:100%}a{color:inherit}h1,h2,h3,p,figure{margin:0}h1,h2,h3{color:var(--chaski-primary);line-height:1.25;letter-spacing:-.025em;font-weight:700;text-wrap:balance}p{color:var(--chaski-muted)}
+.chaski-container{width:min(var(--chaski-container),100%);padding-inline:24px;margin-inline:auto}
+.chaski-icon{width:24px;height:24px;display:inline-block;flex:0 0 auto;vertical-align:middle;fill:currentColor}
+.chaski-btn{min-height:48px;display:inline-flex;justify-content:center;align-items:center;gap:9px;padding:12px 21px;border:0;border-radius:var(--chaski-pill);background:linear-gradient(135deg,#4A562D,#252D15);box-shadow:var(--chaski-shadow);color:#fff;text-decoration:none;font-size:13px;font-weight:600;line-height:1.5;transition:transform .2s,filter .2s}
+.chaski-btn:hover{color:#fff;transform:translateY(-2px);filter:brightness(1.05)}.chaski-btn .chaski-icon{width:18px;height:18px}
+.chaski-btn-secondary{background:#fff;color:var(--chaski-primary);border:1px solid var(--chaski-line);box-shadow:none}.chaski-btn-secondary:hover{background:var(--chaski-section);color:var(--chaski-primary)}
+.chaski-section-badge{display:inline-flex;align-items:center;gap:7px;padding:6px 11px;border:1px solid rgba(63,69,37,.2);border-radius:var(--chaski-pill);background:linear-gradient(135deg,rgba(234,240,226,.9),rgba(220,233,205,.7));color:#3F4525;font-size:10px;font-weight:600;line-height:1.5;letter-spacing:.045em;margin-bottom:18px}
+.chaski-section-badge .chaski-icon{width:15px;height:15px}
+.chaski-eyebrow{display:block;margin:0 0 16px;color:#4E5C32;font-size:10px;line-height:1.5;font-weight:600;letter-spacing:.12em}
+.chaski-actions{display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin-top:26px}
+.chaski-text-link{display:inline-flex;align-items:center;gap:8px;color:var(--chaski-primary);font-size:12px;font-weight:600;text-underline-offset:4px}.chaski-text-link .chaski-icon{width:17px;height:17px}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid #586937;outline-offset:5px}
+.chaski-skip{position:fixed;z-index:100;top:-100px;left:12px;padding:12px;background:#fff;color:var(--chaski-primary)}.chaski-skip:focus{top:10px}
+.chaski-card{background:#fff;border:1px solid var(--chaski-line);border-radius:var(--chaski-radius-lg)}
+.chaski-benefit-strip{background:#fff;border-block:1px solid var(--chaski-line)}
+.chaski-benefit-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));padding-block:26px}
+.chaski-benefit{display:flex;align-items:flex-start;gap:12px;padding:0 22px;border-right:1px solid var(--chaski-line)}
+.chaski-benefit:first-child{padding-left:0}.chaski-benefit:last-child{border:0;padding-right:0}
+.chaski-benefit>.chaski-icon{width:23px;height:23px;margin-top:3px;color:#4E5C32}
+.chaski-benefit h2{font-size:13px;line-height:1.5;letter-spacing:0;text-wrap:initial}
+.chaski-benefit p{margin-top:5px;font-size:12px;line-height:1.7}
+.chaski-footer{padding:44px 0 20px;background:var(--chaski-section);border-top:1px solid var(--chaski-line)}
+.chaski-footer-grid{display:grid;grid-template-columns:1.1fr 1fr 1.2fr .9fr;gap:32px}
+.chaski-footer h2{margin:0 0 14px;font-size:11px;line-height:1.5;letter-spacing:.06em;text-transform:uppercase}
+.chaski-footer p,.chaski-footer a{font-size:11px;line-height:1.8;color:var(--chaski-muted)}
+.chaski-footer a{display:block;text-decoration:none}.chaski-footer a:hover{text-decoration:underline;text-underline-offset:3px;color:var(--chaski-primary)}
+.chaski-footer-logo{width:140px;height:auto;margin-bottom:14px}
+.chaski-footer-bottom{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-top:30px;padding-top:17px;border-top:1px solid var(--chaski-line)}
+.chaski-footer-bottom a{display:inline-flex;align-items:center;gap:7px;color:var(--chaski-primary)}
+.chaski-footer-bottom .chaski-icon{width:16px;height:16px}
+@media(max-width:767px){html{scroll-padding-top:88px}.chaski-container{padding-inline:16px}.chaski-btn{min-height:46px;padding:12px 18px;font-size:12px}.chaski-eyebrow{font-size:9px}.chaski-section-badge{font-size:9px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important}}
+
+/* CHASKI 2026 marketing modules, aligned with the SEO landingpage references. */
+.chaski-benefit-grid{grid-template-columns:repeat(4,minmax(0,1fr));padding:30px 24px}
+.chaski-benefit{align-items:flex-start;gap:12px;padding:0 22px;border-right:1px solid var(--chaski-line);border-bottom:0}
+.chaski-benefit:first-child{padding-left:0}.chaski-benefit:last-child{padding-right:0;border-right:0}
+.chaski-benefit>.chaski-icon{width:24px;height:24px;margin-top:2px;color:#4E5C32}
+.chaski-benefit h2{min-height:0;margin:0 0 6px;font-size:13px;line-height:1.45;letter-spacing:0}
+.chaski-benefit p{margin:0;font-size:12px;line-height:1.65}
+.chaski-footer{padding:48px 0 24px;background:var(--chaski-bg);border-top:1px solid var(--chaski-line)}
+.chaski-footer-grid{grid-template-columns:1fr .9fr 1.3fr 1fr;gap:36px}
+.chaski-footer h2{margin-bottom:18px;font-size:10px;letter-spacing:.06em}
+.chaski-footer p,.chaski-footer a{font-size:11px;line-height:1.8}
+.chaski-footer-grid>div>a:not(:has(img)){margin:7px 0}
+.chaski-footer-bottom{margin-top:32px;padding-top:22px;font-size:9px}
+@media(max-width:1050px){.chaski-benefit{padding-inline:12px;gap:8px}}
+@media(max-width:767px){.chaski-benefit-grid{grid-template-columns:1fr 1fr;padding:8px 24px;gap:0 18px}.chaski-benefit{padding:20px 0;border-right:0;border-bottom:1px solid var(--chaski-line)}.chaski-benefit:nth-last-child(-n+2){border-bottom:0}.chaski-benefit>.chaski-icon{width:20px;height:20px}.chaski-benefit h2{font-size:11px;line-height:1.5;margin-bottom:5px}.chaski-benefit p{font-size:10px;line-height:1.65}.chaski-footer{padding-top:40px}.chaski-footer-grid{grid-template-columns:1fr 1fr;gap:26px 20px}.chaski-footer-bottom{align-items:flex-start;flex-direction:column}}
+
+
+/* Split registration banner used as the closing conversion module. */
+.chaski-registration-banner{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);overflow:hidden;border:1px solid #283018;border-radius:24px;background:linear-gradient(135deg,#3F4525,#2E381B);box-shadow:var(--chaski-shadow-panel)}
+.chaski-registration-copy{min-width:0;padding:48px;align-self:center}
+.chaski-registration-copy .chaski-eyebrow{margin-bottom:16px;color:#E3EAD8;font-size:10px;letter-spacing:.12em}
+.chaski-registration-copy h2{margin:0;color:#fff;font-size:34px;line-height:1.25;letter-spacing:-.025em}
+.chaski-registration-copy>p:not(.chaski-eyebrow){margin-top:18px;color:#E3EAD8;font-size:14px;line-height:1.8}
+.chaski-registration-copy .chaski-btn{margin-top:26px}
+.chaski-registration-banner>img{min-width:0;width:100%;height:100%;min-height:360px;object-fit:cover;object-position:50% 45%}
+@media(max-width:767px){.chaski-registration-banner{grid-template-columns:minmax(0,1fr)}.chaski-registration-copy{padding:30px 24px}.chaski-registration-copy h2{font-size:28px}.chaski-registration-banner>img{height:240px;min-height:0;object-position:50% 40%}}
